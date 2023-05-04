@@ -1,7 +1,9 @@
 # LLMsNineStoryDemonTower
 【LLMs九层妖塔】分享一下打怪(ChatGLM、Chinese-LLaMA-Alpaca、MiniGPT-4、FastChat、LLaMA、gpt4all等)实战与经验，
 
-![](mp4/LLMs九层妖塔挑战赛.mp4)
+![LLMs九层妖塔 视频介绍](https://github.com/km1994/LLMsNineStoryDemonTower/blob/main/mp4/LLMs九层妖塔挑战赛.mp4)
+> [LLMs九层妖塔 视频介绍 地址](https://github.com/km1994/LLMsNineStoryDemonTower/blob/main/mp4/LLMs九层妖塔挑战赛.mp4)
+
 
 ## 第一层 ChatGLM-6B
 
