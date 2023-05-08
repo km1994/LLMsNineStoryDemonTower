@@ -11,6 +11,7 @@
 - [ChatGLM-6B 。P-Tuning v2 微调](ChatGLM-6B/ptuning.md)
 - [【ChatGLM-6B入门-三】ChatGLM 特定任务微调实战](https://articles.zsxq.com/id_3b42ukjdkwpt.html)
 - [【ChatGLM-6B入门-四】ChatGLM + LoRA 进行finetune](https://articles.zsxq.com/id_e2389qm0w0sx.html)
+- [【关于 基于 🤗PEFT 的高效 🤖ChatGLM-6B 微调】那些你不知道的事](https://wx.zsxq.com/dweb2/index/columns/51112141255244)
 
 ## 第二层 Stanford Alpaca 7B 
 
@@ -37,6 +38,8 @@
 - [【LLMs 入门实战 —— 八 】GPT4ALL 模型学习与实战](https://articles.zsxq.com/id_ff0w6czthq25.html)
   - 介绍：一个 可以在自己笔记本上面跑起来的  Nomic AI 的助手式聊天机器人，成为贫民家孩子的 福音！
 
-## 第七层 
+## 第七层 AutoGPT
+
+- [AutoGPT 使用和部署](https://articles.zsxq.com/id_pli0z9916126.html)
 
 
