@@ -1,8 +1,24 @@
-# LLMsNineStoryDemonTower
+# LLMsNineStoryDemonTower LLMs九层妖塔
 【LLMs九层妖塔】分享一下打怪(ChatGLM、Chinese-LLaMA-Alpaca、MiniGPT-4、FastChat、LLaMA、gpt4all等)实战与经验，
 
 ![LLMs九层妖塔 视频介绍](https://github.com/km1994/LLMsNineStoryDemonTower/blob/main/mp4/LLMs九层妖塔挑战赛.mp4)
 > [LLMs九层妖塔 视频介绍 地址](https://github.com/km1994/LLMsNineStoryDemonTower/blob/main/mp4/LLMs九层妖塔挑战赛.mp4)
+
+- [LLMsNineStoryDemonTower LLMs九层妖塔](#llmsninestorydemontower-llms九层妖塔)
+  - [【LLMs 入门实战系列】](#llms-入门实战系列)
+    - [第一层 ChatGLM-6B](#第一层-chatglm-6b)
+      - [内容大纲](#内容大纲)
+    - [第二层 Stanford Alpaca 7B](#第二层-stanford-alpaca-7b)
+    - [第三层 Chinese-LLaMA-Alpaca](#第三层-chinese-llama-alpaca)
+    - [第四层 小羊驼 Vicuna](#第四层-小羊驼-vicuna)
+    - [第五层 MiniGPT-4](#第五层-minigpt-4)
+    - [第六层 GPT4ALL](#第六层-gpt4all)
+    - [第七层 AutoGPT](#第七层-autogpt)
+    - [第八层 MOSS](#第八层-moss)
+  - [优秀笔记](#优秀笔记)
+    - [第一层](#第一层)
+    - [优秀笔记](#优秀笔记-1)
+  - [参考](#参考)
 
 ## 【LLMs 入门实战系列】
 
@@ -27,21 +43,6 @@
       3. ChatGLM-6B LoRA 微调：Fine-tuning the low-rank adapters of the model.
 8. [【LLMs 入门实战 —— 十二 】基于 本地知识库 的高效 🤖langchain-ChatGLM ](https://articles.zsxq.com/id_54vjwns5t6in.html)
    1. 介绍：langchain-ChatGLM是一个基于本地知识的问答机器人，使用者可以自由配置本地知识，用户问题的答案也是基于本地知识生成的。
-
-#### 优秀笔记
-
-1. [杨夕](https://mp.weixin.qq.com/s/4QNgF6nAUo8imSaIB_OWmg)
-2. [奔腾](https://articles.zsxq.com/id_k2qzsps7zw21.html)
-3. [逸尘](https://articles.zsxq.com/id_zzfqt88sw4rl.html)
-4. [此方一泉](https://t.zsxq.com/0dEp8PDcW)
-5. [vezel](http://t.csdn.cn/hWn9D)
-6. [徐生](https://zhuanlan.zhihu.com/p/627358709)
-7. [多点微笑](https://articles.zsxq.com/id_velwvtmfhrwz.html)
-8. [小固](https://zhuanlan.zhihu.com/p/627333187)
-9. [土狼](https://zhuanlan.zhihu.com/p/627358709)
-10. [0](https://github.com/Wesley12138/LLM)
-11. [Welch](https://t.zsxq.com/0dJhaaGRW)
-12. [九猫](https://articles.zsxq.com/id_7g0g65fbsluo.html)
 
 ### 第二层 Stanford Alpaca 7B 
 
@@ -78,6 +79,26 @@
 - [【LLMs 入门实战 —— 十三 】MOSS 模型学习与实战](https://articles.zsxq.com/id_4vwpxod23zrc.html)
   - 介绍：MOSS是一个支持中英双语和多种插件的开源对话语言模型，moss-moon系列模型具有160亿参数，在FP16精度下可在单张A100/A800或两张3090显卡运行，在INT4/8精度下可在单张3090显卡运行。MOSS基座语言模型在约七千亿中英文以及代码单词上预训练得到，后续经过对话指令微调、插件增强学习和人类偏好训练具备多轮对话能力及使用多种插件的能力。
   - 局限性：由于模型参数量较小和自回归生成范式，MOSS仍然可能生成包含事实性错误的误导性回复或包含偏见/歧视的有害内容，请谨慎鉴别和使用MOSS生成的内容，请勿将MOSS生成的有害内容传播至互联网。若产生不良后果，由传播者自负。
+
+## 优秀笔记
+
+### 第一层
+
+### 优秀笔记
+
+1. [杨夕](https://mp.weixin.qq.com/s/4QNgF6nAUo8imSaIB_OWmg)
+2. [奔腾](https://articles.zsxq.com/id_k2qzsps7zw21.html)
+3. [逸尘](https://articles.zsxq.com/id_zzfqt88sw4rl.html)
+4. [此方一泉](https://t.zsxq.com/0dEp8PDcW)
+5. [vezel](http://t.csdn.cn/hWn9D)
+6. [徐生](https://zhuanlan.zhihu.com/p/627358709)
+7. [多点微笑](https://articles.zsxq.com/id_velwvtmfhrwz.html)
+8. [小固](https://zhuanlan.zhihu.com/p/627333187)
+9. [土狼](https://zhuanlan.zhihu.com/p/627358709)
+10. [0](https://github.com/Wesley12138/LLM)
+11. [Welch](https://t.zsxq.com/0dJhaaGRW)
+12. [九猫](https://articles.zsxq.com/id_7g0g65fbsluo.html)
+
 
 ## 参考
 
