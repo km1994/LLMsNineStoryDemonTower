@@ -1,8 +1,7 @@
 # LLMsNineStoryDemonTower LLMs九层妖塔
 【LLMs九层妖塔】分享一下打怪(ChatGLM、Chinese-LLaMA-Alpaca、MiniGPT-4、FastChat、LLaMA、gpt4all等)实战与经验，
 
-![LLMs九层妖塔 视频介绍](https://github.com/km1994/LLMsNineStoryDemonTower/blob/main/mp4/LLMs九层妖塔挑战赛.mp4)
-> [LLMs九层妖塔 视频介绍 地址](https://github.com/km1994/LLMsNineStoryDemonTower/blob/main/mp4/LLMs九层妖塔挑战赛.mp4)
+>⚠ [LLMs九层妖塔 视频介绍](https://github.com/km1994/LLMsNineStoryDemonTower/blob/main/mp4/LLMs九层妖塔挑战赛.mp4)
 
 - [LLMsNineStoryDemonTower LLMs九层妖塔](#llmsninestorydemontower-llms九层妖塔)
   - [【LLMs 入门实战系列】](#llms-入门实战系列)
@@ -108,5 +107,5 @@
 4. [Vicuna](https://github.com/lm-sys/FastChat)
 5. [MiniGPT-4](https://github.com/Vision-CAIR/MiniGPT-4)
 6. [GPT4ALL](https://github.com/nomic-ai/gpt4all)
-7. [Auto-GPT](hhttps://github.com/Significant-Gravitas/Auto-GPT)
+7. [Auto-GPT](https://github.com/Significant-Gravitas/Auto-GPT)
 8. [MOSS](https://github.com/OpenLMLab/MOSS/tree/main)
