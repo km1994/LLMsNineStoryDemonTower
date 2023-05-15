@@ -27,41 +27,74 @@
 #### 内容大纲
 
 1. [【ChatGLM-6B入门-一】清华大学开源中文版ChatGLM-6B模型学习与实战](ChatGLM-6B/induction.md)
-   1. 介绍：ChatGLM-6B 环境配置 和 部署
+   - 介绍：ChatGLM-6B 环境配置 和 部署
+   - github 项目：https://github.com/THUDM/ChatGLM-6B
+   - huggingface Weights：
+     - https://huggingface.co/THUDM/chatglm-6b
 2. [【ChatGLM-6B入门-二】清华大学开源中文版ChatGLM-6B模型微调实战](ChatGLM-6B/ptuning.md)
-   1. ChatGLM-6B P-Tuning V2 微调：Fine-tuning the prefix encoder of the model.
-3. [【ChatGLM-6B入门-三】ChatGLM 特定任务微调实战](https://articles.zsxq.com/id_3b42ukjdkwpt.html)
-4. [【ChatGLM-6B入门-四】ChatGLM + LoRA 进行finetune](https://articles.zsxq.com/id_e2389qm0w0sx.html)
-   1. 介绍：ChatGLM-6B LoRA 微调：Fine-tuning the low-rank adapters of the model.
-5. [ChatGLM-6B 小编填坑记](https://articles.zsxq.com/id_fw7vn0mhdsnq.html)
-   1. 介绍：ChatGLM-6B 在 部署和微调 过程中 会遇到很多坑，小编掉坑了很多次，为防止 后人和小编一样继续掉坑，小编索性把遇到的坑都填了。
-6. [【LLMs学习】关于大模型实践的一些总结](https://articles.zsxq.com/id_il58nxrs9jxr.html)
-7. [【LLMs 入门实战 —— 十一 】基于 🤗PEFT 的高效 🤖ChatGLM-6B 微调](https://articles.zsxq.com/id_7rz5jtfguuc5.html)
-   1. 微调方式：
-      1. ChatGLM-6B Freeze 微调：Fine-tuning the MLPs in the last n blocks of the model.
-      2. ChatGLM-6B P-Tuning V2 微调：Fine-tuning the prefix encoder of the model.
-      3. ChatGLM-6B LoRA 微调：Fine-tuning the low-rank adapters of the model.
-8. [【LLMs 入门实战 —— 十二 】基于 本地知识库 的高效 🤖langchain-ChatGLM ](https://articles.zsxq.com/id_54vjwns5t6in.html)
-   1. 介绍：langchain-ChatGLM是一个基于本地知识的问答机器人，使用者可以自由配置本地知识，用户问题的答案也是基于本地知识生成的。
+   - 介绍：ChatGLM-6B P-Tuning V2 微调：Fine-tuning the prefix encoder of the model.
+   - github 项目：https://github.com/THUDM/ChatGLM-6B
+   - huggingface Weights：
+     - https://huggingface.co/THUDM/chatglm-6b
+
+3. [【ChatGLM-6B入门-三】ChatGLM 特定任务微调实战](ChatGLM-6B/ptuning_in_my_data.md)
+   - 介绍：对于 ChatGLM-6B 模型基于 [P-Tuning v2](https://github.com/THUDM/P-tuning-v2) 的特定任务微调实验，微调目标为自动生成的整数/小数加减乘除运算。
+   - github 项目：
+     - https://github.com/THUDM/ChatGLM-6B
+     - https://github.com/yongzhuo/chatglm-maths
+   - huggingface Weights：
+     - https://huggingface.co/THUDM/chatglm-6b
+   - 训练数据集：
+     - [BelleGroup/school_math_0.25M](https://huggingface.co/datasets/BelleGroup/school_math_0.25M) 
+  
+4. [【ChatGLM-6B入门-四】ChatGLM + LoRA 进行finetune](ChatGLM-6B/LoRA_finetune.md)
+   - 介绍：ChatGLM-6B LoRA 微调：Fine-tuning the low-rank adapters of the model.
+   - github 项目：
+     - https://github.com/mymusise/ChatGLM-Tuning
+   - huggingface Weights：
+     - https://huggingface.co/THUDM/chatglm-6b
+5. [【LLMs 入门实战 —— 十一 】基于 🤗PEFT 的高效 🤖ChatGLM-6B 微调](https://articles.zsxq.com/id_7rz5jtfguuc5.html)
+   - 微调方式：
+     - ChatGLM-6B Freeze 微调：Fine-tuning the MLPs in the last n blocks of the model.
+     - ChatGLM-6B P-Tuning V2 微调：Fine-tuning the prefix encoder of the model.
+     - ChatGLM-6B LoRA 微调：Fine-tuning the low-rank adapters of the model.
+6. [【LLMs 入门实战 —— 十二 】基于 本地知识库 的高效 🤖langchain-ChatGLM ](https://articles.zsxq.com/id_54vjwns5t6in.html)
+   - 介绍：langchain-ChatGLM是一个基于本地知识的问答机器人，使用者可以自由配置本地知识，用户问题的答案也是基于本地知识生成的。
+7. [ChatGLM-6B 小编填坑记](https://articles.zsxq.com/id_fw7vn0mhdsnq.html)
+   - 介绍：ChatGLM-6B 在 部署和微调 过程中 会遇到很多坑，小编掉坑了很多次，为防止 后人和小编一样继续掉坑，小编索性把遇到的坑都填了。
+8. [【LLMs学习】关于大模型实践的一些总结](https://articles.zsxq.com/id_il58nxrs9jxr.html)
 
 ### 第二层 Stanford Alpaca 7B 
 
-- [【LLMs 入门实战 —— 五 】Stanford Alpaca 7B 模型学习与实战](https://articles.zsxq.com/id_xnt3fvp2wxz0.html)
+- [【LLMs 入门实战 —— 五 】Stanford Alpaca 7B 模型学习与实战](Stanford_Alpaca_7B/readme.md)
   - 介绍：本教程提供了对LLaMA模型进行微调的廉价亲民 LLMs 学习和微调 方式，主要介绍对于 Stanford Alpaca 7B 模型在特定任务上 的 微调实验，所用的数据为OpenAI提供的GPT模型API生成质量较高的指令数据（仅52k）。
+  - github 项目：
+    - https://github.com/tatsu-lab/stanford_alpaca
+  - huggingface Weights：
+    - https://huggingface.co/P01son/ChatLLaMA-zh-7B
 
 ### 第三层 Chinese-LLaMA-Alpaca 
 
-- [【LLMs 入门实战 —— 六 】Chinese-LLaMA-Alpaca 模型学习与实战](https://articles.zsxq.com/id_dqvusswrdg6c.html)
+- [【LLMs 入门实战 —— 六 】Chinese-LLaMA-Alpaca 模型学习与实战](Chinese-LLaMA-Alpaca/readme.md)
   - 介绍：本教程主要介绍了 Chinese-ChatLLaMA,提供中文对话模型 ChatLLama 、中文基础模型 LLaMA-zh 及其训练数据。 模型基于 TencentPretrain 多模态预训练框架构建
+  - github 项目：
+    - https://github.com/ydli-ai/Chinese-ChatLLaMA
+  - huggingface Weights：
+    - https://huggingface.co/decapoda-research/llama-7b-hf
 
 ### 第四层 小羊驼 Vicuna
 
-- [【LLMs 入门实战 —— 七 】小羊驼 Vicuna模型学习与实战](https://articles.zsxq.com/id_q9mx24q9fdab.html)
+- [【LLMs 入门实战 —— 七 】小羊驼 Vicuna模型学习与实战](Vicuna/readme.md)
   - 介绍：UC伯克利学者联手CMU、斯坦福等，再次推出一个全新模型70亿/130亿参数的Vicuna，俗称「小羊驼」（骆马）。小羊驼号称能达到GPT-4的90%性能
+  - github 项目：
+    - https://github.com/lm-sys/FastChat
+  - huggingface Weights：
+    - https://huggingface.co/lmsys/vicuna-7b-delta-v1.1
+    - https://huggingface.co/decapoda-research/llama-7b-hf
 
 ### 第五层 MiniGPT-4 
 
-- [【LLMs 入门实战 —— 八 】MiniGPT-4 模型学习与实战](https://articles.zsxq.com/id_ff0w6czthq25.html)
+- [【LLMs 入门实战 —— 八 】MiniGPT-4 模型学习与实战](mingpt/readme.md)
   - 介绍： MiniGPT-4，是来自阿卜杜拉国王科技大学的几位博士做的，它能提供类似 GPT-4 的图像理解与对话能力
 
 ### 第六层 GPT4ALL
