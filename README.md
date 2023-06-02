@@ -17,11 +17,14 @@
     - [第九层 BLOOM](#第九层-bloom)
     - [第十层 BELLE](#第十层-belle)
     - [第十一层 LLMTune](#第十一层-llmtune)
+<<<<<<< HEAD
     - [第十二层 VisualGLM-6B](#第十二层-visualglm-6b)
     - [第十三层 ChatRWKV](#第十三层-chatrwkv)
     - [第十四层 聚宝盆(Cornucopia)](#第十四层-聚宝盆cornucopia)
     - [第十五层 Guanaco](#第十五层-guanaco)
     - [第十六层 Massively Multilingual Speech (MMS，大规模多语种语音)](#第十六层-massively-multilingual-speech-mms大规模多语种语音)
+=======
+>>>>>>> 66d9c9c237c1f29ad4ea8ccce513de30e9d1bbe6
   - [学习群](#学习群)
   - [优秀笔记](#优秀笔记)
     - [第一层](#第一层)
@@ -105,6 +108,7 @@
   - 介绍：Cornell Tech开源的LLMTune就是为了降低大模型微调难度所提出的一种解决方案。对于650亿参数的LLaMA模型微调仅需要40GB显存即可。
   - github 地址: https://github.com/kuleshov-group/llmtune
 
+<<<<<<< HEAD
 ### 第十二层 VisualGLM-6B
 
 - [【LLMs 入门实战 —— 十七 】 VisualGLM-6B 模型学习与实战](https://articles.zsxq.com/id_4pzgwnwl2zjc.html)
@@ -155,6 +159,8 @@ VisualGLM-6B 依靠来自于 CogView 数据集的30M高质量中文图文对，�
   - 代码：[fairseq/tree/main/examples/mms](https://github.com/facebookresearch/fairseq/tree/main/examples/mms)
   - 公告：https://ai.facebook.com/blog/multilingual-model-speech-recognition/
   - 介绍：Meta 在 GitHub 上再次开源了一款全新的 AI 语言模型——Massively Multilingual Speech (MMS，大规模多语种语音)，它与 ChatGPT 有着很大的不同，这款新的语言模型可以识别 4000 多种口头语言并生成 1100 多种语音（文本到语音）。
+=======
+>>>>>>> 66d9c9c237c1f29ad4ea8ccce513de30e9d1bbe6
 
 ## 学习群
 
