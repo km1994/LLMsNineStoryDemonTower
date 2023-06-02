@@ -1,32 +1,68 @@
-# LLMsNineStoryDemonTower LLMs九层妖塔
-【LLMs九层妖塔】分享一下打怪(ChatGLM、Chinese-LLaMA-Alpaca、MiniGPT-4、FastChat、LLaMA、gpt4all等)实战与经验，
+# 【LLMs 入门实战 —— 二十 】 Guanaco 模型学习与实战
+ 
+1. [https://huggingface.co/BlinkDL](https://huggingface.co/BlinkDL)
+2. 代码：[artidoro/qlora](https://github.com/artidoro/qlora)
+3. 模型：[timdettmers (Tim Dettmers)](https://huggingface.co/timdettmers)
+4. 量化代码：[TimDettmers/bitsandbytes](https://github.com/TimDettmers/bitsandbytes)
+5. BLOG : [Making LLMs even more accessible with bitsandbytes, 4-bit quantization and QLoRA](https://huggingface.co/blog/4bit-transformers-bitsandbytes)
+6. Demo环境：[Guanaco Playground Tgi - a Hugging Face Space by uwnlp](https://huggingface.co/spaces/uwnlp/guanaco-playground-tgi)
 
-![LLMs九层妖塔 视频介绍](https://github.com/km1994/LLMsNineStoryDemonTower/blob/main/mp4/LLMs九层妖塔挑战赛.mp4)
-> [LLMs九层妖塔 视频介绍 地址](https://github.com/km1994/LLMsNineStoryDemonTower/blob/main/mp4/LLMs九层妖塔挑战赛.mp4)
 
-- [LLMsNineStoryDemonTower LLMs九层妖塔](#llmsninestorydemontower-llms九层妖塔)
-  - [【LLMs 入门实战系列】](#llms-入门实战系列)
-    - [第一层 ChatGLM-6B](#第一层-chatglm-6b)
-    - [第二层 Stanford Alpaca 7B](#第二层-stanford-alpaca-7b)
-    - [第三层 Chinese-LLaMA-Alpaca](#第三层-chinese-llama-alpaca)
-    - [第四层 小羊驼 Vicuna](#第四层-小羊驼-vicuna)
-    - [第五层 MiniGPT-4](#第五层-minigpt-4)
-    - [第六层 GPT4ALL](#第六层-gpt4all)
-    - [第七层 AutoGPT](#第七层-autogpt)
-    - [第八层 MOSS](#第八层-moss)
-    - [第九层 BLOOM](#第九层-bloom)
-    - [第十层 BELLE](#第十层-belle)
-    - [第十一层 LLMTune](#第十一层-llmtune)
-    - [第十二层 VisualGLM-6B](#第十二层-visualglm-6b)
-    - [第十三层 ChatRWKV](#第十三层-chatrwkv)
-    - [第十四层 聚宝盆(Cornucopia)](#第十四层-聚宝盆cornucopia)
-    - [第十五层 Guanaco](#第十五层-guanaco)
-    - [第十六层 Massively Multilingual Speech (MMS，大规模多语种语音)](#第十六层-massively-multilingual-speech-mms大规模多语种语音)
-  - [学习群](#学习群)
-  - [优秀笔记](#优秀笔记)
-    - [第一层](#第一层)
-    - [优秀笔记](#优秀笔记-1)
-  - [参考](#参考)
+## 一、前言
+
+### 1.1 动机
+
+5月24日华盛顿大学的研究者发布了QLoRA技术及用其生成的Guanaco大模型。
+
+- 特点：
+  - 在Vicuna基准测试中表现优于所有先前公开发布的模型，达到ChatGPT性能水平的99.3%，仅需要单个GPU上的24小时微调时间；
+  - QLORA引入了一些创新来节省内存而不牺牲性能：
+    - （a）4位NormalFloat（NF4），这是一种对于正态分布权重来说在信息论上是最优的数据类型；
+    - （b）双量化，通过量化量化常数来减少平均内存占用；
+    - （c）分页优化器，用于管理内存峰值。
+
+### 1.2 软件资源
+
+- CUDA 11.7
+- Python 3.10
+- pytorch 1.13.1+cu117
+
+## 二、环境搭建
+
+### 2.1 下载代码 
+
+```s
+    $ git clone https://github.com/BlinkDL/ChatRWKV.git
+```
+
+### 2.2 构建环境
+
+```s
+    $ conda create -n py310_chat python=3.10       # 创建新环境
+    $ source activate py310_chat                   # 激活环境
+```
+
+### 2.3 安装依赖 
+
+```s
+    $ cd ChatRWKV
+    $ pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple
+```
+
+## 三、模型训练代码
+
+### 3.1 模型下载
+
+
+
+### 3.2 模型推理
+
+
+
+
+## 填坑笔记
+
+
 
 ## 【LLMs 入门实战系列】
 
@@ -148,46 +184,13 @@ VisualGLM-6B 依靠来自于 CogView 数据集的30M高质量中文图文对，�
         - （b）双量化，通过量化量化常数来减少平均内存占用；
         - （c）分页优化器，用于管理内存峰值。
 
-### 第十六层 Massively Multilingual Speech (MMS，大规模多语种语音)
-
-- [【LLMs 入门实战 —— 二十 】 Massively Multilingual Speech (MMS，大规模多语种语音) 模型学习与实战](https://github.com/km1994/LLMsNineStoryDemonTower/tree/main/speech_MMS_21)
-  - 论文：[Scaling Speech Technology to 1,000+ Languages](https://research.facebook.com/publications/scaling-speech-technology-to-1000-languages/)
-  - 代码：[fairseq/tree/main/examples/mms](https://github.com/facebookresearch/fairseq/tree/main/examples/mms)
-  - 公告：https://ai.facebook.com/blog/multilingual-model-speech-recognition/
-  - 介绍：Meta 在 GitHub 上再次开源了一款全新的 AI 语言模型——Massively Multilingual Speech (MMS，大规模多语种语音)，它与 ChatGPT 有着很大的不同，这款新的语言模型可以识别 4000 多种口头语言并生成 1100 多种语音（文本到语音）。
-
-## 学习群
-
-![[学习群二维码](img/20230516092740.jpg)](img/20230516092740.jpg)
-> 二维码如果过期，可以加 wx: yzyykm666 加群
-
-## 优秀笔记
-
-### 第一层
-
-### 优秀笔记
-
-1. [杨夕](https://mp.weixin.qq.com/s/4QNgF6nAUo8imSaIB_OWmg)
-2. [奔腾](https://articles.zsxq.com/id_k2qzsps7zw21.html)
-3. [逸尘](https://articles.zsxq.com/id_zzfqt88sw4rl.html)
-4. [此方一泉](https://t.zsxq.com/0dEp8PDcW)
-5. [vezel](http://t.csdn.cn/hWn9D)
-6. [徐生](https://zhuanlan.zhihu.com/p/627358709)
-7. [多点微笑](https://articles.zsxq.com/id_velwvtmfhrwz.html)
-8. [小固](https://zhuanlan.zhihu.com/p/627333187)
-9. [土狼](https://zhuanlan.zhihu.com/p/627358709)
-10. [0](https://github.com/Wesley12138/LLM)
-11. [Welch](https://t.zsxq.com/0dJhaaGRW)
-12. [九猫](https://articles.zsxq.com/id_7g0g65fbsluo.html)
-
-
 ## 参考
 
-1. [ChatGLM-6B](https://github.com/THUDM/ChatGLM-6B)
-2. [Stanford Alpaca 7B](https://github.com/tatsu-lab/stanford_alpaca)
-3. [Chinese-LLaMA-Alpaca](https://github.com/ymcui/Chinese-LLaMA-Alpaca)
-4. [Vicuna](https://github.com/lm-sys/FastChat)
-5. [MiniGPT-4](https://github.com/Vision-CAIR/MiniGPT-4)
-6. [GPT4ALL](https://github.com/nomic-ai/gpt4all)
-7. [Auto-GPT](hhttps://github.com/Significant-Gravitas/Auto-GPT)
-8. [MOSS](https://github.com/OpenLMLab/MOSS/tree/main)
+1. [https://huggingface.co/BlinkDL](https://huggingface.co/BlinkDL)
+2. 代码：[artidoro/qlora](https://github.com/artidoro/qlora)
+3. 模型：[timdettmers (Tim Dettmers)](https://huggingface.co/timdettmers)
+4. 量化代码：[TimDettmers/bitsandbytes](https://github.com/TimDettmers/bitsandbytes)
+5. BLOG : [Making LLMs even more accessible with bitsandbytes, 4-bit quantization and QLoRA](https://huggingface.co/blog/4bit-transformers-bitsandbytes)
+6. Demo环境：[Guanaco Playground Tgi - a Hugging Face Space by uwnlp](https://huggingface.co/spaces/uwnlp/guanaco-playground-tgi)
+7. [开源原驼（Guanaco）及背后的QLoRA技术，将微调65B模型的显存需求从780GB以上降低到48GB以下，效果直逼GPT-4，技术详解](https://zhuanlan.zhihu.com/p/632236718)
+
