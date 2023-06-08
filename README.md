@@ -32,7 +32,7 @@
       - [第二重 Guanaco](#第二重-guanaco)
     - [第八层 LLMs to Vertical Field (VF)](#第八层-llms-to-vertical-field-vf)
       - [第一重 聚宝盆(Cornucopia)](#第一重-聚宝盆cornucopia)
-      - [第九层 LLMs to Trick](#第九层-llms-to-trick)
+    - [第九层 LLMs to Trick](#第九层-llms-to-trick)
   - [学习群](#学习群)
   - [优秀笔记](#优秀笔记)
     - [第一层](#第一层)
@@ -194,7 +194,7 @@ VisualGLM-6B 依靠来自于 CogView 数据集的30M高质量中文图文对，�
   - 聚宝盆(Cornucopia) 开源了经过中文金融知识指令精调/指令微调(Instruct-tuning) 的LLaMA-7B模型。通过中文金融公开数据+爬取的金融数据构建指令数据集，并在此基础上对LLaMA进行了指令微调，提高了 LLaMA 在金融领域的问答效果。
   - github: [jerry1993-tech/Cornucopia-LLaMA-Fin-Chinese](https://github.com/jerry1993-tech/Cornucopia-LLaMA-Fin-Chinese/tree/main)
 
-#### 第九层 LLMs to Trick
+### 第九层 LLMs to Trick
 
 
 ## 学习群
