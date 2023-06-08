@@ -17,22 +17,23 @@
       - [第八重 BELLE](#第八重-belle)
       - [第九重 ChatRWKV](#第九重-chatrwkv)
     - [第二层 LLMs to Intelligent Retrieval (IR)](#第二层-llms-to-intelligent-retrieval-ir)
-      - [第一重 ChatGLM-6B](#第一重-chatglm-6b-1)
-    - [第三层 LLMs to Visual Question Answering (VQA)](#第三层-llms-to-visual-question-answering-vqa)
+      - [第一重 langchain](#第一重-langchain)
+    - [第三层 LLMs to Text-to-Image (TTI)](#第三层-llms-to-text-to-image-tti)
+      - [第一重 Stable Diffusion](#第一重-stable-diffusion)
+    - [第四层 LLMs to Visual Question Answering (VQA)](#第四层-llms-to-visual-question-answering-vqa)
       - [第一重 MiniGPT-4](#第一重-minigpt-4)
       - [第二重 VisualGLM-6B](#第二重-visualglm-6b)
-    - [第四层 LLMs to Automatic Speech Recognition (ASR)](#第四层-llms-to-automatic-speech-recognition-asr)
+    - [第五层 LLMs to Automatic Speech Recognition (ASR)](#第五层-llms-to-automatic-speech-recognition-asr)
       - [第一重 Massively Multilingual Speech (MMS，大规模多语种语音)](#第一重-massively-multilingual-speech-mms大规模多语种语音)
-    - [第五层 LLMs to Text To Speech (TTS)](#第五层-llms-to-text-to-speech-tts)
+    - [第六层 LLMs to Text To Speech (TTS)](#第六层-llms-to-text-to-speech-tts)
       - [第一重 Massively Multilingual Speech (MMS，大规模多语种语音)](#第一重-massively-multilingual-speech-mms大规模多语种语音-1)
-    - [第六层 LLMs to Artifact](#第六层-llms-to-artifact)
+    - [第七层 LLMs to Artifact](#第七层-llms-to-artifact)
       - [第一重 AutoGPT](#第一重-autogpt)
-    - [第七层 LLMs to Parameter Efficient Fine-Tuning (PEFT)](#第七层-llms-to-parameter-efficient-fine-tuning-peft)
+    - [第八层 LLMs to Parameter Efficient Fine-Tuning (PEFT)](#第八层-llms-to-parameter-efficient-fine-tuning-peft)
       - [第一重 LLMTune](#第一重-llmtune)
       - [第二重 Guanaco](#第二重-guanaco)
-    - [第八层 LLMs to Vertical Field (VF)](#第八层-llms-to-vertical-field-vf)
+    - [第九层 LLMs to Vertical Field (VF)](#第九层-llms-to-vertical-field-vf)
       - [第一重 聚宝盆(Cornucopia)](#第一重-聚宝盆cornucopia)
-    - [第九层 LLMs to Trick](#第九层-llms-to-trick)
   - [学习群](#学习群)
   - [优秀笔记](#优秀笔记)
     - [第一层](#第一层)
@@ -112,12 +113,30 @@
 
 ### 第二层 LLMs to Intelligent Retrieval (IR)
 
-#### 第一重 ChatGLM-6B
+#### 第一重 langchain
 
 1. [【LLMs 入门实战 —— 十二 】基于 本地知识库 的高效 🤖langchain-ChatGLM ](https://articles.zsxq.com/id_54vjwns5t6in.html)
    1. 介绍：langchain-ChatGLM是一个基于本地知识的问答机器人，使用者可以自由配置本地知识，用户问题的答案也是基于本地知识生成的。
 
-### 第三层 LLMs to Visual Question Answering (VQA)
+### 第三层 LLMs to Text-to-Image (TTI)
+
+#### 第一重 Stable Diffusion
+
+- [【LLMs 入门实战 —— 二十二 】Stable Diffusion 模型学习与实战](https://github.com/km1994/LLMsNineStoryDemonTower/tree/main/text2img/stable_diffusion)
+  - Github 地址：https://github.com/gediz/lstein-stable-diffusion
+  - 预训练模型：https://huggingface.co/CompVis/stable-diffusion
+  - 介绍：Stable Diffusion是一种潜在扩散模型（Latent Diffusion Model），能够从文本描述中生成详细的图像。它还可以用于图像修复、图像绘制、文本到图像和图像到图像等任务。简单地说，我们只要给出想要的图片的文字描述在提Stable Diffusion就能生成符合你要求的逼真的图像！
+- [【LLMs 入门实战 —— 二十三 】Stable Diffusion Webui 模型学习与实战](https://github.com/km1994/LLMsNineStoryDemonTower/tree/main/text2img/stable_diffusion_webui)
+  - Github 地址：https://github.com/AUTOMATIC1111/stable-diffusion-webui
+  - 预训练模型：https://huggingface.co/CompVis/stable-diffusion
+  - 介绍：Stable Diffusion是一款功能异常强大的AI图片生成器。它不仅支持生成图片，使用各种各样的模型来达到你想要的效果，还能训练你自己的专属模型。WebUI使得Stable Diffusion有了一个更直观的用户界面，更适合新手用户。
+- [【LLMs 入门实战 —— 二十四 】Novelai 模型学习与实战](https://github.com/km1994/LLMsNineStoryDemonTower/tree/main/text2img/novelai)
+- [【LLMs 入门实战 —— 二十五 】lora to TTI 模型学习与实战](https://github.com/km1994/LLMsNineStoryDemonTower/tree/main/text2img/lora)
+  - Github 地址：https://github.com/microsoft/LoRA
+  - 预训练模型：https://huggingface.co/johnsmith007/LoRAs/tree/main
+  - 介绍：LoRA的全称是LoRA: Low-Rank Adaptation of Large Language Models，可以理解为stable diffusion（SD)模型的一种插件，和hyper-network，controlNet一样，都是在不修改SD模型的前提下，利用少量数据训练出一种画风/IP/人物，实现定制化需求，所需的训练资源比训练SD模要小很多，非常适合社区使用者和个人开发者。
+
+### 第四层 LLMs to Visual Question Answering (VQA)
 
 #### 第一重 MiniGPT-4 
 
@@ -133,7 +152,7 @@
 VisualGLM-6B 依靠来自于 CogView 数据集的30M高质量中文图文对，与 300M 经过筛选的英文图文对进行预训练，中英文权重相同。该训练方式较好地将视觉信息对齐到 ChatGLM 的语义空间；之后的微调阶段，模型在长视觉问答数据上训练，以生成符合人类偏好的答案。
   - github 地址:https://github.com/THUDM/VisualGLM-6B
 
-### 第四层 LLMs to Automatic Speech Recognition (ASR)
+### 第五层 LLMs to Automatic Speech Recognition (ASR)
 
 #### 第一重 Massively Multilingual Speech (MMS，大规模多语种语音)
 
@@ -143,7 +162,7 @@ VisualGLM-6B 依靠来自于 CogView 数据集的30M高质量中文图文对，�
   - 公告：https://ai.facebook.com/blog/multilingual-model-speech-recognition/
   - 介绍：Meta 在 GitHub 上再次开源了一款全新的 AI 语言模型——Massively Multilingual Speech (MMS，大规模多语种语音)，它与 ChatGPT 有着很大的不同，这款新的语言模型可以识别 4000 多种口头语言并生成 1100 多种语音（文本到语音）。
 
-### 第五层 LLMs to Text To Speech (TTS)
+### 第六层 LLMs to Text To Speech (TTS)
 
 #### 第一重 Massively Multilingual Speech (MMS，大规模多语种语音)
 
@@ -153,14 +172,14 @@ VisualGLM-6B 依靠来自于 CogView 数据集的30M高质量中文图文对，�
   - 公告：https://ai.facebook.com/blog/multilingual-model-speech-recognition/
   - 介绍：Meta 在 GitHub 上再次开源了一款全新的 AI 语言模型——Massively Multilingual Speech (MMS，大规模多语种语音)，它与 ChatGPT 有着很大的不同，这款新的语言模型可以识别 4000 多种口头语言并生成 1100 多种语音（文本到语音）。
 
-### 第六层 LLMs to Artifact
+### 第七层 LLMs to Artifact
 
 #### 第一重 AutoGPT
 
 - [AutoGPT 使用和部署](https://articles.zsxq.com/id_pli0z9916126.html)
   - 介绍：Auto-GPT是一个基于ChatGPT的工具，他能帮你自动完成各种任务，比如写代码、写报告、做调研等等。使用它时，你只需要告诉他要扮演的角色和要实现的目标，然后他就会利用ChatGPT和谷歌搜索等工具，不断“思考”如何接近目标并执行，你甚至可以看到他的思考过程。
 
-### 第七层 LLMs to Parameter Efficient Fine-Tuning (PEFT)
+### 第八层 LLMs to Parameter Efficient Fine-Tuning (PEFT)
 
 #### 第一重 LLMTune
 
@@ -186,15 +205,13 @@ VisualGLM-6B 依靠来自于 CogView 数据集的30M高质量中文图文对，�
         - （b）双量化，通过量化量化常数来减少平均内存占用；
         - （c）分页优化器，用于管理内存峰值。
 
-### 第八层 LLMs to Vertical Field (VF)
+### 第九层 LLMs to Vertical Field (VF)
 
 #### 第一重 聚宝盆(Cornucopia) 
 
 - [【LLMs 入门实战 —— 十九】 聚宝盆(Cornucopia) 模型学习与实战](https://github.com/km1994/LLMsNineStoryDemonTower/tree/main/Cornucopia_19)
   - 聚宝盆(Cornucopia) 开源了经过中文金融知识指令精调/指令微调(Instruct-tuning) 的LLaMA-7B模型。通过中文金融公开数据+爬取的金融数据构建指令数据集，并在此基础上对LLaMA进行了指令微调，提高了 LLaMA 在金融领域的问答效果。
   - github: [jerry1993-tech/Cornucopia-LLaMA-Fin-Chinese](https://github.com/jerry1993-tech/Cornucopia-LLaMA-Fin-Chinese/tree/main)
-
-### 第九层 LLMs to Trick
 
 
 ## 学习群
