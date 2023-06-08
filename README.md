@@ -1,9 +1,7 @@
 # LLMsNineStoryDemonTower LLMs九层妖塔
-【LLMs九层妖塔】分享一下打怪(ChatGLM、Chinese-LLaMA-Alpaca、MiniGPT-4、FastChat、LLaMA、gpt4all等)实战与经验，
 
-<video id="video" controls="" preload="none" poster="封面">
-      <source id="mp4" src="mp4/LLMs九层妖塔挑战赛.mp4" type="video/mp4">
-</videos>
+【LLMs九层妖塔】分享一下打怪(ChatGLM、Chinese-LLaMA-Alpaca、MiniGPT-4、小羊驼 Vicuna、LLaMA、GPT4ALL等)实战与经验，
+
 
 - [LLMsNineStoryDemonTower LLMs九层妖塔](#llmsninestorydemontower-llms九层妖塔)
   - [【LLMs 入门实战系列】](#llms-入门实战系列)
