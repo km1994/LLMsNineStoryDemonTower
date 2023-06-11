@@ -76,7 +76,7 @@
 
 #### 第四重 小羊驼 Vicuna
 
-- [【LLMs 入门实战 —— 七 】小羊驼 Vicuna模型学习与实战](https://articles.zsxq.com/id_q9mx24q9fdab.html)
+- [【LLMs 入门实战 —— 七 】小羊驼 Vicuna模型学习与实战](Vicuna/readme.md)
   - 介绍：UC伯克利学者联手CMU、斯坦福等，再次推出一个全新模型70亿/130亿参数的Vicuna，俗称「小羊驼」（骆马）。小羊驼号称能达到GPT-4的90%性能
 
 #### 第五重 GPT4ALL
@@ -200,7 +200,7 @@
 
 #### 第三重 MiniGPT-4 
 
-- [【LLMs 入门实战 —— 八 】MiniGPT-4 模型学习与实战](https://articles.zsxq.com/id_ff0w6czthq25.html)
+- [【LLMs 入门实战 —— 八 】MiniGPT-4 模型学习与实战](mingpt/readme.md)
   - Github 链接： https://github.com/Vision-CAIR/MiniGPT-4
   - 介绍： MiniGPT-4，是来自阿卜杜拉国王科技大学的几位博士做的，它能提供类似 GPT-4 的图像理解与对话能力
 
