@@ -2,18 +2,6 @@
 
 > 参考：[MiniGPT-4](https://github.com/Vision-CAIR/MiniGPT-4)
 
-## 【LLMs 入门实战系列】
-
-1. [清华大学开源中文版ChatGLM-6B模型学习与实战](https://articles.zsxq.com/id_3nsce4n09dhv.html)
-2. [【ChatGLM-6B入门-二】清华大学开源中文版ChatGLM-6B模型微调实战](https://articles.zsxq.com/id_3c9k9qlhnhol.html)
-3. [【ChatGLM-6B入门-三】ChatGLM 特定任务微调实战](https://articles.zsxq.com/id_3b42ukjdkwpt.html)
-4. [【ChatGLM-6B入门-四】ChatGLM + LoRA 进行finetune](https://articles.zsxq.com/id_e2389qm0w0sx.html)
-5. [【LLMs 入门实战 —— 五 】Stanford Alpaca 7B 模型学习与实战](https://articles.zsxq.com/id_xnt3fvp2wxz0.html)
-6. [【LLMs学习】关于大模型实践的一些总结](https://articles.zsxq.com/id_il58nxrs9jxr.html)
-7. [ChatGLM-6B 小编填坑记](https://articles.zsxq.com/id_fw7vn0mhdsnq.html)
-8. [【LLMs 入门实战 —— 六 】Chinese-LLaMA-Alpaca 模型学习与实战](https://articles.zsxq.com/id_dqvusswrdg6c.html)
-9. [【LLMs 入门实战 —— 七 】小羊驼 FastChat 模型学习与实战](https://articles.zsxq.com/id_q9mx24q9fdab.html)
-
 ## 一、前言
 
 还在苦苦等待GPT-4开放？开源项目MiniGPT-4就能提前体验类似GPT-4的多模态对话功能。

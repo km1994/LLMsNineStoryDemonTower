@@ -1,7 +1,6 @@
 # 【LLMs 入门实战 —— 七 】Vicuna 模型学习与实战
 
-- github 地址: https://github.com/tatsu-lab/stanford_alpaca
-- 试用地址：https://alpaca-ai-custom6.ngrok.io/
+- github 地址: https://github.com/lm-sys/FastChat
 
 ## 一、前言
 
