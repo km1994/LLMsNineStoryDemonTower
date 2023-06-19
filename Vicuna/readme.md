@@ -231,6 +231,35 @@ You can use model parallelism to aggregate GPU memory from multiple GPUs on the 
     $ python -m fastchat.serve.cli --model-path /path/to/vicuna/weights --load-8bit
 ```
 
+#### 4.0.2 Tokenizer class LlaMATokenizer does not exist or is not currentlv imported
+
+- 问题描述：运行 以下命令
+
+```shell
+    $ python -m fastchat.serve.cli --model-path /path/to/vicuna/weights 
+```
+
+出现以下问题：
+
+![](img/微信图片_20230614103247.png)
+
+- 解决方法：
+
+将 FastChat/fastchat/model/model_adapter.py 里面 的 
+
+```s
+    tokenizer = AutoTokenizer.from_pretrained(model_path， use_fast=self.use_fast_tokenizer
+    model = AutoModelForCausalLM.from_pretrained(...)
+```
+
+使用文本替换，将所有的
+
+1. AutoTokenizer 替换为 LlamaTokenizer
+2. AutoModelForCausalLM 替换为 LlamaForCausalLM
+3. 保存
+
+重新运行即可
+
 ## 五、使用Web GUI服务
 
 ### 5.1 介绍
