@@ -16,6 +16,19 @@
       - [第九重 ChatRWKV](#第九重-chatrwkv)
       - [第十重 ChatGPT](#第十重-chatgpt)
       - [第十一重 OpenBuddy](#第十一重-openbuddy)
+      - [第十二重 Baize](#第十二重-baize)
+      - [第十三重 OpenChineseLLaMA](#第十三重-openchinesellama)
+      - [第十四重 Panda](#第十四重-panda)
+      - [第十五重 Ziya-LLaMA-13B](#第十五重-ziya-llama-13b)
+      - [第十六重 BiLLa](#第十六重-billa)
+      - [第十七重 Luotuo-Chinese-LLM](#第十七重-luotuo-chinese-llm)
+      - [第十八重 Linly](#第十八重-linly)
+      - [第十九重 ChatYuan](#第十九重-chatyuan)
+      - [第二十重 CPM-Bee](#第二十重-cpm-bee)
+      - [第二十一重 TigerBot](#第二十一重-tigerbot)
+      - [第二十二重 书生·浦语](#第二十二重-书生浦语)
+      - [第二十三重 Aquila](#第二十三重-aquila)
+      - [第二十四重 baichuan-7B](#第二十四重-baichuan-7b)
     - [第二层 LLMs to Intelligent Retrieval (IR)](#第二层-llms-to-intelligent-retrieval-ir)
       - [第一重 langchain](#第一重-langchain)
     - [第三层 LLMs to Text-to-Image](#第三层-llms-to-text-to-image)
@@ -25,6 +38,7 @@
       - [第二重 BLIP2](#第二重-blip2)
       - [第三重 MiniGPT-4](#第三重-minigpt-4)
       - [第四重 VisualGLM-6B](#第四重-visualglm-6b)
+      - [第五重 Ziya-Visual](#第五重-ziya-visual)
     - [第五层 LLMs to Automatic Speech Recognition (ASR)](#第五层-llms-to-automatic-speech-recognition-asr)
       - [第一重 Massively Multilingual Speech (MMS，大规模多语种语音)](#第一重-massively-multilingual-speech-mms大规模多语种语音)
     - [第六层 LLMs to Text To Speech (TTS)](#第六层-llms-to-text-to-speech-tts)
@@ -35,7 +49,11 @@
       - [第一重 LLMTune](#第一重-llmtune)
       - [第二重 Guanaco](#第二重-guanaco)
     - [第九层 LLMs to Vertical Field (VF)](#第九层-llms-to-vertical-field-vf)
-      - [第一重 聚宝盆(Cornucopia)](#第一重-聚宝盆cornucopia)
+      - [第一重 金融领域](#第一重-金融领域)
+      - [第二重 医疗领域](#第二重-医疗领域)
+      - [第三重 法律领域](#第三重-法律领域)
+      - [第四重 教育领域](#第四重-教育领域)
+      - [第五重 文化领域](#第五重-文化领域)
   - [学习群](#学习群)
   - [优秀笔记](#优秀笔记)
     - [第一层](#第一层)
@@ -76,7 +94,7 @@
 
 #### 第四重 小羊驼 Vicuna
 
-- [【LLMs 入门实战 —— 七 】小羊驼 Vicuna模型学习与实战](Vicuna/readme.md)
+- [【LLMs 入门实战 —— 七 】小羊驼 Vicuna模型学习与实战](https://articles.zsxq.com/id_q9mx24q9fdab.html)
   - 介绍：UC伯克利学者联手CMU、斯坦福等，再次推出一个全新模型70亿/130亿参数的Vicuna，俗称「小羊驼」（骆马）。小羊驼号称能达到GPT-4的90%性能
 
 #### 第五重 GPT4ALL
@@ -137,6 +155,126 @@
   - github 地址：https://github.com/OpenBuddy/OpenBuddy
   - 动机：虽然目前 很多人 LLMs 层出不穷，但是他们并不能 在 多语言支持无缝衔接（eg: LLaMA 模型由于是用 英语训练，所以在 中文等其他语种上效果并不好）
   - 介绍：基于 Tii 的 Falcon 模型和 Facebook 的 LLaMA 模型构建，OpenBuddy 经过微调，包括扩展词汇表、增加常见字符和增强 token 嵌入。通过利用这些改进和多轮对话数据集，OpenBuddy 提供了一个强大的模型，能够回答各种语言的问题并执行翻译任务。
+
+#### 第十二重 Baize
+
+- [【LLMs 入门实战 —— 三十 】Baize 学习与实战]()
+  - 论文名称：Baize: An Open-Source Chat Model with Parameter-Efficient Tuning on Self-Chat Data
+  - 论文地址：https://arxiv.org/abs/2304.01196
+  - Github 代码：https://github.com/project-baize/baize-chatbot/blob/main/README.md
+  - 模型：
+    - baize-v2-7b 模型：https://huggingface.co/project-baize/baize-v2-7b
+    - baize-v2-13b 模型：https://huggingface.co/project-baize/baize-v2-13b
+  - baize 体验网站：https://huggingface.co/spaces/project-baize/baize-lora-7B
+  - 动机：高质量的标注数据问题
+  - 介绍：Baize 作者 提出了一个自动收集 ChatGPT 对话的流水线，通过从特定数据集中采样「种子」的方式，让 ChatGPT 自我对话，批量生成高质量多轮对话数据集。其中如果使用领域特定数据集，比如医学问答数据集，就可以生成高质量垂直领域语料。
+
+#### 第十三重 OpenChineseLLaMA
+
+- [【LLMs 入门实战 】OpenChineseLLaMA 学习与实战](https://github.com/km1994/LLMsNineStoryDemonTower/tree/main/OpenChineseLLaMA)
+  - 论文名称：
+  - 论文地址：
+  - Github 代码：https://github.com/OpenLMLab/OpenChineseLLaMA
+  - 模型：https://huggingface.co/openlmlab/open-chinese-llama-7b-patch
+  - 介绍：基于 LLaMA-7B 经过中文数据集增量预训练产生的中文大语言模型基座，对比原版 LLaMA，该模型在中文理解能力和生成能力方面均获得较大提升，在众多下游任务中均取得了突出的成绩。
+
+#### 第十四重 Panda
+
+- [【LLMs 入门实战 】Panda 学习与实战](https://github.com/km1994/LLMsNineStoryDemonTower/tree/main/PandaLM)
+  - 论文名称：Panda LLM: Training Data and Evaluation for Open-Sourced Chinese Instruction-Following Large Language Models
+  - 论文地址：https://arxiv.org/pdf/2305.03025v1.pdf
+  - Github 代码：https://github.com/dandelionsllm/pandallm
+  - 模型：
+  - 介绍：开源了基于LLaMA-7B, -13B, -33B, -65B 进行中文领域上的持续预训练的语言模型, 使用了接近 15M 条数据进行二次预训练。
+
+#### 第十五重 Ziya-LLaMA-13B
+
+- [【LLMs 入门实战 】 Ziya-LLaMA-13B 学习与实战](https://github.com/km1994/LLMsNineStoryDemonTower/tree/main/Ziya-LLaMA-13B-v1)
+  - 论文名称：
+  - 论文地址：
+  - Github 代码：https://huggingface.co/IDEA-CCNL/Ziya-LLaMA-13B-v1
+  - 模型：
+  - 介绍：该项目开源了姜子牙通用大模型V1，是基于LLaMa的130亿参数的大规模预训练模型，具备翻译，编程，文本分类，信息抽取，摘要，文案生成，常识问答和数学计算等能力。该模型已完成大规模预训练、多任务有监督微调和人类反馈学习三阶段的训练过程。
+
+#### 第十六重 BiLLa
+
+- [【LLMs 入门实战 】 BiLLa 学习与实战](https://github.com/km1994/LLMsNineStoryDemonTower/tree/main/BiLLa)
+  - 论文名称：BiLLa: A Bilingual LLaMA with Enhanced Reasoning Ability
+  - 论文地址：
+  - Github 代码：https://github.com/Neutralzz/BiLLa
+  - 模型：
+  - 介绍：该项目开源了推理能力增强的中英双语LLaMA模型。模型的主要特性有：较大提升LLaMA的中文理解能力，并尽可能减少对原始LLaMA英文能力的损伤；训练过程增加较多的任务型数据，利用ChatGPT生成解析，强化模型理解任务求解逻辑；全量参数更新，追求更好的生成效果。
+
+#### 第十七重 Luotuo-Chinese-LLM
+
+- [【LLMs 入门实战 】 Luotuo-Chinese-LLM 学习与实战]()
+  - 论文名称：
+  - 论文地址：
+  - Github 代码：https://github.com/LC1332/Luotuo-Chinese-LLM
+  - 模型：
+  - 介绍：囊括了一系列中文大语言模型开源项目，包含了一系列基于已有开源模型（ChatGLM, MOSS, LLaMA）进行二次微调的语言模型，指令微调数据集等。
+
+#### 第十八重 Linly
+
+- [【LLMs 入门实战 】 Linly 学习与实战]()
+  - 论文名称：
+  - 论文地址：
+  - Github 代码：https://github.com/CVI-SZU/Linly
+  - 模型：
+  - 介绍：提供中文对话模型 Linly-ChatFlow 、中文基础模型 Linly-Chinese-LLaMA 及其训练数据。中文基础模型以 LLaMA 为底座，利用中文和中英平行增量预训练。项目汇总了目前公开的多语言指令数据，对中文模型进行了大规模指令跟随训练，实现了 Linly-ChatFlow 对话模型。
+
+#### 第十九重 ChatYuan
+
+- [【LLMs 入门实战 】 ChatYuan 学习与实战]()
+  - 论文名称：
+  - 论文地址：
+  - Github 代码：https://github.com/clue-ai/ChatYuan
+  - 介绍：元语智能发布的一系列支持中英双语的功能型对话语言大模型，在微调数据、人类反馈强化学习、思维链等方面进行了优化。
+
+#### 第二十重 CPM-Bee
+
+- [【LLMs 入门实战 】 CPM-Bee 学习与实战]()
+  - 论文名称：
+  - 论文地址：
+  - Github 代码：https://github.com/OpenBMB/CPM-Bee
+  - 模型：
+  - 介绍：一个完全开源、允许商用的百亿参数中英文基座模型。它采用Transformer自回归架构（auto-regressive），在超万亿（trillion）高质量语料上进行预训练，拥有强大的基础能力。开发者和研究者可以在CPM-Bee基座模型的基础上在各类场景进行适配来以创建特定领域的应用模型。
+
+#### 第二十一重 TigerBot
+
+- [【LLMs 入门实战 】 TigerBot 学习与实战]()
+  - 论文名称：
+  - 论文地址：
+  - Github 代码：https://github.com/TigerResearch/TigerBot
+  - 模型：
+  - 介绍：一个多语言多任务的大规模语言模型(LLM)，开源了包括模型：TigerBot-7B, TigerBot-7B-base，TigerBot-180B，基本训练和推理代码，100G预训练数据，涵盖金融、法律、百科的领域数据以及API等。
+
+#### 第二十二重 书生·浦语
+
+- [【LLMs 入门实战 】 书生·浦语 学习与实战]()
+  - 论文名称：
+  - 论文地址：
+  - Github 代码：https://github.com/InternLM/InternLM-techreport
+  - 模型：
+  - 介绍：商汤科技、上海AI实验室联合香港中文大学、复旦大学和上海交通大学发布千亿级参数大语言模型“书生·浦语”（InternLM）。据悉，“书生·浦语”具有1040亿参数，基于“包含1.6万亿token的多语种高质量数据集”训练而成。
+
+#### 第二十三重 Aquila
+
+- [【LLMs 入门实战 】 Aquila 学习与实战]()
+  - 论文名称：
+  - 论文地址：
+  - Github 代码： https://github.com/FlagAI-Open/FlagAI/tree/master/examples/Aquila
+  - 模型：
+  - 介绍：由智源研究院发布，Aquila语言大模型在技术上继承了GPT-3、LLaMA等的架构设计优点，替换了一批更高效的底层算子实现、重新设计实现了中英双语的tokenizer，升级了BMTrain并行训练方法，是在中英文高质量语料基础上从０开始训练的，通过数据质量的控制、多种训练的优化方法，实现在更小的数据集、更短的训练时间，获得比其它开源模型更优的性能。也是首个支持中英双语知识、支持商用许可协议、符合国内数据合规需要的大规模开源语言模型。
+
+#### 第二十四重 baichuan-7B
+
+- [【LLMs 入门实战 】 baichuan-7B 学习与实战]()
+  - 论文名称：
+  - 论文地址：
+  - Github 代码： https://github.com/baichuan-inc/baichuan-7B
+  - 模型：
+  - 介绍：由百川智能开发的一个开源可商用的大规模预训练语言模型。基于Transformer结构，在大约1.2万亿tokens上训练的70亿参数模型，支持中英双语，上下文窗口长度为4096。在标准的中文和英文权威benchmark（C-EVAL/MMLU）上均取得同尺寸最好的效果。
 
 ### 第二层 LLMs to Intelligent Retrieval (IR)
 
@@ -200,7 +338,7 @@
 
 #### 第三重 MiniGPT-4 
 
-- [【LLMs 入门实战 —— 八 】MiniGPT-4 模型学习与实战](mingpt/readme.md)
+- [【LLMs 入门实战 —— 八 】MiniGPT-4 模型学习与实战](https://articles.zsxq.com/id_ff0w6czthq25.html)
   - Github 链接： https://github.com/Vision-CAIR/MiniGPT-4
   - 介绍： MiniGPT-4，是来自阿卜杜拉国王科技大学的几位博士做的，它能提供类似 GPT-4 的图像理解与对话能力
 
@@ -212,6 +350,15 @@
   - 动机：OpenAI 的GPT-4样例中展现出令人印象深刻的多模态理解能力，但是能理解图像的中文开源对话模型仍是空白。
   - 介绍：VisualGLM-6B 是一个开源的，支持图像、中文和英文的多模态对话语言模型，语言模型基于 ChatGLM-6B，具有 62 亿参数；图像部分通过训练 BLIP2-Qformer 构建起视觉模型与语言模型的桥梁，整体模型共 78 亿参数。VisualGLM-6B 依靠来自于 CogView 数据集的30M高质量中文图文对，与 300M 经过筛选的英文图文对进行预训练，中英文权重相同。该训练方式较好地将视觉信息对齐到 ChatGLM 的语义空间；之后的微调阶段，模型在长视觉问答数据上训练，以生成符合人类偏好的答案。
   - github 地址:https://github.com/THUDM/VisualGLM-6B
+
+#### 第五重 Ziya-Visual
+
+- [【LLMs 入门实战 】 Ziya-Visual 模型学习与实战](https://github.com/km1994/LLMsNineStoryDemonTower/tree/main/ZiyaVisual) 
+  - Ziya-Visual模型开源地址：https://huggingface.co/IDEA-CCNL/Ziya-BLIP2-14B-Visual-v1L/Ziya-BLIP2-14B-Visual-v1
+  - Demo体验地址：https://huggingface.co/spaces/IDEA-CCNL/Ziya-BLIP2-14B-Visual-v1-DemoDEA-CCNL/Ziya-BLIP2-14B-Visual-v1-Demo
+  - Ziya开源模型：https://huggingface.co/IDEA-CCNL/Ziya-LLaMA-13B-v1L/Ziya-LLaMA-13B-v1
+  - 封神榜项目主页：https://github.com/IDEA-CCNL/Fengshenbang-LM
+  - 介绍：自从3月份OpenAI发布具有识图能力的多模态大模型GPT-4，大模型的能力便不再局限于文本输入-文本输出的形式，人们可以上传视觉图片来与大模型进行聊天和交互。遗憾的是，时至今日绝大部分用户也都还没有拿到GPT-4输入图片的权限，无法体验到结合视觉和语言两大模态的大模型的卓越能力，而且GPT-4也没有叙述或者开源GPT模型多模态预训练的方案。与之相对的是，学术界和开源界则充分探索了视觉预训练模型（比如ViT, Vision Transformer）与大语言模型(LLM，Large Language Model)结合，从而让目前的LLM获得输入图片、认识图片的能力。其中的代表工作包括国外团队开源的Mini-GPT4[1]，LLaVA[2]等，国内团队开源的VisuaGLM[3]，mPLUG-Owl[4]等工作。大部分的开源方案参考了BLIP2的训练方案[5]，选择冻结LLM部分的参数训练或者采用Lora等parameter-efficient的微调训练方式。IDEA研究院封神榜团队在5月17日发布“姜子牙通用大模型v1”之后，继续发布Ziya-BLIP2-14B-Visual-v1多模态大模型（以下简称Ziya-Visual模型）。和Ziya大模型一样，Ziya-Visual模型具备中英双语能力，特别是中文能力较为突出。和所有基于BLIP2的方案类似，我们简单高效的扩展了LLM的识图能力。该模型对比VisualGLM、mPLUG-Owl模型，在视觉问答（VQA）评价和GPT-4打分评价[2]中，展现了一些优势。
 
 ### 第五层 LLMs to Automatic Speech Recognition (ASR)
 
@@ -275,11 +422,100 @@
 
 ### 第九层 LLMs to Vertical Field (VF)
 
-#### 第一重 聚宝盆(Cornucopia) 
+#### 第一重 金融领域
 
 - [【LLMs 入门实战 —— 十九】 聚宝盆(Cornucopia) 模型学习与实战](https://github.com/km1994/LLMsNineStoryDemonTower/tree/main/Cornucopia_19)
   - 聚宝盆(Cornucopia) 开源了经过中文金融知识指令精调/指令微调(Instruct-tuning) 的LLaMA-7B模型。通过中文金融公开数据+爬取的金融数据构建指令数据集，并在此基础上对LLaMA进行了指令微调，提高了 LLaMA 在金融领域的问答效果。
   - github: [jerry1993-tech/Cornucopia-LLaMA-Fin-Chinese](https://github.com/jerry1993-tech/Cornucopia-LLaMA-Fin-Chinese/tree/main)
+- [【LLMs 入门实战 】 BBT-FinCUGE-Applications 学习与实战]()
+  - 论文名称：
+  - 论文地址：https://github.com/ssymmetry/BBT-FinCUGE-Applications
+  - 介绍：开源了中文金融领域开源语料库BBT-FinCorpus，中文金融领域知识增强型预训练语言模型BBT-FinT5及中文金融领域自然语言处理评测基准CFLEB。
+- [【LLMs 入门实战 】 XuanYuan（轩辕） 学习与实战]()：首个千亿级中文金融对话模型
+  - 论文名称：
+  - 论文地址：https://huggingface.co/xyz-nlp/XuanYuan2.0
+  - 介绍：轩辕是国内首个开源的千亿级中文对话大模型，同时也是首个针对中文金融领域优化的千亿级开源对话大模型。轩辕在BLOOM-176B的基础上针对中文通用领域和金融领域进行了针对性的预训练与微调，它不仅可以应对通用领域的问题，也可以解答与金融相关的各类问题，为用户提供准确、全面的金融信息和建议。
+
+#### 第二重 医疗领域
+
+- [【LLMs 入门实战 —— 二十九 】HuatuoGPT (华佗GPT) 学习与实战]()
+  - HuatuoGPT (华佗GPT), Towards Taming Language Models To Be a Doctor.
+  - 论文地址：https://arxiv.org/pdf/2305.15075.pdf
+  - Github 代码：https://github.com/FreedomIntelligence/HuatuoGPT
+  - 模型：https://huggingface.co/FreedomIntelligence/HuatuoGPT-7b-v1
+  - HuatuoGPT 体验网站：https://www.huatuogpt.cn/
+  - HuatuoGPT (华佗GPT) 监督微调（SFT）：[HuatuoGPT-sft-data-v1](https://huggingface.co/datasets/FreedomIntelligence/HuatuoGPT-sft-data-v1)
+  - 动机：
+    - 益增长的在线和医院快速医疗咨询需求 与 医生的时间和精力 矛盾问题
+    - 目前并没有 开源而且高质量的 可用于训练 medical LLMs，所以 为 训练 medical LLMs 而构建 high-quality instruction training data 至关重要；
+    - medical LLMs 诊断能力需要进行 彻底评估和测试，避免 medical LLMs 误诊问题；
+  - 介绍：
+    - HuatuoGPT (华佗GPT) 知识库是一个在庞大的中国医学语料库上训练的大型语言模型。HuatuoGPT (华佗GPT) 的目标是为医疗咨询场景构建一个更专业的“ChatGPT”。
+
+- [【LLMs 入门实战 】DoctorGLM 学习与实战]()
+  - 论文名称：
+  - 论文地址：https://github.com/xionghonglin/DoctorGLM
+  - 介绍：基于 ChatGLM-6B的中文问诊模型，通过中文医疗对话数据集进行微调，实现了包括lora、p-tuningv2等微调及部署
+
+- [【LLMs 入门实战 】 BenTsao 学习与实战]()
+  - 论文名称：
+  - 论文地址：https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese
+  - 介绍：开源了经过中文医学指令精调/指令微调(Instruct-tuning) 的LLaMA-7B模型。通过医学知识图谱和GPT3.5 API构建了中文医学指令数据集，并在此基础上对LLaMA进行了指令微调，提高了LLaMA在医疗领域的问答效果。
+
+- [【LLMs 入门实战 】 BianQue 学习与实战]()
+  - 论文名称：
+  - 论文地址：https://github.com/scutcyr/BianQue
+  - 介绍：一个经过指令与多轮问询对话联合微调的医疗对话大模型，基于ClueAI/ChatYuan-large-v2作为底座，使用中文医疗问答指令与多轮问询对话混合数据集进行微调。
+
+- [【LLMs 入门实战 】 Med-ChatGLM 学习与实战]()
+  - 论文名称：
+  - 论文地址：https://github.com/SCIR-HI/Med-ChatGLM
+  - 介绍：基于中文医学知识的ChatGLM模型微调，微调数据与BenTsao相同。
+
+- [【LLMs 入门实战 】 QiZhenGPT 学习与实战]()
+  - 论文名称：
+  - 论文地址：https://github.com/CMKRG/QiZhenGPT
+  - 介绍：该项目利用启真医学知识库构建的中文医学指令数据集，并基于此在LLaMA-7B模型上进行指令精调，大幅提高了模型在中文医疗场景下效果，首先针对药品知识问答发布了评测数据集，后续计划优化疾病、手术、检验等方面的问答效果，并针对医患问答、病历自动生成等应用展开拓展。
+
+- [【LLMs 入门实战 】 ChatMed 学习与实战]()
+  - 论文名称：
+  - 论文地址：https://github.com/michael-wzhu/ChatMed
+  - 介绍：该项目推出ChatMed系列中文医疗大规模语言模型，模型主干为LlaMA-7b并采用LoRA微调，具体包括ChatMed-Consult : 基于中文医疗在线问诊数据集ChatMed_Consult_Dataset的50w+在线问诊+ChatGPT回复作为训练集；ChatMed-TCM : 基于中医药指令数据集ChatMed_TCM_Dataset，以开源的中医药知识图谱为基础，采用以实体为中心的自指令方法(entity-centric self-instruct)，调用ChatGPT得到2.6w+的围绕中医药的指令数据训练得到。
+
+- [【LLMs 入门实战 】 XrayGLM 学习与实战]()
+  - 论文名称：
+  - 论文地址：https://github.com/WangRongsheng/XrayGLM
+  - 介绍：该项目为促进中文领域医学多模态大模型的研究发展，发布了XrayGLM数据集及模型，其在医学影像诊断和多轮交互对话上显示出了非凡的潜力。
+
+#### 第三重 法律领域
+
+- [【LLMs 入门实战 】 LaWGPT 学习与实战]()：基于中文法律知识的大语言模型
+  - 论文名称：
+  - 论文地址：https://github.com/pengxiao-song/LaWGPT
+  - 介绍：该系列模型在通用中文基座模型（如 Chinese-LLaMA、ChatGLM 等）的基础上扩充法律领域专有词表、大规模中文法律语料预训练，增强了大模型在法律领域的基础语义理解能力。在此基础上，构造法律领域对话问答数据集、中国司法考试数据集进行指令精调，提升了模型对法律内容的理解和执行能力。
+- [【LLMs 入门实战 】 LaWGPT 学习与实战]()：中文法律大模型
+  - 论文名称：
+  - 论文地址：https://github.com/CSHaitao/LexiLaw
+  - 介绍：LexiLaw 是一个基于 ChatGLM-6B微调的中文法律大模型，通过在法律领域的数据集上进行微调。该模型旨在为法律从业者、学生和普通用户提供准确、可靠的法律咨询服务，包括具体法律问题的咨询，还是对法律条款、案例解析、法规解读等方面的查询。
+- [【LLMs 入门实战 】 Lawyer LLaMA 学习与实战]()：中文法律LLaMA
+  - 论文名称：
+  - 论文地址：https://github.com/AndrewZhe/lawyer-llama
+  - 介绍：开源了一系列法律领域的指令微调数据和基于LLaMA训练的中文法律大模型的参数。Lawyer LLaMA 首先在大规模法律语料上进行了continual pretraining。在此基础上，借助ChatGPT收集了一批对中国国家统一法律职业资格考试客观题（以下简称法考）的分析和对法律咨询的回答，利用收集到的数据对模型进行指令微调，让模型习得将法律知识应用到具体场景中的能力。
+
+#### 第四重 教育领域
+
+- [【LLMs 入门实战 】 桃李（Taoli） 学习与实战]()
+  - 论文名称：
+  - 论文地址：https://github.com/blcuicall/taoli
+  - 介绍：一个在国际中文教育领域数据上进行了额外训练的模型。项目基于目前国际中文教育领域流通的500余册国际中文教育教材与教辅书、汉语水平考试试题以及汉语学习者词典等，构建了国际中文教育资源库，构造了共计 88000 条的高质量国际中文教育问答数据集，并利用收集到的数据对模型进行指令微调，让模型习得将知识应用到具体场景中的能力。
+
+#### 第五重 文化领域
+
+- [【LLMs 入门实战 】 Firefly 学习与实战]()
+  - 论文名称：
+  - 论文地址：https://github.com/yangjianxin1/Firefly
+  - 介绍：中文对话式大语言模型，构造了许多与中华文化相关的数据，以提升模型这方面的表现，如对联、作诗、文言文翻译、散文、金庸小说等。
+
 
 ## 学习群
 
@@ -316,3 +552,4 @@
 6. [GPT4ALL](https://github.com/nomic-ai/gpt4all)
 7. [Auto-GPT](https://github.com/Significant-Gravitas/Auto-GPT)
 8. [MOSS](https://github.com/OpenLMLab/MOSS/tree/main)
+9. [Awesome-Chinese-LLM：收集和梳理中文LLM相关的开源模型、应用、数据集及教程等资料](https://mp.weixin.qq.com/s/Oy6XZNyN3kpsC6TfQYQb7A)
