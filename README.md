@@ -1,6 +1,6 @@
 # LLMsNineStoryDemonTower LLMs九层妖塔
-
-【LLMs九层妖塔】分享一下打怪(ChatGLM、Chinese-LLaMA-Alpaca、MiniGPT-4、小羊驼 Vicuna、LLaMA、GPT4ALL等)实战与经验，
+ 
+【LLMs九层妖塔】分享 LLMs在自然语言处理（ChatGLM、Chinese-LLaMA-Alpaca、小羊驼 Vicuna、LLaMA、GPT4ALL等）、信息检索（langchain）、语言合成、语言识别、多模态等领域（Stable Diffusion、MiniGPT-4、VisualGLM-6B、Ziya-Visual等）等 实战与经验。
 
 - [LLMsNineStoryDemonTower LLMs九层妖塔](#llmsninestorydemontower-llms九层妖塔)
   - [【LLMs 入门实战系列】](#llms-入门实战系列)
