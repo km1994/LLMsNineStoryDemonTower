@@ -189,8 +189,17 @@ RuntimeError: The size of tensor a (32000) must match the size of tensor b (3200
 
 1. 下载 MiniGPT-4 checkpoint
 
-- Checkpoint Aligned with Vicuna 13B: https://drive.google.com/file/d/1a4zLvaiDBr-36pasffmgpvH5P7CKmpze/view?usp=share_link
-- Checkpoint Aligned with Vicuna 7B: https://drive.google.com/file/d/1RY9jV0dyqLX-o38LrumkKRh6Jtaop58R/view?usp=sharing
+- 方法一：从 google drive 下载
+  - Checkpoint Aligned with Vicuna 13B: https://drive.google.com/file/d/1a4zLvaiDBr-36pasffmgpvH5P7CKmpze/view?usp=share_link
+  - Checkpoint Aligned with Vicuna 7B: https://drive.google.com/file/d/1RY9jV0dyqLX-o38LrumkKRh6Jtaop58R/view?usp=sharing
+- 方法二：huggingface 平台下载
+  - prerained_minigpt4_7b.pth：https://www.huggingface.co/wangrongsheng/MiniGPT4-7B/tree/main
+  - pretrained_minigpt4.pth：https://www.huggingface.co/wangrongsheng/MiniGPT4/tree/main
+
+```s
+    $ git lfs install
+    $ git clone https://www.huggingface.co/wangrongsheng/MiniGPT4-7B
+```
 
 2. 在 [eval_configs/minigpt4_eval.yaml](https://github.com/Vision-CAIR/MiniGPT-4/blob/main/eval_configs/minigpt4_eval.yaml#L10) 的 第11行 设置 MiniGPT-4 checkpoint 路径
 
