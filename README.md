@@ -41,13 +41,16 @@
       - [第五重 Ziya-Visual](#第五重-ziya-visual)
     - [第五层 LLMs to Automatic Speech Recognition (ASR)](#第五层-llms-to-automatic-speech-recognition-asr)
       - [第一重 Massively Multilingual Speech (MMS，大规模多语种语音)](#第一重-massively-multilingual-speech-mms大规模多语种语音)
+      - [第二重 whisper](#第二重-whisper)
     - [第六层 LLMs to Text To Speech (TTS)](#第六层-llms-to-text-to-speech-tts)
       - [第一重 Massively Multilingual Speech (MMS，大规模多语种语音)](#第一重-massively-multilingual-speech-mms大规模多语种语音-1)
     - [第七层 LLMs to Artifact](#第七层-llms-to-artifact)
       - [第一重 AutoGPT](#第一重-autogpt)
     - [第八层 LLMs to Parameter Efficient Fine-Tuning (PEFT)](#第八层-llms-to-parameter-efficient-fine-tuning-peft)
       - [第一重 LLMTune](#第一重-llmtune)
-      - [第二重 Guanaco](#第二重-guanaco)
+      - [第二重 QLoRA](#第二重-qlora)
+      - [第三重 Parallel](#第三重-parallel)
+      - [第四重 Trick](#第四重-trick)
     - [第九层 LLMs to Vertical Field (VF)](#第九层-llms-to-vertical-field-vf)
       - [第一重 金融领域](#第一重-金融领域)
       - [第二重 医疗领域](#第二重-医疗领域)
@@ -158,7 +161,7 @@
 
 #### 第十二重 Baize
 
-- 【LLMs 入门实战 —— 三十 】Baize 学习与实战
+- [【LLMs 入门实战 —— 三十 】Baize 学习与实战](https://articles.zsxq.com/id_hftswats1oe8.html)
   - 论文名称：Baize: An Open-Source Chat Model with Parameter-Efficient Tuning on Self-Chat Data
   - 论文地址：https://arxiv.org/abs/2304.01196
   - Github 代码：https://github.com/project-baize/baize-chatbot/blob/main/README.md
@@ -171,7 +174,7 @@
 
 #### 第十三重 OpenChineseLLaMA
 
-- 【LLMs 入门实战 】OpenChineseLLaMA 学习与实战
+- [【LLMs 入门实战 】OpenChineseLLaMA 学习与实战](https://articles.zsxq.com/id_kbaocwse89o9.html)
   - 论文名称：
   - 论文地址：
   - Github 代码：https://github.com/OpenLMLab/OpenChineseLLaMA
@@ -180,7 +183,7 @@
 
 #### 第十四重 Panda
 
-- 【LLMs 入门实战 】Panda 学习与实战
+- [【LLMs 入门实战 】Panda 学习与实战](https://articles.zsxq.com/id_6dnefz5bmekd.html)
   - 论文名称：Panda LLM: Training Data and Evaluation for Open-Sourced Chinese Instruction-Following Large Language Models
   - 论文地址：https://arxiv.org/pdf/2305.03025v1.pdf
   - Github 代码：https://github.com/dandelionsllm/pandallm
@@ -189,7 +192,7 @@
 
 #### 第十五重 Ziya-LLaMA-13B
 
-- 【LLMs 入门实战 】 Ziya-LLaMA-13B 学习与实战
+- [【LLMs 入门实战 】 Ziya-LLaMA-13B 学习与实战](https://articles.zsxq.com/id_110iedww8t0k.html)
   - 论文名称：
   - 论文地址：
   - Github 代码：https://huggingface.co/IDEA-CCNL/Ziya-LLaMA-13B-v1
@@ -198,7 +201,7 @@
 
 #### 第十六重 BiLLa
 
-- 【LLMs 入门实战 】 BiLLa 学习与实战
+- [【LLMs 入门实战 】 BiLLa 学习与实战](https://articles.zsxq.com/id_wtixv8u69v7w.html)
   - 论文名称：BiLLa: A Bilingual LLaMA with Enhanced Reasoning Ability
   - 论文地址：
   - Github 代码：https://github.com/Neutralzz/BiLLa
@@ -207,7 +210,7 @@
 
 #### 第十七重 Luotuo-Chinese-LLM
 
-- 【LLMs 入门实战 】 Luotuo-Chinese-LLM 学习与实战
+- [【LLMs 入门实战 】 Luotuo-Chinese-LLM 学习与实战]()
   - 论文名称：
   - 论文地址：
   - Github 代码：https://github.com/LC1332/Luotuo-Chinese-LLM
@@ -216,7 +219,7 @@
 
 #### 第十八重 Linly
 
-- 【LLMs 入门实战 】 Linly 学习与实战
+- [【LLMs 入门实战 】 Linly 学习与实战]()
   - 论文名称：
   - 论文地址：
   - Github 代码：https://github.com/CVI-SZU/Linly
@@ -225,7 +228,7 @@
 
 #### 第十九重 ChatYuan
 
-- 【LLMs 入门实战 】 ChatYuan 学习与实战
+- [【LLMs 入门实战 】 ChatYuan 学习与实战]()
   - 论文名称：
   - 论文地址：
   - Github 代码：https://github.com/clue-ai/ChatYuan
@@ -233,7 +236,7 @@
 
 #### 第二十重 CPM-Bee
 
-- 【LLMs 入门实战 】 CPM-Bee 学习与实战
+- [【LLMs 入门实战 】 CPM-Bee 学习与实战]()
   - 论文名称：
   - 论文地址：
   - Github 代码：https://github.com/OpenBMB/CPM-Bee
@@ -242,7 +245,7 @@
 
 #### 第二十一重 TigerBot
 
-- 【LLMs 入门实战 】 TigerBot 学习与实战
+- [【LLMs 入门实战 】 TigerBot 学习与实战]()
   - 论文名称：
   - 论文地址：
   - Github 代码：https://github.com/TigerResearch/TigerBot
@@ -251,7 +254,7 @@
 
 #### 第二十二重 书生·浦语
 
-- 【LLMs 入门实战 】 书生·浦语 学习与实战
+- [【LLMs 入门实战 】 书生·浦语 学习与实战]()
   - 论文名称：
   - 论文地址：
   - Github 代码：https://github.com/InternLM/InternLM-techreport
@@ -260,7 +263,7 @@
 
 #### 第二十三重 Aquila
 
-- 【LLMs 入门实战 】 Aquila 学习与实战
+- [【LLMs 入门实战 】 Aquila 学习与实战]()
   - 论文名称：
   - 论文地址：
   - Github 代码： https://github.com/FlagAI-Open/FlagAI/tree/master/examples/Aquila
@@ -269,7 +272,7 @@
 
 #### 第二十四重 baichuan-7B
 
-- 【LLMs 入门实战 】 baichuan-7B 学习与实战
+- [【LLMs 入门实战 】 baichuan-7B 学习与实战]()
   - 论文名称：
   - 论文地址：
   - Github 代码： https://github.com/baichuan-inc/baichuan-7B
@@ -280,8 +283,17 @@
 
 #### 第一重 langchain
 
-1. [【LLMs 入门实战 —— 十二 】基于 本地知识库 的高效 🤖langchain-ChatGLM ](https://articles.zsxq.com/id_54vjwns5t6in.html)
-   1. 介绍：langchain-ChatGLM是一个基于本地知识的问答机器人，使用者可以自由配置本地知识，用户问题的答案也是基于本地知识生成的。
+- [【LLMs 入门实战 —— 十二 】基于 本地知识库 的高效 🤖langchain-ChatGLM ](https://articles.zsxq.com/id_54vjwns5t6in.html)
+  - 介绍：langchain-ChatGLM是一个基于本地知识的问答机器人，使用者可以自由配置本地知识，用户问题的答案也是基于本地知识生成的。
+- [【LLMs 入门实战 —— 三十一 】Vicuna-LangChain 模型学习与实战](https://articles.zsxq.com/id_74t8mmww5a1n.html)
+  - 介绍：一个简单的类LangChain实现，基于Sentence Embedding+本地知识库，以Vicuna作为生成模型。支持中英双语，支持pdf、html和docx格式的文档作为知识 库。
+  - Vicuna-LangChain 思路
+    1. 提取知识库文件夹中的文档文本，分割成chunk_length大小的文本块
+    2. 通过shibing624/text2vec-base-chinese模型计算各文本块的嵌入
+    3. 计算问题文本嵌入和各文本块的嵌入的余弦相似度
+    4. 返回余弦相似度最高的k个文本作为给定信息生成prompt
+    5. 将prompt历史替换为最初问的问题
+    6. 将prompt交给vicuna模型生成答案
 
 ### 第三层 LLMs to Text-to-Image
 
@@ -353,7 +365,7 @@
 
 #### 第五重 Ziya-Visual
 
-- [【LLMs 入门实战 】 Ziya-Visual 模型学习与实战](https://github.com/km1994/LLMsNineStoryDemonTower/tree/main/ZiyaVisual) 
+- [【LLMs 入门实战 】 Ziya-Visual 模型学习与实战](https://articles.zsxq.com/id_f3wugvkt4w00.html) 
   - Ziya-Visual模型开源地址：https://huggingface.co/IDEA-CCNL/Ziya-BLIP2-14B-Visual-v1L/Ziya-BLIP2-14B-Visual-v1
   - Demo体验地址：https://huggingface.co/spaces/IDEA-CCNL/Ziya-BLIP2-14B-Visual-v1-DemoDEA-CCNL/Ziya-BLIP2-14B-Visual-v1-Demo
   - Ziya开源模型：https://huggingface.co/IDEA-CCNL/Ziya-LLaMA-13B-v1L/Ziya-LLaMA-13B-v1
@@ -369,6 +381,25 @@
   - 代码：[fairseq/tree/main/examples/mms](https://github.com/facebookresearch/fairseq/tree/main/examples/mms)
   - 公告：https://ai.facebook.com/blog/multilingual-model-speech-recognition/
   - 介绍：Meta 在 GitHub 上再次开源了一款全新的 AI 语言模型——Massively Multilingual Speech (MMS，大规模多语种语音)，它与 ChatGPT 有着很大的不同，这款新的语言模型可以识别 4000 多种口头语言并生成 1100 多种语音（文本到语音）。
+
+#### 第二重 whisper 
+
+- [【LLMs 入门实战】 whisper 模型学习与实战](whisper/readme.md)
+  - Introducing Whisper: https://openai.com/blog/whisper/
+  - Robust Speech Recognition via Large-Scale Weak Supervision: https://cdn.openai.com/papers/whisper.pdf
+  - openai/whisper: https://github.com/openai/whisper
+  - Huggin一 Face地址：Whisper - a Hugging Face Space by openai:https://huggingface.co/spaces/openai/whisper
+  - Colab地址：Google Colaboratory: https://colab.research.google.com/github/openai/whisper/blob/master/notebooks/LibriSpeech.ipynb
+  - 介绍：Whisper这个模型是OpenAI在今年九月释放出来的吧（2022/09/21）Introducing Whisper ，不过这个效果真的是太好了，它的泛化性能跟别的模型一比，真是天上地下啊。
+- [【LLMs 入门实战】 Faster-Whisper 模型学习与实战](whisper/FasterWhisper.md) 
+  - Making OpenAI Whisper faster：https://nikolas.blog/making-openai-whisper-faster/
+  - Faster Whisper transcription with CTranslate2 ：https://github.com/guillaumekln/faster-whisper
+  - sanchit-gandhi/whisper-jax#creating-an-endpoint：https://github.com/sanchit-gandhi/whisper-jax#creating-an-endpoint
+  - 介绍：Faster-Whisper是一种基于深度学习的语音识别模型，它采用了一种新颖的架构，可以在保持准确性的同时提高速度。Faster-Whisper的设计灵感来自于目标检测领域的Faster R-CNN模型，它将语音信号转换为频谱图，并使用卷积神经网络（CNN）和循环神经网络（RNN）进行特征提取和序列建模。Faster-Whisper的主要优点是速度快、准确性高、可扩展性强，适用于大规模语音识别任务。
+  - Faster-Whisper的架构包括三个主要组件：
+    - 前端：将语音信号转换为频谱图，使用CNN进行特征提取。
+    - 后端：使用RNN进行序列建模，输出每个时间步的概率分布。
+    - 解码器：将概率分布转换为最终的文本输出。
 
 ### 第六层 LLMs to Text To Speech (TTS)
 
@@ -396,9 +427,9 @@
   - 介绍：Cornell Tech开源的LLMTune就是为了降低大模型微调难度所提出的一种解决方案。对于650亿参数的LLaMA模型微调仅需要40GB显存即可。
   - github 地址: https://github.com/kuleshov-group/llmtune
 
-#### 第二重 Guanaco
+#### 第二重 QLoRA
 
-- [【LLMs 入门实战 —— 二十 】 Guanaco 模型学习与实战]()
+- [【LLMs 入门实战 —— 二十 】 QLoRA 模型学习与实战]()
   - [https://huggingface.co/BlinkDL](https://huggingface.co/BlinkDL)
   - [artidoro/qlora](https://github.com/artidoro/qlora)
   - 模型：[timdettmers (Tim Dettmers)](https://huggingface.co/timdettmers)
@@ -420,6 +451,32 @@
   - 量化代码：[TimDettmers/bitsandbytes](https://github.com/TimDettmers/bitsandbytes)
   - BLOG : [Making LLMs even more accessible with bitsandbytes, 4-bit quantization and QLoRA](https://huggingface.co/blog/4bit-transformers-bitsandbytes)
 
+- [【LLMs 入门实战 】Anima 学习与实战](Anima/readme.md)
+  - Github 代码：https://github.com/lyogavin/Anima
+  - 模型：https://huggingface.co/lyogavin/Anima33B
+  - 动机：之前大部分开源可finetune的模型大都是比较小的模型7B或者13B，虽然可以在一些简单的chatbot评测集上，通过finetune训练有不错的表现。但是由于这些模型规模还是有限，LLM核心的reasoning的能力还是相对比较弱。这就是为什么很多这种小规模的模型在实际应用的场景表现像是个玩具。chatbot评测集比较简单，真正比较考验模型能力的复杂逻辑推理及数学问题上小模型和大模型差距还是很明显的。
+  - 介绍：QLoRA的优化方法，第一次让33B规模的模型可以比较民主化的，比较低成本的finetune训练，让33B模型的普及使用成为了可能。我们认为33B模型既可以发挥大规模模型的比较强的推理能力，又可以针对私有业务领域数据进行灵活的finetune训练提升对于LLM的控制力。
+
+#### 第三重 Parallel
+
+- [分布式训练神器 之 ZeRO 学习](trick/distributed/ZeRO.md)
+  - 动机：虽然 DataParallel (DP) 因为简单易实现，所以目前应用相比于其他两种 广泛，但是 由于 DataParallel (DP) 需要 每张卡都存储一个模型，导致 显存大小 成为 制约模型规模 的 主要因素。
+  - 核心思路：去除数据并行中的冗余参数，使每张卡只存储一部分模型状态，从而减少显存占用。
+
+- [分布式训练神器 之 分布式训练方法汇总](trick/distributed/readme.md)
+  - DataParallel分布式训练
+  - Distributed分布式训练
+  - multiprocess启动
+  - AMP混合精度训练
+  - horovod分布式训练
+  - deepspeed分布式训练
+  - accelerate分布式训练
+  - transformers的Trainer分布式训练
+
+#### 第四重 Trick
+
+- [LLMs Trick](trick/readme.md)
+
 ### 第九层 LLMs to Vertical Field (VF)
 
 #### 第一重 金融领域
@@ -438,7 +495,7 @@
 
 #### 第二重 医疗领域
 
-- [【LLMs 入门实战 —— 二十九 】HuatuoGPT (华佗GPT) 学习与实战]()
+- [【LLMs 入门实战 —— 二十九 】HuatuoGPT (华佗GPT) 学习与实战](HuatuoGPT_29/readme.md)
   - HuatuoGPT (华佗GPT), Towards Taming Language Models To Be a Doctor.
   - 论文地址：https://arxiv.org/pdf/2305.15075.pdf
   - Github 代码：https://github.com/FreedomIntelligence/HuatuoGPT
@@ -493,7 +550,7 @@
   - 论文名称：
   - 论文地址：https://github.com/pengxiao-song/LaWGPT
   - 介绍：该系列模型在通用中文基座模型（如 Chinese-LLaMA、ChatGLM 等）的基础上扩充法律领域专有词表、大规模中文法律语料预训练，增强了大模型在法律领域的基础语义理解能力。在此基础上，构造法律领域对话问答数据集、中国司法考试数据集进行指令精调，提升了模型对法律内容的理解和执行能力。
-- [【LLMs 入门实战 】 LaWGPT 学习与实战]()：中文法律大模型
+- [【LLMs 入门实战 】 LexiLaw 学习与实战]()：中文法律大模型
   - 论文名称：
   - 论文地址：https://github.com/CSHaitao/LexiLaw
   - 介绍：LexiLaw 是一个基于 ChatGLM-6B微调的中文法律大模型，通过在法律领域的数据集上进行微调。该模型旨在为法律从业者、学生和普通用户提供准确、可靠的法律咨询服务，包括具体法律问题的咨询，还是对法律条款、案例解析、法规解读等方面的查询。
