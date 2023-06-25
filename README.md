@@ -1,6 +1,6 @@
 # LLMsNineStoryDemonTower LLMs九层妖塔
-
-【LLMs九层妖塔】分享一下打怪(ChatGLM、Chinese-LLaMA-Alpaca、MiniGPT-4、小羊驼 Vicuna、LLaMA、GPT4ALL等)实战与经验，
+ 
+【LLMs九层妖塔】分享 LLMs在自然语言处理（ChatGLM、Chinese-LLaMA-Alpaca、小羊驼 Vicuna、LLaMA、GPT4ALL等）、信息检索（langchain）、语言合成、语言识别、多模态等领域（Stable Diffusion、MiniGPT-4、VisualGLM-6B、Ziya-Visual等）等 实战与经验。
 
 - [LLMsNineStoryDemonTower LLMs九层妖塔](#llmsninestorydemontower-llms九层妖塔)
   - [【LLMs 入门实战系列】](#llms-入门实战系列)
@@ -158,7 +158,7 @@
 
 #### 第十二重 Baize
 
-- [【LLMs 入门实战 —— 三十 】Baize 学习与实战]()
+- 【LLMs 入门实战 —— 三十 】Baize 学习与实战
   - 论文名称：Baize: An Open-Source Chat Model with Parameter-Efficient Tuning on Self-Chat Data
   - 论文地址：https://arxiv.org/abs/2304.01196
   - Github 代码：https://github.com/project-baize/baize-chatbot/blob/main/README.md
@@ -171,7 +171,7 @@
 
 #### 第十三重 OpenChineseLLaMA
 
-- [【LLMs 入门实战 】OpenChineseLLaMA 学习与实战](https://github.com/km1994/LLMsNineStoryDemonTower/tree/main/OpenChineseLLaMA)
+- 【LLMs 入门实战 】OpenChineseLLaMA 学习与实战
   - 论文名称：
   - 论文地址：
   - Github 代码：https://github.com/OpenLMLab/OpenChineseLLaMA
@@ -180,7 +180,7 @@
 
 #### 第十四重 Panda
 
-- [【LLMs 入门实战 】Panda 学习与实战](https://github.com/km1994/LLMsNineStoryDemonTower/tree/main/PandaLM)
+- 【LLMs 入门实战 】Panda 学习与实战
   - 论文名称：Panda LLM: Training Data and Evaluation for Open-Sourced Chinese Instruction-Following Large Language Models
   - 论文地址：https://arxiv.org/pdf/2305.03025v1.pdf
   - Github 代码：https://github.com/dandelionsllm/pandallm
@@ -189,7 +189,7 @@
 
 #### 第十五重 Ziya-LLaMA-13B
 
-- [【LLMs 入门实战 】 Ziya-LLaMA-13B 学习与实战](https://github.com/km1994/LLMsNineStoryDemonTower/tree/main/Ziya-LLaMA-13B-v1)
+- 【LLMs 入门实战 】 Ziya-LLaMA-13B 学习与实战
   - 论文名称：
   - 论文地址：
   - Github 代码：https://huggingface.co/IDEA-CCNL/Ziya-LLaMA-13B-v1
@@ -198,7 +198,7 @@
 
 #### 第十六重 BiLLa
 
-- [【LLMs 入门实战 】 BiLLa 学习与实战](https://github.com/km1994/LLMsNineStoryDemonTower/tree/main/BiLLa)
+- 【LLMs 入门实战 】 BiLLa 学习与实战
   - 论文名称：BiLLa: A Bilingual LLaMA with Enhanced Reasoning Ability
   - 论文地址：
   - Github 代码：https://github.com/Neutralzz/BiLLa
@@ -207,7 +207,7 @@
 
 #### 第十七重 Luotuo-Chinese-LLM
 
-- [【LLMs 入门实战 】 Luotuo-Chinese-LLM 学习与实战]()
+- 【LLMs 入门实战 】 Luotuo-Chinese-LLM 学习与实战
   - 论文名称：
   - 论文地址：
   - Github 代码：https://github.com/LC1332/Luotuo-Chinese-LLM
@@ -216,7 +216,7 @@
 
 #### 第十八重 Linly
 
-- [【LLMs 入门实战 】 Linly 学习与实战]()
+- 【LLMs 入门实战 】 Linly 学习与实战
   - 论文名称：
   - 论文地址：
   - Github 代码：https://github.com/CVI-SZU/Linly
@@ -225,7 +225,7 @@
 
 #### 第十九重 ChatYuan
 
-- [【LLMs 入门实战 】 ChatYuan 学习与实战]()
+- 【LLMs 入门实战 】 ChatYuan 学习与实战
   - 论文名称：
   - 论文地址：
   - Github 代码：https://github.com/clue-ai/ChatYuan
@@ -233,7 +233,7 @@
 
 #### 第二十重 CPM-Bee
 
-- [【LLMs 入门实战 】 CPM-Bee 学习与实战]()
+- 【LLMs 入门实战 】 CPM-Bee 学习与实战
   - 论文名称：
   - 论文地址：
   - Github 代码：https://github.com/OpenBMB/CPM-Bee
@@ -242,7 +242,7 @@
 
 #### 第二十一重 TigerBot
 
-- [【LLMs 入门实战 】 TigerBot 学习与实战]()
+- 【LLMs 入门实战 】 TigerBot 学习与实战
   - 论文名称：
   - 论文地址：
   - Github 代码：https://github.com/TigerResearch/TigerBot
@@ -251,7 +251,7 @@
 
 #### 第二十二重 书生·浦语
 
-- [【LLMs 入门实战 】 书生·浦语 学习与实战]()
+- 【LLMs 入门实战 】 书生·浦语 学习与实战
   - 论文名称：
   - 论文地址：
   - Github 代码：https://github.com/InternLM/InternLM-techreport
@@ -260,7 +260,7 @@
 
 #### 第二十三重 Aquila
 
-- [【LLMs 入门实战 】 Aquila 学习与实战]()
+- 【LLMs 入门实战 】 Aquila 学习与实战
   - 论文名称：
   - 论文地址：
   - Github 代码： https://github.com/FlagAI-Open/FlagAI/tree/master/examples/Aquila
@@ -269,7 +269,7 @@
 
 #### 第二十四重 baichuan-7B
 
-- [【LLMs 入门实战 】 baichuan-7B 学习与实战]()
+- 【LLMs 入门实战 】 baichuan-7B 学习与实战
   - 论文名称：
   - 论文地址：
   - Github 代码： https://github.com/baichuan-inc/baichuan-7B
