@@ -1,73 +1,10 @@
-# LLMsNineStoryDemonTower LLMs九层妖塔
- 
-【LLMs九层妖塔】分享 LLMs在自然语言处理（ChatGLM、Chinese-LLaMA-Alpaca、小羊驼 Vicuna、LLaMA、GPT4ALL等）、信息检索（langchain）、语言合成、语言识别、多模态等领域（Stable Diffusion、MiniGPT-4、VisualGLM-6B、Ziya-Visual等）等 实战与经验。
-
-- [LLMsNineStoryDemonTower LLMs九层妖塔](#llmsninestorydemontower-llms九层妖塔)
-  - [【LLMs 入门实战系列】](#llms-入门实战系列)
-    - [第一层 LLMs to Natural Language Processing (NLP)](#第一层-llms-to-natural-language-processing-nlp)
-      - [第一重 ChatGLM-6B](#第一重-chatglm-6b)
-      - [第二重 Stanford Alpaca 7B](#第二重-stanford-alpaca-7b)
-      - [第三重 Chinese-LLaMA-Alpaca](#第三重-chinese-llama-alpaca)
-      - [第四重 小羊驼 Vicuna](#第四重-小羊驼-vicuna)
-      - [第五重 GPT4ALL](#第五重-gpt4all)
-      - [第六重 MOSS](#第六重-moss)
-      - [第七重 BLOOMz](#第七重-bloomz)
-      - [第八重 BELLE](#第八重-belle)
-      - [第九重 ChatRWKV](#第九重-chatrwkv)
-      - [第十重 ChatGPT](#第十重-chatgpt)
-      - [第十一重 OpenBuddy](#第十一重-openbuddy)
-      - [第十二重 Baize](#第十二重-baize)
-      - [第十三重 OpenChineseLLaMA](#第十三重-openchinesellama)
-      - [第十四重 Panda](#第十四重-panda)
-      - [第十五重 Ziya-LLaMA-13B](#第十五重-ziya-llama-13b)
-      - [第十六重 BiLLa](#第十六重-billa)
-      - [第十七重 Luotuo-Chinese-LLM](#第十七重-luotuo-chinese-llm)
-      - [第十八重 Linly](#第十八重-linly)
-      - [第十九重 ChatYuan](#第十九重-chatyuan)
-      - [第二十重 CPM-Bee](#第二十重-cpm-bee)
-      - [第二十一重 TigerBot](#第二十一重-tigerbot)
-      - [第二十二重 书生·浦语](#第二十二重-书生浦语)
-      - [第二十三重 Aquila](#第二十三重-aquila)
-      - [第二十四重 baichuan-7B](#第二十四重-baichuan-7b)
-    - [第二层 LLMs to Intelligent Retrieval (IR)](#第二层-llms-to-intelligent-retrieval-ir)
-      - [第一重 langchain](#第一重-langchain)
-    - [第三层 LLMs to Text-to-Image](#第三层-llms-to-text-to-image)
-      - [第一重 Stable Diffusion](#第一重-stable-diffusion)
-    - [第四层 LLMs to Visual Question Answering (VQA)](#第四层-llms-to-visual-question-answering-vqa)
-      - [第一重 BLIP](#第一重-blip)
-      - [第二重 BLIP2](#第二重-blip2)
-      - [第三重 MiniGPT-4](#第三重-minigpt-4)
-      - [第四重 VisualGLM-6B](#第四重-visualglm-6b)
-      - [第五重 Ziya-Visual](#第五重-ziya-visual)
-    - [第五层 LLMs to Automatic Speech Recognition (ASR)](#第五层-llms-to-automatic-speech-recognition-asr)
-      - [第一重 Massively Multilingual Speech (MMS，大规模多语种语音)](#第一重-massively-multilingual-speech-mms大规模多语种语音)
-      - [第二重 whisper](#第二重-whisper)
-    - [第六层 LLMs to Text To Speech (TTS)](#第六层-llms-to-text-to-speech-tts)
-      - [第一重 Massively Multilingual Speech (MMS，大规模多语种语音)](#第一重-massively-multilingual-speech-mms大规模多语种语音-1)
-    - [第七层 LLMs to Artifact](#第七层-llms-to-artifact)
-      - [第一重 AutoGPT](#第一重-autogpt)
-    - [第八层 LLMs to Parameter Efficient Fine-Tuning (PEFT)](#第八层-llms-to-parameter-efficient-fine-tuning-peft)
-      - [第一重 LLMTune](#第一重-llmtune)
-      - [第二重 QLoRA](#第二重-qlora)
-      - [第三重 Parallel](#第三重-parallel)
-      - [第四重 Trick](#第四重-trick)
-    - [第九层 LLMs to Vertical Field (VF)](#第九层-llms-to-vertical-field-vf)
-      - [第一重 金融领域](#第一重-金融领域)
-      - [第二重 医疗领域](#第二重-医疗领域)
-      - [第三重 法律领域](#第三重-法律领域)
-      - [第四重 教育领域](#第四重-教育领域)
-      - [第五重 文化领域](#第五重-文化领域)
-  - [学习群](#学习群)
-  - [优秀笔记](#优秀笔记)
-    - [第一层](#第一层)
-    - [优秀笔记](#优秀笔记-1)
-  - [参考](#参考)
-
 ## 【LLMs 入门实战系列】
 
 ### 第一层 LLMs to Natural Language Processing (NLP)
 
-#### 第一重 ChatGLM-6B
+#### 第一重 ChatGLM-6B 系列
+
+##### ChatGLM-6B 
 
 1. [【ChatGLM-6B入门-一】清华大学开源中文版ChatGLM-6B模型学习与实战](ChatGLM-6B/induction.md)
    1. 介绍：ChatGLM-6B 环境配置 和 部署
@@ -84,6 +21,19 @@
       1. ChatGLM-6B Freeze 微调：Fine-tuning the MLPs in the last n blocks of the model.
       2. ChatGLM-6B P-Tuning V2 微调：Fine-tuning the prefix encoder of the model.
       3. ChatGLM-6B LoRA 微调：Fine-tuning the low-rank adapters of the model.
+
+##### ChatGLM2-6B 
+
+- [【ChatGLM-6B入门-一】清华大学开源中文版ChatGLM-6B模型学习与实战](ChatGLM2-6B/readme.md)
+  - 论文名称：ChatGLM2-6B: An Open Bilingual Chat LLM | 开源双语对话语言模型
+  - 论文地址：
+  - Github 代码：https://github.com/THUDM/ChatGLM2-6B
+  - 动机：在主要评估LLM模型中文能力的 C-Eval 榜单中，截至6月25日 ChatGLM2 模型以 71.1 的分数位居 Rank 0 ，ChatGLM2-6B 模型以 51.7 的分数位居 Rank 6，是榜单上排名最高的开源模型。
+  - 介绍：ChatGLM2-6B 是开源中英双语对话模型 ChatGLM-6B 的第二代版本，在保留了初代模型对话流畅、部署门槛较低等众多优秀特性的基础之上，ChatGLM2-6B 引入了如下新特性：
+    - **更强大的性能**：基于 ChatGLM 初代模型的开发经验，我们全面升级了 ChatGLM2-6B 的基座模型。ChatGLM2-6B 使用了 GLM 的混合目标函数，经过了 1.4T 中英标识符的预训练与人类偏好对齐训练，评测结果显示，相比于初代模型，ChatGLM2-6B 在 MMLU（+23%）、CEval（+33%）、GSM8K（+571%） 、BBH（+60%）等数据集上的性能取得了大幅度的提升，在同尺寸开源模型中具有较强的竞争力。
+    - **更长的上下文**：基于 FlashAttention 技术，我们将基座模型的上下文长度（Context Length）由 ChatGLM-6B 的 2K 扩展到了 32K，并在对话阶段使用 8K 的上下文长度训练，允许更多轮次的对话。但当前版本的 ChatGLM2-6B 对单轮超长文档的理解能力有限，我们会在后续迭代升级中着重进行优化。
+    - **更高效的推理**：基于 Multi-Query Attention 技术，ChatGLM2-6B 有更高效的推理速度和更低的显存占用：在官方的模型实现下，推理速度相比初代提升了 42%，INT4 量化下，6G 显存支持的对话长度由 1K 提升到了 8K。
+    - **更开放的协议**：ChatGLM2-6B 权重对学术研究完全开放，在获得官方的书面许可后，亦允许商业使用。如果您发现我们的开源模型对您的业务有用，我们欢迎您对下一代模型 ChatGLM3 研发的捐赠。
 
 #### 第二重 Stanford Alpaca 7B 
 
@@ -574,39 +524,8 @@
   - 介绍：中文对话式大语言模型，构造了许多与中华文化相关的数据，以提升模型这方面的表现，如对联、作诗、文言文翻译、散文、金庸小说等。
 
 
-## 学习群
-
-![[学习群二维码](img/20230516092740.jpg)](img/20230516092740.jpg)
-> 二维码如果过期，可以加 wx: yzyykm666 加群
-
-## 优秀笔记
-
-### 第一层
-
-### 优秀笔记
-
-1. [杨夕](https://mp.weixin.qq.com/s/4QNgF6nAUo8imSaIB_OWmg)
-2. [奔腾](https://articles.zsxq.com/id_k2qzsps7zw21.html)
-3. [逸尘](https://articles.zsxq.com/id_zzfqt88sw4rl.html)
-4. [此方一泉](https://t.zsxq.com/0dEp8PDcW)
-5. [vezel](http://t.csdn.cn/hWn9D)
-6. [徐生](https://zhuanlan.zhihu.com/p/627358709)
-7. [多点微笑](https://articles.zsxq.com/id_velwvtmfhrwz.html)
-8. [小固](https://zhuanlan.zhihu.com/p/627333187)
-9. [土狼](https://zhuanlan.zhihu.com/p/627358709)
-10. [0](https://github.com/Wesley12138/LLM)
-11. [Welch](https://t.zsxq.com/0dJhaaGRW)
-12. [九猫](https://articles.zsxq.com/id_7g0g65fbsluo.html)
-
-
 ## 参考
 
-1. [ChatGLM-6B](https://github.com/THUDM/ChatGLM-6B)
-2. [Stanford Alpaca 7B](https://github.com/tatsu-lab/stanford_alpaca)
-3. [Chinese-LLaMA-Alpaca](https://github.com/ymcui/Chinese-LLaMA-Alpaca)
-4. [Vicuna](https://github.com/lm-sys/FastChat)
-5. [MiniGPT-4](https://github.com/Vision-CAIR/MiniGPT-4)
-6. [GPT4ALL](https://github.com/nomic-ai/gpt4all)
-7. [Auto-GPT](https://github.com/Significant-Gravitas/Auto-GPT)
-8. [MOSS](https://github.com/OpenLMLab/MOSS/tree/main)
-9. [Awesome-Chinese-LLM：收集和梳理中文LLM相关的开源模型、应用、数据集及教程等资料](https://mp.weixin.qq.com/s/Oy6XZNyN3kpsC6TfQYQb7A)
+1. [Awesome-Chinese-LLM：收集和梳理中文LLM相关的开源模型、应用、数据集及教程等资料](https://mp.weixin.qq.com/s/Oy6XZNyN3kpsC6TfQYQb7A)
+
+
