@@ -24,7 +24,7 @@
 
 ##### ChatGLM2-6B 
 
-- [【ChatGLM-6B入门-一】清华大学开源中文版ChatGLM-6B模型学习与实战](ChatGLM2-6B/readme.md)
+- [【ChatGLM2-6B入门】清华大学开源中文版ChatGLM-6B模型学习与实战](https://mp.weixin.qq.com/s/11jCCeOpg1YbABIRLlnyvg)
   - 论文名称：ChatGLM2-6B: An Open Bilingual Chat LLM | 开源双语对话语言模型
   - 论文地址：
   - Github 代码：https://github.com/THUDM/ChatGLM2-6B
@@ -34,6 +34,12 @@
     - **更长的上下文**：基于 FlashAttention 技术，我们将基座模型的上下文长度（Context Length）由 ChatGLM-6B 的 2K 扩展到了 32K，并在对话阶段使用 8K 的上下文长度训练，允许更多轮次的对话。但当前版本的 ChatGLM2-6B 对单轮超长文档的理解能力有限，我们会在后续迭代升级中着重进行优化。
     - **更高效的推理**：基于 Multi-Query Attention 技术，ChatGLM2-6B 有更高效的推理速度和更低的显存占用：在官方的模型实现下，推理速度相比初代提升了 42%，INT4 量化下，6G 显存支持的对话长度由 1K 提升到了 8K。
     - **更开放的协议**：ChatGLM2-6B 权重对学术研究完全开放，在获得官方的书面许可后，亦允许商业使用。如果您发现我们的开源模型对您的业务有用，我们欢迎您对下一代模型 ChatGLM3 研发的捐赠。
+
+- [【关于 ChatGLM2 + LoRA 进行finetune 】那些你不知道的事](https://articles.zsxq.com/id_pmijwhnwxwen.html)
+  - 论文名称：ChatGLM2-6B: An Open Bilingual Chat LLM | 开源双语对话语言模型
+  - 论文地址：
+  - Github 代码：https://github.com/THUDM/ChatGLM2-6B
+  - 介绍：本教程主要介绍对于 ChatGLM2-6B 模型基于 LoRA 进行finetune。
 
 #### 第二重 Stanford Alpaca 7B 
 
@@ -361,12 +367,43 @@
   - 公告：https://ai.facebook.com/blog/multilingual-model-speech-recognition/
   - 介绍：Meta 在 GitHub 上再次开源了一款全新的 AI 语言模型——Massively Multilingual Speech (MMS，大规模多语种语音)，它与 ChatGPT 有着很大的不同，这款新的语言模型可以识别 4000 多种口头语言并生成 1100 多种语音（文本到语音）。
 
+#### 第二重 Retrieval-based-Voice-Conversion
+
+- [【LLMs 入门实战】 Retrieval-based-Voice-Conversion-WebUI 模型学习与实战]()
+  - 名称：Retrieval-based-Voice-Conversion-WebUI
+  - 论文地址：https://arxiv.org/abs/2305.18975
+  - Github 代码：https://github.com/RVC-Project/Retrieval-based-Voice-Conversion-WebUI
+  - 使用了RVC的实时语音转换: [w-okada/voice-changer](https://github.com/w-okada/voice-changer)
+  - 使用了RVC变声器训练的人声转木吉他模型在线demo ：https://huggingface.co/spaces/lj1995/vocal2guitar
+  - RVC人声转吉他效果展示视频 ：https://www.bilibili.com/video/BV19W4y1D7tT/
+  - 介绍：一个基于VITS的简单易用的语音转换（变声器）框架
+  - 特点
+    - 使用top1检索替换输入源特征为训练集特征来杜绝音色泄漏
+    - 即便在相对较差的显卡上也能快速训练
+    - 使用少量数据进行训练也能得到较好结果(推荐至少收集10分钟低底噪语音数据)
+    - 可以通过模型融合来改变音色(借助ckpt处理选项卡中的ckpt-merge)
+    - 简单易用的网页界面
+    - 可调用UVR5模型来快速分离人声和伴奏
+
+- [【LLMs 入门实战】 kNN-VC 模型学习与实战]()
+  - 论文名称：Voice Conversion With Just Nearest Neighbors (kNN-VC)
+  - 论文地址：https://arxiv.org/abs/2305.18975
+  - Github 代码：https://github.com/bshall/knn-vc
+
 ### 第七层 LLMs to Artifact
 
 #### 第一重 AutoGPT
 
 - [AutoGPT 使用和部署](https://articles.zsxq.com/id_pli0z9916126.html)
   - 介绍：Auto-GPT是一个基于ChatGPT的工具，他能帮你自动完成各种任务，比如写代码、写报告、做调研等等。使用它时，你只需要告诉他要扮演的角色和要实现的目标，然后他就会利用ChatGPT和谷歌搜索等工具，不断“思考”如何接近目标并执行，你甚至可以看到他的思考过程。
+
+#### 第二重 Knowledge Extraction
+
+- [【LLMs 入门实战 】 DeepKE-LLM 模型学习与实战]()
+  - DeepKE-LLM链接：https://github.com/zjunlp/DeepKE/tree/main/example/llm
+  - OpenKG地址：http://openkg.cn/tool/deepke
+  - Gitee地址：https://gitee.com/openkg/deepke/tree/main/example/llm
+  - 介绍：DeepKE是一个开源可扩展的知识图谱抽取工具，可实现命名实体识别、关系抽取和属性抽取等抽取任务，并支持低资源少样本、文档篇章和多模态等复杂场景。在大模型时代，我们对DeepKE进行了全面升级并发布大模型版DeepKE-LLM（智析抽取大模型）。该版本基于大模型对数据进行智能解析以实现知识抽取，支持多种大模型、遵循指令和自定义知识类型、格式。
 
 ### 第八层 LLMs to Parameter Efficient Fine-Tuning (PEFT)
 
