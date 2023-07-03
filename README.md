@@ -43,8 +43,10 @@
     - [第二重 whisper](#第二重-whisper)
   - [第六层 LLMs to Text To Speech (TTS)](#第六层-llms-to-text-to-speech-tts)
     - [第一重 Massively Multilingual Speech (MMS，大规模多语种语音)](#第一重-massively-multilingual-speech-mms大规模多语种语音-1)
+    - [第二重 Retrieval-based-Voice-Conversion](#第二重-retrieval-based-voice-conversion)
   - [第七层 LLMs to Artifact](#第七层-llms-to-artifact)
     - [第一重 AutoGPT](#第一重-autogpt)
+    - [第二重 Knowledge Extraction](#第二重-knowledge-extraction)
   - [第八层 LLMs to Parameter Efficient Fine-Tuning (PEFT)](#第八层-llms-to-parameter-efficient-fine-tuning-peft)
     - [第一重 LLMTune](#第一重-llmtune)
     - [第二重 QLoRA](#第二重-qlora)
@@ -57,7 +59,6 @@
     - [第四重 教育领域](#第四重-教育领域)
     - [第五重 文化领域](#第五重-文化领域)
 - [参考](#参考)
-
 
 ### 第一层 LLMs to Natural Language Processing (NLP)
 
@@ -99,6 +100,12 @@
   - 论文地址：
   - Github 代码：https://github.com/THUDM/ChatGLM2-6B
   - 介绍：本教程主要介绍对于 ChatGLM2-6B 模型基于 LoRA 进行finetune。
+
+- [【LLMs 入门实战 】基于 🤗PEFT 的高效 🤖ChatGLM2-6B 微调](https://articles.zsxq.com/id_q04evzros1ca.html)
+  - 微调方式：
+    - ChatGLM2-6B Freeze 微调：Fine-tuning the MLPs in the last n blocks of the model.
+    - ChatGLM2-6B P-Tuning V2 微调：Fine-tuning the prefix encoder of the model.
+    -  ChatGLM2-6B LoRA 微调：Fine-tuning the low-rank adapters of the model.
 
 #### 第二重 Stanford Alpaca 7B 
 
@@ -309,6 +316,9 @@
     4. 返回余弦相似度最高的k个文本作为给定信息生成prompt
     5. 将prompt历史替换为最初问的问题
     6. 将prompt交给vicuna模型生成答案
+- [【LLMs 入门实战】基于 本地知识库 的高效 🤖langchain-ChatGLM2 ](https://articles.zsxq.com/id_gcc7oq4qlb94.html)
+  - 介绍：langchain-ChatGLM2是一个基于本地知识的问答机器人，使用者可以自由配置本地知识，用户问题的答案也是基于本地知识生成的。
+
 
 ### 第三层 LLMs to Text-to-Image
 
