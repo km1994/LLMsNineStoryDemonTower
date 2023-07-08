@@ -8,26 +8,11 @@
     - [第二重 Stanford Alpaca 7B](#第二重-stanford-alpaca-7b)
     - [第三重 Chinese-LLaMA-Alpaca](#第三重-chinese-llama-alpaca)
     - [第四重 小羊驼 Vicuna](#第四重-小羊驼-vicuna)
-    - [第五重 GPT4ALL](#第五重-gpt4all)
-    - [第六重 MOSS](#第六重-moss)
-    - [第七重 BLOOMz](#第七重-bloomz)
-    - [第八重 BELLE](#第八重-belle)
-    - [第九重 ChatRWKV](#第九重-chatrwkv)
-    - [第十重 ChatGPT](#第十重-chatgpt)
-    - [第十一重 OpenBuddy](#第十一重-openbuddy)
-    - [第十二重 Baize](#第十二重-baize)
-    - [第十三重 OpenChineseLLaMA](#第十三重-openchinesellama)
-    - [第十四重 Panda](#第十四重-panda)
-    - [第十五重 Ziya-LLaMA-13B](#第十五重-ziya-llama-13b)
-    - [第十六重 BiLLa](#第十六重-billa)
-    - [第十七重 Luotuo-Chinese-LLM](#第十七重-luotuo-chinese-llm)
-    - [第十八重 Linly](#第十八重-linly)
-    - [第十九重 ChatYuan](#第十九重-chatyuan)
-    - [第二十重 CPM-Bee](#第二十重-cpm-bee)
-    - [第二十一重 TigerBot](#第二十一重-tigerbot)
-    - [第二十二重 书生·浦语](#第二十二重-书生浦语)
-    - [第二十三重 Aquila](#第二十三重-aquila)
-    - [第二十四重 baichuan-7B](#第二十四重-baichuan-7b)
+    - [第五重 MOSS](#第五重-moss)
+    - [第六重 BLOOMz](#第六重-bloomz)
+    - [第七重 BELLE](#第七重-belle)
+    - [第八重 ChatRWKV](#第八重-chatrwkv)
+    - [第九重 ChatGPT](#第九重-chatgpt)
   - [第二层 LLMs to Intelligent Retrieval (IR)](#第二层-llms-to-intelligent-retrieval-ir)
     - [第一重 langchain](#第一重-langchain)
   - [第三层 LLMs to Text-to-Image](#第三层-llms-to-text-to-image)
@@ -58,6 +43,22 @@
     - [第三重 法律领域](#第三重-法律领域)
     - [第四重 教育领域](#第四重-教育领域)
     - [第五重 文化领域](#第五重-文化领域)
+  - [LLaMA 衍生物系列](#llama-衍生物系列)
+    - [第五重 GPT4ALL](#第五重-gpt4all)
+    - [第十一重 OpenBuddy](#第十一重-openbuddy)
+    - [第十二重 Baize](#第十二重-baize)
+    - [第十三重 OpenChineseLLaMA](#第十三重-openchinesellama)
+    - [第十四重 Panda](#第十四重-panda)
+    - [第十五重 Ziya-LLaMA-13B](#第十五重-ziya-llama-13b)
+    - [第十六重 BiLLa](#第十六重-billa)
+    - [第十七重 Luotuo-Chinese-LLM](#第十七重-luotuo-chinese-llm)
+    - [第十八重 Linly](#第十八重-linly)
+    - [第十九重 ChatYuan](#第十九重-chatyuan)
+    - [第二十重 CPM-Bee](#第二十重-cpm-bee)
+    - [第二十一重 TigerBot](#第二十一重-tigerbot)
+    - [第二十二重 书生·浦语](#第二十二重-书生浦语)
+    - [第二十三重 Aquila](#第二十三重-aquila)
+    - [第二十四重 baichuan-7B](#第二十四重-baichuan-7b)
 - [参考](#参考)
 
 ### 第一层 LLMs to Natural Language Processing (NLP)
@@ -81,6 +82,10 @@
       1. ChatGLM-6B Freeze 微调：Fine-tuning the MLPs in the last n blocks of the model.
       2. ChatGLM-6B P-Tuning V2 微调：Fine-tuning the prefix encoder of the model.
       3. ChatGLM-6B LoRA 微调：Fine-tuning the low-rank adapters of the model.
+8. [【LLMs 入门实战】基于 🤗QLoRA 的高效 🤖ChatGLM-6B 微调](https://articles.zsxq.com/id_jwxc99b1gbfd.html)
+   1. 介绍：本项目使用 https://github.com/huggingface/peft  库，实现了 ChatGLM-6B 模型4bit的 QLoRA 高效微调，可以在一张RTX3060上完成全部微调过程。
+9. [【LLMs 入门实战 】🤖ChatGLM-6B 模型结构代码解析](https://articles.zsxq.com/id_vi2qatrhvzwt.html)
+   1.  介绍：ChatGLM-6B 模型结构代码解析
 
 ##### ChatGLM2-6B 
 
@@ -106,6 +111,8 @@
     - ChatGLM2-6B Freeze 微调：Fine-tuning the MLPs in the last n blocks of the model.
     - ChatGLM2-6B P-Tuning V2 微调：Fine-tuning the prefix encoder of the model.
     -  ChatGLM2-6B LoRA 微调：Fine-tuning the low-rank adapters of the model.
+- [【LLMs 入门实战】基于 🤗QLoRA 的高效 🤖ChatGLM2-6B 微调](https://articles.zsxq.com/id_5oocf5c9e4te.html)
+  - 介绍：本项目使用 https://github.com/huggingface/peft  库，实现了 ChatGLM2-6B 模型4bit的 QLoRA 高效微调，可以在一张RTX3060上完成全部微调过程。
 
 #### 第二重 Stanford Alpaca 7B 
 
@@ -122,30 +129,25 @@
 - [【LLMs 入门实战 —— 七 】小羊驼 Vicuna模型学习与实战](https://articles.zsxq.com/id_q9mx24q9fdab.html)
   - 介绍：UC伯克利学者联手CMU、斯坦福等，再次推出一个全新模型70亿/130亿参数的Vicuna，俗称「小羊驼」（骆马）。小羊驼号称能达到GPT-4的90%性能
 
-#### 第五重 GPT4ALL
-
-- [【LLMs 入门实战 —— 八 】GPT4ALL 模型学习与实战](https://articles.zsxq.com/id_ff0w6czthq25.html)
-  - 介绍：一个 可以在自己笔记本上面跑起来的  Nomic AI 的助手式聊天机器人，成为贫民家孩子的 福音！
-
-#### 第六重 MOSS
+#### 第五重 MOSS
 
 - [【LLMs 入门实战 —— 十三 】MOSS 模型学习与实战](https://articles.zsxq.com/id_4vwpxod23zrc.html)
   - 介绍：MOSS是一个支持中英双语和多种插件的开源对话语言模型，moss-moon系列模型具有160亿参数，在FP16精度下可在单张A100/A800或两张3090显卡运行，在INT4/8精度下可在单张3090显卡运行。MOSS基座语言模型在约七千亿中英文以及代码单词上预训练得到，后续经过对话指令微调、插件增强学习和人类偏好训练具备多轮对话能力及使用多种插件的能力。
   - 局限性：由于模型参数量较小和自回归生成范式，MOSS仍然可能生成包含事实性错误的误导性回复或包含偏见/歧视的有害内容，请谨慎鉴别和使用MOSS生成的内容，请勿将MOSS生成的有害内容传播至互联网。若产生不良后果，由传播者自负。
 
-#### 第七重 BLOOMz
+#### 第六重 BLOOMz
 
 - [【LLMs 入门实战 —— 十四 】 BLOOMz 模型学习与实战](https://articles.zsxq.com/id_wd97899pkjqj.html)
   - 介绍：大型语言模型（LLMs）已被证明能够根据一些演示或自然语言指令执行新的任务。虽然这些能力已经导致了广泛的采用，但大多数LLM是由资源丰富的组织开发的，而且经常不对公众开放。作为使这一强大技术民主化的一步，我们提出了BLOOM，一个176B参数的开放性语言模型，它的设计和建立要感谢数百名研究人员的合作。BLOOM是一个仅有解码器的Transformer语言模型，它是在ROOTS语料库上训练出来的，该数据集包括46种自然语言和13种编程语言（共59种）的数百个来源。我们发现，BLOOM在各种基准上取得了有竞争力的性能，在经历了多任务提示的微调后，其结果更加强大。
   - 模型地址：https://huggingface.co/bigscience/bloomz
 
-#### 第八重 BELLE
+#### 第七重 BELLE
 
 - [【LLMs 入门实战 —— 十五 】 BELLE 模型学习与实战](https://articles.zsxq.com/id_gxebzsadfpr2.html)
   - 介绍：相比如何做好大语言模型的预训练，BELLE更关注如何在开源预训练大语言模型的基础上，帮助每一个人都能够得到一个属于自己的、效果尽可能好的具有指令表现能力的语言模型，降低大语言模型、特别是中文大语言模型的研究和应用门槛。为此，BELLE项目会持续开放指令训练数据、相关模型、训练代码、应用场景等，也会持续评估不同训练数据、训练算法等对模型表现的影响。BELLE针对中文做了优化，模型调优仅使用由ChatGPT生产的数据（不包含任何其他数据）。
   - github 地址: https://github.com/LianjiaTech/BELLE
 
-#### 第九重 ChatRWKV
+#### 第八重 ChatRWKV
 
 - [【LLMs 入门实战 —— 十八 】 ChatRWKV 模型学习与实战](https://articles.zsxq.com/id_dw7jhxq736bw.html)
   - 目前 RWKV 有大量模型，对应各种场景，各种语言，请选择合适的模型：
@@ -156,7 +158,7 @@
   - github: https://github.com/BlinkDL/ChatRWKV
   -  模型文件：https://huggingface.co/BlinkDL
 
-#### 第十重 ChatGPT
+#### 第九重 ChatGPT
 
 - [《ChatGPT Prompt Engineering for Developers》 学习 之 如何 编写 Prompt？](https://articles.zsxq.com/id_2wutbr4eehzm.html)
   - [吴恩达老师与OpenAI合作推出《ChatGPT Prompt Engineering for Developers》](https://learn.deeplearning.ai/chatgpt-prompt-eng/lesson/1/introduction)
@@ -173,134 +175,6 @@
   - 动机：吴恩达老师与OpenAI合作推出《ChatGPT Prompt Engineering for Developers》课程
   - 介绍：如何构建ChatGPT Prompt以处理文本摘要、推断和转换(翻译、纠错、风格转换、格式转换等)这些常见的NLP任务
 
-#### 第十一重 OpenBuddy
-
-- [【LLMs 入门实战 —— 二十八 】 OpenBuddy 模型学习与实战](https://articles.zsxq.com/id_g2tmn66fearf.html)
-  - 论文名称：OpenBuddy - Open Multilingual Chatbot based on Falcon
-  - github 地址：https://github.com/OpenBuddy/OpenBuddy
-  - 动机：虽然目前 很多人 LLMs 层出不穷，但是他们并不能 在 多语言支持无缝衔接（eg: LLaMA 模型由于是用 英语训练，所以在 中文等其他语种上效果并不好）
-  - 介绍：基于 Tii 的 Falcon 模型和 Facebook 的 LLaMA 模型构建，OpenBuddy 经过微调，包括扩展词汇表、增加常见字符和增强 token 嵌入。通过利用这些改进和多轮对话数据集，OpenBuddy 提供了一个强大的模型，能够回答各种语言的问题并执行翻译任务。
-
-#### 第十二重 Baize
-
-- [【LLMs 入门实战 —— 三十 】Baize 学习与实战](https://articles.zsxq.com/id_hftswats1oe8.html)
-  - 论文名称：Baize: An Open-Source Chat Model with Parameter-Efficient Tuning on Self-Chat Data
-  - 论文地址：https://arxiv.org/abs/2304.01196
-  - Github 代码：https://github.com/project-baize/baize-chatbot/blob/main/README.md
-  - 模型：
-    - baize-v2-7b 模型：https://huggingface.co/project-baize/baize-v2-7b
-    - baize-v2-13b 模型：https://huggingface.co/project-baize/baize-v2-13b
-  - baize 体验网站：https://huggingface.co/spaces/project-baize/baize-lora-7B
-  - 动机：高质量的标注数据问题
-  - 介绍：Baize 作者 提出了一个自动收集 ChatGPT 对话的流水线，通过从特定数据集中采样「种子」的方式，让 ChatGPT 自我对话，批量生成高质量多轮对话数据集。其中如果使用领域特定数据集，比如医学问答数据集，就可以生成高质量垂直领域语料。
-
-#### 第十三重 OpenChineseLLaMA
-
-- [【LLMs 入门实战 】OpenChineseLLaMA 学习与实战](https://articles.zsxq.com/id_kbaocwse89o9.html)
-  - 论文名称：
-  - 论文地址：
-  - Github 代码：https://github.com/OpenLMLab/OpenChineseLLaMA
-  - 模型：https://huggingface.co/openlmlab/open-chinese-llama-7b-patch
-  - 介绍：基于 LLaMA-7B 经过中文数据集增量预训练产生的中文大语言模型基座，对比原版 LLaMA，该模型在中文理解能力和生成能力方面均获得较大提升，在众多下游任务中均取得了突出的成绩。
-
-#### 第十四重 Panda
-
-- [【LLMs 入门实战 】Panda 学习与实战](https://articles.zsxq.com/id_6dnefz5bmekd.html)
-  - 论文名称：Panda LLM: Training Data and Evaluation for Open-Sourced Chinese Instruction-Following Large Language Models
-  - 论文地址：https://arxiv.org/pdf/2305.03025v1.pdf
-  - Github 代码：https://github.com/dandelionsllm/pandallm
-  - 模型：
-  - 介绍：开源了基于LLaMA-7B, -13B, -33B, -65B 进行中文领域上的持续预训练的语言模型, 使用了接近 15M 条数据进行二次预训练。
-
-#### 第十五重 Ziya-LLaMA-13B
-
-- [【LLMs 入门实战 】 Ziya-LLaMA-13B 学习与实战](https://articles.zsxq.com/id_110iedww8t0k.html)
-  - 论文名称：
-  - 论文地址：
-  - Github 代码：https://huggingface.co/IDEA-CCNL/Ziya-LLaMA-13B-v1
-  - 模型：
-  - 介绍：该项目开源了姜子牙通用大模型V1，是基于LLaMa的130亿参数的大规模预训练模型，具备翻译，编程，文本分类，信息抽取，摘要，文案生成，常识问答和数学计算等能力。该模型已完成大规模预训练、多任务有监督微调和人类反馈学习三阶段的训练过程。
-
-#### 第十六重 BiLLa
-
-- [【LLMs 入门实战 】 BiLLa 学习与实战](https://articles.zsxq.com/id_wtixv8u69v7w.html)
-  - 论文名称：BiLLa: A Bilingual LLaMA with Enhanced Reasoning Ability
-  - 论文地址：
-  - Github 代码：https://github.com/Neutralzz/BiLLa
-  - 模型：
-  - 介绍：该项目开源了推理能力增强的中英双语LLaMA模型。模型的主要特性有：较大提升LLaMA的中文理解能力，并尽可能减少对原始LLaMA英文能力的损伤；训练过程增加较多的任务型数据，利用ChatGPT生成解析，强化模型理解任务求解逻辑；全量参数更新，追求更好的生成效果。
-
-#### 第十七重 Luotuo-Chinese-LLM
-
-- [【LLMs 入门实战 】 Luotuo-Chinese-LLM 学习与实战]()
-  - 论文名称：
-  - 论文地址：
-  - Github 代码：https://github.com/LC1332/Luotuo-Chinese-LLM
-  - 模型：
-  - 介绍：囊括了一系列中文大语言模型开源项目，包含了一系列基于已有开源模型（ChatGLM, MOSS, LLaMA）进行二次微调的语言模型，指令微调数据集等。
-
-#### 第十八重 Linly
-
-- [【LLMs 入门实战 】 Linly 学习与实战]()
-  - 论文名称：
-  - 论文地址：
-  - Github 代码：https://github.com/CVI-SZU/Linly
-  - 模型：
-  - 介绍：提供中文对话模型 Linly-ChatFlow 、中文基础模型 Linly-Chinese-LLaMA 及其训练数据。中文基础模型以 LLaMA 为底座，利用中文和中英平行增量预训练。项目汇总了目前公开的多语言指令数据，对中文模型进行了大规模指令跟随训练，实现了 Linly-ChatFlow 对话模型。
-
-#### 第十九重 ChatYuan
-
-- [【LLMs 入门实战 】 ChatYuan 学习与实战]()
-  - 论文名称：
-  - 论文地址：
-  - Github 代码：https://github.com/clue-ai/ChatYuan
-  - 介绍：元语智能发布的一系列支持中英双语的功能型对话语言大模型，在微调数据、人类反馈强化学习、思维链等方面进行了优化。
-
-#### 第二十重 CPM-Bee
-
-- [【LLMs 入门实战 】 CPM-Bee 学习与实战]()
-  - 论文名称：
-  - 论文地址：
-  - Github 代码：https://github.com/OpenBMB/CPM-Bee
-  - 模型：
-  - 介绍：一个完全开源、允许商用的百亿参数中英文基座模型。它采用Transformer自回归架构（auto-regressive），在超万亿（trillion）高质量语料上进行预训练，拥有强大的基础能力。开发者和研究者可以在CPM-Bee基座模型的基础上在各类场景进行适配来以创建特定领域的应用模型。
-
-#### 第二十一重 TigerBot
-
-- [【LLMs 入门实战 】 TigerBot 学习与实战]()
-  - 论文名称：
-  - 论文地址：
-  - Github 代码：https://github.com/TigerResearch/TigerBot
-  - 模型：
-  - 介绍：一个多语言多任务的大规模语言模型(LLM)，开源了包括模型：TigerBot-7B, TigerBot-7B-base，TigerBot-180B，基本训练和推理代码，100G预训练数据，涵盖金融、法律、百科的领域数据以及API等。
-
-#### 第二十二重 书生·浦语
-
-- [【LLMs 入门实战 】 书生·浦语 学习与实战]()
-  - 论文名称：
-  - 论文地址：
-  - Github 代码：https://github.com/InternLM/InternLM-techreport
-  - 模型：
-  - 介绍：商汤科技、上海AI实验室联合香港中文大学、复旦大学和上海交通大学发布千亿级参数大语言模型“书生·浦语”（InternLM）。据悉，“书生·浦语”具有1040亿参数，基于“包含1.6万亿token的多语种高质量数据集”训练而成。
-
-#### 第二十三重 Aquila
-
-- [【LLMs 入门实战 】 Aquila 学习与实战]()
-  - 论文名称：
-  - 论文地址：
-  - Github 代码： https://github.com/FlagAI-Open/FlagAI/tree/master/examples/Aquila
-  - 模型：
-  - 介绍：由智源研究院发布，Aquila语言大模型在技术上继承了GPT-3、LLaMA等的架构设计优点，替换了一批更高效的底层算子实现、重新设计实现了中英双语的tokenizer，升级了BMTrain并行训练方法，是在中英文高质量语料基础上从０开始训练的，通过数据质量的控制、多种训练的优化方法，实现在更小的数据集、更短的训练时间，获得比其它开源模型更优的性能。也是首个支持中英双语知识、支持商用许可协议、符合国内数据合规需要的大规模开源语言模型。
-
-#### 第二十四重 baichuan-7B
-
-- [【LLMs 入门实战 】 baichuan-7B 学习与实战]()
-  - 论文名称：
-  - 论文地址：
-  - Github 代码： https://github.com/baichuan-inc/baichuan-7B
-  - 模型：
-  - 介绍：由百川智能开发的一个开源可商用的大规模预训练语言模型。基于Transformer结构，在大约1.2万亿tokens上训练的70亿参数模型，支持中英双语，上下文窗口长度为4096。在标准的中文和英文权威benchmark（C-EVAL/MMLU）上均取得同尺寸最好的效果。
-
 ### 第二层 LLMs to Intelligent Retrieval (IR)
 
 #### 第一重 langchain
@@ -316,9 +190,14 @@
     4. 返回余弦相似度最高的k个文本作为给定信息生成prompt
     5. 将prompt历史替换为最初问的问题
     6. 将prompt交给vicuna模型生成答案
-- [【LLMs 入门实战】基于 本地知识库 的高效 🤖langchain-ChatGLM2 ](https://articles.zsxq.com/id_gcc7oq4qlb94.html)
+- [【LLMs 入门实战】基于 本地知识库 的高效 🤖langchain-ChatGLM2 ](https://articles.zsxq.com/id_zx9d1pix6wls.html)
   - 介绍：langchain-ChatGLM2是一个基于本地知识的问答机器人，使用者可以自由配置本地知识，用户问题的答案也是基于本地知识生成的。
-
+- [【LLMs 入门实战】基于 本地知识库 的高效 🤖wenda+ChatGLM2-6B](https://articles.zsxq.com/id_mx6n1d28iccg.html)
+  - 介绍：本项目设计目标为实现针对特定环境的高效内容生成，同时考虑个人和中小企业的计算资源局限性，以及知识安全和私密性问题。为达目标，平台化集成了以下能力：
+    - 知识库：支持对接本地离线向量库、本地搜索引擎、在线搜索引擎等。
+    - 多种大语言模型：目前支持离线部署模型有chatGLM-6B\chatGLM2-6B、chatRWKV、llama系列(不推荐中文用户)、moss(不推荐)、baichuan(需配合lora使用，否则效果差)、Aquila-7B，在线API访问openai api和chatGLM-130b api。
+    - Auto脚本：通过开发插件形式的JavaScript脚本，为平台附件功能，实现包括但不限于自定义对话流程、访问外部API、在线切换LoRA模型。
+    - 其他实用化所需能力：对话历史管理、内网部署、多用户同时使用等。
 
 ### 第三层 LLMs to Text-to-Image
 
@@ -628,6 +507,141 @@
   - 论文名称：
   - 论文地址：https://github.com/yangjianxin1/Firefly
   - 介绍：中文对话式大语言模型，构造了许多与中华文化相关的数据，以提升模型这方面的表现，如对联、作诗、文言文翻译、散文、金庸小说等。
+
+### LLaMA 衍生物系列
+
+#### 第五重 GPT4ALL
+
+- [【LLMs 入门实战 —— 八 】GPT4ALL 模型学习与实战](https://articles.zsxq.com/id_ff0w6czthq25.html)
+  - 介绍：一个 可以在自己笔记本上面跑起来的  Nomic AI 的助手式聊天机器人，成为贫民家孩子的 福音！
+
+#### 第十一重 OpenBuddy
+
+- [【LLMs 入门实战 —— 二十八 】 OpenBuddy 模型学习与实战](https://articles.zsxq.com/id_g2tmn66fearf.html)
+  - 论文名称：OpenBuddy - Open Multilingual Chatbot based on Falcon
+  - github 地址：https://github.com/OpenBuddy/OpenBuddy
+  - 动机：虽然目前 很多人 LLMs 层出不穷，但是他们并不能 在 多语言支持无缝衔接（eg: LLaMA 模型由于是用 英语训练，所以在 中文等其他语种上效果并不好）
+  - 介绍：基于 Tii 的 Falcon 模型和 Facebook 的 LLaMA 模型构建，OpenBuddy 经过微调，包括扩展词汇表、增加常见字符和增强 token 嵌入。通过利用这些改进和多轮对话数据集，OpenBuddy 提供了一个强大的模型，能够回答各种语言的问题并执行翻译任务。
+
+#### 第十二重 Baize
+
+- [【LLMs 入门实战 —— 三十 】Baize 学习与实战](https://articles.zsxq.com/id_hftswats1oe8.html)
+  - 论文名称：Baize: An Open-Source Chat Model with Parameter-Efficient Tuning on Self-Chat Data
+  - 论文地址：https://arxiv.org/abs/2304.01196
+  - Github 代码：https://github.com/project-baize/baize-chatbot/blob/main/README.md
+  - 模型：
+    - baize-v2-7b 模型：https://huggingface.co/project-baize/baize-v2-7b
+    - baize-v2-13b 模型：https://huggingface.co/project-baize/baize-v2-13b
+  - baize 体验网站：https://huggingface.co/spaces/project-baize/baize-lora-7B
+  - 动机：高质量的标注数据问题
+  - 介绍：Baize 作者 提出了一个自动收集 ChatGPT 对话的流水线，通过从特定数据集中采样「种子」的方式，让 ChatGPT 自我对话，批量生成高质量多轮对话数据集。其中如果使用领域特定数据集，比如医学问答数据集，就可以生成高质量垂直领域语料。
+
+#### 第十三重 OpenChineseLLaMA
+
+- [【LLMs 入门实战 】OpenChineseLLaMA 学习与实战](https://articles.zsxq.com/id_kbaocwse89o9.html)
+  - 论文名称：
+  - 论文地址：
+  - Github 代码：https://github.com/OpenLMLab/OpenChineseLLaMA
+  - 模型：https://huggingface.co/openlmlab/open-chinese-llama-7b-patch
+  - 介绍：基于 LLaMA-7B 经过中文数据集增量预训练产生的中文大语言模型基座，对比原版 LLaMA，该模型在中文理解能力和生成能力方面均获得较大提升，在众多下游任务中均取得了突出的成绩。
+
+#### 第十四重 Panda
+
+- [【LLMs 入门实战 】Panda 学习与实战](https://articles.zsxq.com/id_6dnefz5bmekd.html)
+  - 论文名称：Panda LLM: Training Data and Evaluation for Open-Sourced Chinese Instruction-Following Large Language Models
+  - 论文地址：https://arxiv.org/pdf/2305.03025v1.pdf
+  - Github 代码：https://github.com/dandelionsllm/pandallm
+  - 模型：
+  - 介绍：开源了基于LLaMA-7B, -13B, -33B, -65B 进行中文领域上的持续预训练的语言模型, 使用了接近 15M 条数据进行二次预训练。
+
+#### 第十五重 Ziya-LLaMA-13B
+
+- [【LLMs 入门实战 】 Ziya-LLaMA-13B 学习与实战](https://articles.zsxq.com/id_110iedww8t0k.html)
+  - 论文名称：
+  - 论文地址：
+  - Github 代码：https://huggingface.co/IDEA-CCNL/Ziya-LLaMA-13B-v1
+  - 模型：
+  - 介绍：该项目开源了姜子牙通用大模型V1，是基于LLaMa的130亿参数的大规模预训练模型，具备翻译，编程，文本分类，信息抽取，摘要，文案生成，常识问答和数学计算等能力。该模型已完成大规模预训练、多任务有监督微调和人类反馈学习三阶段的训练过程。
+
+#### 第十六重 BiLLa
+
+- [【LLMs 入门实战 】 BiLLa 学习与实战](https://articles.zsxq.com/id_wtixv8u69v7w.html)
+  - 论文名称：BiLLa: A Bilingual LLaMA with Enhanced Reasoning Ability
+  - 论文地址：
+  - Github 代码：https://github.com/Neutralzz/BiLLa
+  - 模型：
+  - 介绍：该项目开源了推理能力增强的中英双语LLaMA模型。模型的主要特性有：较大提升LLaMA的中文理解能力，并尽可能减少对原始LLaMA英文能力的损伤；训练过程增加较多的任务型数据，利用ChatGPT生成解析，强化模型理解任务求解逻辑；全量参数更新，追求更好的生成效果。
+
+#### 第十七重 Luotuo-Chinese-LLM
+
+- [【LLMs 入门实战 】 Luotuo-Chinese-LLM 学习与实战]()
+  - 论文名称：
+  - 论文地址：
+  - Github 代码：https://github.com/LC1332/Luotuo-Chinese-LLM
+  - 模型：
+  - 介绍：囊括了一系列中文大语言模型开源项目，包含了一系列基于已有开源模型（ChatGLM, MOSS, LLaMA）进行二次微调的语言模型，指令微调数据集等。
+
+#### 第十八重 Linly
+
+- [【LLMs 入门实战 】 Linly 学习与实战]()
+  - 论文名称：
+  - 论文地址：
+  - Github 代码：https://github.com/CVI-SZU/Linly
+  - 模型：
+  - 介绍：提供中文对话模型 Linly-ChatFlow 、中文基础模型 Linly-Chinese-LLaMA 及其训练数据。中文基础模型以 LLaMA 为底座，利用中文和中英平行增量预训练。项目汇总了目前公开的多语言指令数据，对中文模型进行了大规模指令跟随训练，实现了 Linly-ChatFlow 对话模型。
+
+#### 第十九重 ChatYuan
+
+- [【LLMs 入门实战 】 ChatYuan 学习与实战]()
+  - 论文名称：
+  - 论文地址：
+  - Github 代码：https://github.com/clue-ai/ChatYuan
+  - 介绍：元语智能发布的一系列支持中英双语的功能型对话语言大模型，在微调数据、人类反馈强化学习、思维链等方面进行了优化。
+
+#### 第二十重 CPM-Bee
+
+- [【LLMs 入门实战 】 CPM-Bee 学习与实战]()
+  - 论文名称：
+  - 论文地址：
+  - Github 代码：https://github.com/OpenBMB/CPM-Bee
+  - 模型：
+  - 介绍：一个完全开源、允许商用的百亿参数中英文基座模型。它采用Transformer自回归架构（auto-regressive），在超万亿（trillion）高质量语料上进行预训练，拥有强大的基础能力。开发者和研究者可以在CPM-Bee基座模型的基础上在各类场景进行适配来以创建特定领域的应用模型。
+
+#### 第二十一重 TigerBot
+
+- [【LLMs 入门实战 】 TigerBot 学习与实战]()
+  - 论文名称：
+  - 论文地址：
+  - Github 代码：https://github.com/TigerResearch/TigerBot
+  - 模型：
+  - 介绍：一个多语言多任务的大规模语言模型(LLM)，开源了包括模型：TigerBot-7B, TigerBot-7B-base，TigerBot-180B，基本训练和推理代码，100G预训练数据，涵盖金融、法律、百科的领域数据以及API等。
+
+#### 第二十二重 书生·浦语
+
+- [【LLMs 入门实战 】 书生·浦语 学习与实战]()
+  - 论文名称：
+  - 论文地址：
+  - Github 代码：https://github.com/InternLM/InternLM-techreport
+  - 模型：
+  - 介绍：商汤科技、上海AI实验室联合香港中文大学、复旦大学和上海交通大学发布千亿级参数大语言模型“书生·浦语”（InternLM）。据悉，“书生·浦语”具有1040亿参数，基于“包含1.6万亿token的多语种高质量数据集”训练而成。
+
+#### 第二十三重 Aquila
+
+- [【LLMs 入门实战 】 Aquila 学习与实战]()
+  - 论文名称：
+  - 论文地址：
+  - Github 代码： https://github.com/FlagAI-Open/FlagAI/tree/master/examples/Aquila
+  - 模型：
+  - 介绍：由智源研究院发布，Aquila语言大模型在技术上继承了GPT-3、LLaMA等的架构设计优点，替换了一批更高效的底层算子实现、重新设计实现了中英双语的tokenizer，升级了BMTrain并行训练方法，是在中英文高质量语料基础上从０开始训练的，通过数据质量的控制、多种训练的优化方法，实现在更小的数据集、更短的训练时间，获得比其它开源模型更优的性能。也是首个支持中英双语知识、支持商用许可协议、符合国内数据合规需要的大规模开源语言模型。
+
+#### 第二十四重 baichuan-7B
+
+- [【LLMs 入门实战 】 baichuan-7B 学习与实战]()
+  - 论文名称：
+  - 论文地址：
+  - Github 代码： https://github.com/baichuan-inc/baichuan-7B
+  - 模型：
+  - 介绍：由百川智能开发的一个开源可商用的大规模预训练语言模型。基于Transformer结构，在大约1.2万亿tokens上训练的70亿参数模型，支持中英双语，上下文窗口长度为4096。在标准的中文和英文权威benchmark（C-EVAL/MMLU）上均取得同尺寸最好的效果。
 
 
 ## 参考
