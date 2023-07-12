@@ -5,6 +5,9 @@
     - [第一重 ChatGLM-6B 系列](#第一重-chatglm-6b-系列)
       - [ChatGLM-6B](#chatglm-6b)
       - [ChatGLM2-6B](#chatglm2-6b)
+    - [第十重 Baichuan](#第十重-baichuan)
+      - [Baichuan-13B](#baichuan-13b)
+      - [baichuan-7B](#baichuan-7b)
     - [第二重 Stanford Alpaca 7B](#第二重-stanford-alpaca-7b)
     - [第三重 Chinese-LLaMA-Alpaca](#第三重-chinese-llama-alpaca)
     - [第四重 小羊驼 Vicuna](#第四重-小羊驼-vicuna)
@@ -13,30 +16,31 @@
     - [第七重 BELLE](#第七重-belle)
     - [第八重 ChatRWKV](#第八重-chatrwkv)
     - [第九重 ChatGPT](#第九重-chatgpt)
-  - [第二层 LLMs to Intelligent Retrieval (IR)](#第二层-llms-to-intelligent-retrieval-ir)
+  - [第二层 LLMs to Parameter Efficient Fine-Tuning (PEFT)](#第二层-llms-to-parameter-efficient-fine-tuning-peft)
+    - [第一重 分布式训练神器](#第一重-分布式训练神器)
+    - [第二重 LLMs Trick](#第二重-llms-trick)
+    - [第三重 LLMTune](#第三重-llmtune)
+    - [第四重 QLoRA](#第四重-qlora)
+  - [第三层 LLMs to Intelligent Retrieval (IR)](#第三层-llms-to-intelligent-retrieval-ir)
     - [第一重 langchain](#第一重-langchain)
-  - [第三层 LLMs to Text-to-Image](#第三层-llms-to-text-to-image)
+    - [第二重 wenda](#第二重-wenda)
+  - [第四层 LLMs to Text-to-Image](#第四层-llms-to-text-to-image)
     - [第一重 Stable Diffusion](#第一重-stable-diffusion)
-  - [第四层 LLMs to Visual Question Answering (VQA)](#第四层-llms-to-visual-question-answering-vqa)
+  - [第五层 LLMs to Visual Question Answering (VQA)](#第五层-llms-to-visual-question-answering-vqa)
     - [第一重 BLIP](#第一重-blip)
     - [第二重 BLIP2](#第二重-blip2)
     - [第三重 MiniGPT-4](#第三重-minigpt-4)
     - [第四重 VisualGLM-6B](#第四重-visualglm-6b)
     - [第五重 Ziya-Visual](#第五重-ziya-visual)
-  - [第五层 LLMs to Automatic Speech Recognition (ASR)](#第五层-llms-to-automatic-speech-recognition-asr)
+  - [第六层 LLMs to Automatic Speech Recognition (ASR)](#第六层-llms-to-automatic-speech-recognition-asr)
     - [第一重 Massively Multilingual Speech (MMS，大规模多语种语音)](#第一重-massively-multilingual-speech-mms大规模多语种语音)
     - [第二重 whisper](#第二重-whisper)
-  - [第六层 LLMs to Text To Speech (TTS)](#第六层-llms-to-text-to-speech-tts)
+  - [第七层 LLMs to Text To Speech (TTS)](#第七层-llms-to-text-to-speech-tts)
     - [第一重 Massively Multilingual Speech (MMS，大规模多语种语音)](#第一重-massively-multilingual-speech-mms大规模多语种语音-1)
     - [第二重 Retrieval-based-Voice-Conversion](#第二重-retrieval-based-voice-conversion)
-  - [第七层 LLMs to Artifact](#第七层-llms-to-artifact)
+  - [第八层 LLMs to Artifact](#第八层-llms-to-artifact)
     - [第一重 AutoGPT](#第一重-autogpt)
     - [第二重 Knowledge Extraction](#第二重-knowledge-extraction)
-  - [第八层 LLMs to Parameter Efficient Fine-Tuning (PEFT)](#第八层-llms-to-parameter-efficient-fine-tuning-peft)
-    - [第一重 LLMTune](#第一重-llmtune)
-    - [第二重 QLoRA](#第二重-qlora)
-    - [第三重 Parallel](#第三重-parallel)
-    - [第四重 Trick](#第四重-trick)
   - [第九层 LLMs to Vertical Field (VF)](#第九层-llms-to-vertical-field-vf)
     - [第一重 金融领域](#第一重-金融领域)
     - [第二重 医疗领域](#第二重-医疗领域)
@@ -58,7 +62,8 @@
     - [第二十一重 TigerBot](#第二十一重-tigerbot)
     - [第二十二重 书生·浦语](#第二十二重-书生浦语)
     - [第二十三重 Aquila](#第二十三重-aquila)
-    - [第二十四重 baichuan-7B](#第二十四重-baichuan-7b)
+- [知识体系](#知识体系)
+- [加入学习群](#加入学习群)
 - [参考](#参考)
 
 ### 第一层 LLMs to Natural Language Processing (NLP)
@@ -113,6 +118,30 @@
     -  ChatGLM2-6B LoRA 微调：Fine-tuning the low-rank adapters of the model.
 - [【LLMs 入门实战】基于 🤗QLoRA 的高效 🤖ChatGLM2-6B 微调](https://articles.zsxq.com/id_5oocf5c9e4te.html)
   - 介绍：本项目使用 https://github.com/huggingface/peft  库，实现了 ChatGLM2-6B 模型4bit的 QLoRA 高效微调，可以在一张RTX3060上完成全部微调过程。
+
+#### 第十重 Baichuan
+
+##### Baichuan-13B
+
+- [【LLMs 入门实战 】 Baichuan-13B 模型学习与实战](https://articles.zsxq.com/id_a88op9no2xwi.html)
+  - baichuan-inc/Baichuan-13B：https://github.com/baichuan-inc/Baichuan-13B
+  - Baichuan-13B 大模型：
+    - 官方微调过（指令对齐）:https://huggingface.co/baichuan-inc/Baichuan-13B-Chat
+    - 预训练大模型（未经过微调）:https://huggingface.co/baichuan-inc/Baichuan-13B-Base
+  - 介绍：Baichuan-13B 是由百川智能继 Baichuan-7B 之后开发的包含 130 亿参数的开源可商用的大规模语言模型，在权威的中文和英文 benchmark 上均取得同尺寸最好的效果。Baichuan-13B 有如下几个特点：
+    - 更大尺寸、更多数据：Baichuan-13B 在 Baichuan-7B 的基础上进一步扩大参数量到 130 亿，并且在高质量的语料上训练了 1.4 万亿 tokens，超过 LLaMA-13B 40%，是当前开源 13B 尺寸下训练数据量最多的模型。支持中英双语，使用 ALiBi 位置编码，上下文窗口长度为 4096。
+    - 同时开源预训练和对齐模型：预训练模型是适用开发者的“基座”，而广大普通用户对有对话功能的对齐模型具有更强的需求。因此本次开源同时发布了对齐模型（Baichuan-13B-Chat），具有很强的对话能力，开箱即用，几行代码即可简单的部署。
+    - 更高效的推理：为了支持更广大用户的使用，本次同时开源了 int8 和 int4 的量化版本，相对非量化版本在几乎没有效果损失的情况下大大降低了部署的机器资源门槛，可以部署在如 Nvidia 3090 这样的消费级显卡上。
+    - 开源免费可商用：Baichuan-13B 不仅对学术研究完全开放，开发者也仅需邮件申请并获得官方商用许可后，即可以免费商用。
+
+##### baichuan-7B
+
+- [【LLMs 入门实战 】 baichuan-7B 学习与实战]()
+  - 论文名称：
+  - 论文地址：
+  - Github 代码： https://github.com/baichuan-inc/baichuan-7B
+  - 模型：
+  - 介绍：由百川智能开发的一个开源可商用的大规模预训练语言模型。基于Transformer结构，在大约1.2万亿tokens上训练的70亿参数模型，支持中英双语，上下文窗口长度为4096。在标准的中文和英文权威benchmark（C-EVAL/MMLU）上均取得同尺寸最好的效果。
 
 #### 第二重 Stanford Alpaca 7B 
 
@@ -175,7 +204,103 @@
   - 动机：吴恩达老师与OpenAI合作推出《ChatGPT Prompt Engineering for Developers》课程
   - 介绍：如何构建ChatGPT Prompt以处理文本摘要、推断和转换(翻译、纠错、风格转换、格式转换等)这些常见的NLP任务
 
-### 第二层 LLMs to Intelligent Retrieval (IR)
+### 第二层 LLMs to Parameter Efficient Fine-Tuning (PEFT)
+
+#### 第一重 分布式训练神器
+
+- [分布式训练神器 之 ZeRO 学习](trick/distributed/ZeRO.md)
+  - 动机：虽然 DataParallel (DP) 因为简单易实现，所以目前应用相比于其他两种 广泛，但是 由于 DataParallel (DP) 需要 每张卡都存储一个模型，导致 显存大小 成为 制约模型规模 的 主要因素。
+  - 核心思路：去除数据并行中的冗余参数，使每张卡只存储一部分模型状态，从而减少显存占用。
+
+- [图解分布式训练（一） —— 流水线并行（Pipeline Parallelism）](https://articles.zsxq.com/id_5116ludvwvww.html)
+  - 动机：
+    - 回顾ChatGPT的发展历程，我们可以总结出大语言模型（LLM）取得惊艳效果的要点（重要性从高到低排序）：
+      - 愿意烧钱，且接受“烧钱 != 好模型”的现实
+      - 高质量的训练语料
+      - **高效的分布式训练框架**和**充沛优质的硬件资源**
+      - **算法的迭代创新**
+  - 介绍：在大模型训练这个系列里，我们将一起探索学习几种经典的分布式并行范式，包括**流水线并行（Pipeline Parallelism）**，**数据并行（Data Parallelism）**和**张量并行（Tensor Parallesim）**。
+
+- [图解分布式训练（二） —— nn.DataParallel](https://articles.zsxq.com/id_m3tdrv0wdlzr.html)
+  - 动机：
+    - 多GPU并行训练的原理就是将模型参数和数据分布到多个GPU上，同时利用多个GPU计算加速训练过程。具体实现需要考虑以下两个问题：
+    - 数据如何划分？因为模型需要处理的数据通常很大，将所有数据放入单个GPU内存中可能会导致内存不足，因此我们需要将数据划分到多个GPU上。
+  - 介绍：
+    - 计算如何协同？因为每个GPU都需要计算模型参数的梯度并将其发送给其他GPU，因此需要使用同步机制来保证计算正确性。一般有两种同步方式：
+    - 数据同步：在每个GPU上计算模型参数的梯度，然后将梯度发送到其他GPU上进行汇总，最终更新模型参数。
+    - 模型同步：在每个GPU上计算模型参数的梯度，然后将模型参数广播到其他GPU上进行汇总，最终更新模型参数。
+
+- [图解分布式训练（三） ——  nn.parallel.DistributedDataParallel](https://articles.zsxq.com/id_w11rmbn6i9zl.html)
+  - 动机：
+    - **数据如何划分？**因为模型需要处理的数据通常很大，将所有数据放入单个GPU内存中可能会导致内存不足，因此我们需要将数据划分到多个GPU上。一般有两种划分方式：
+      - 数据并行：将数据分割成多个小批次，每个GPU处理其中的一个小批次，然后将梯度汇总后更新模型参数。
+      - 模型并行：将模型分解成多个部分，每个GPU处理其中一个部分，并将处理结果传递给其他GPU以获得最终结果。
+    - **计算如何协同？**因为每个GPU都需要计算模型参数的梯度并将其发送给其他GPU，因此需要使用同步机制来保证计算正确性。一般有两种同步方式：
+      - 数据同步：在每个GPU上计算模型参数的梯度，然后将梯度发送到其他GPU上进行汇总，最终更新模型参数。
+      - 模型同步：在每个GPU上计算模型参数的梯度，然后将模型参数广播到其他GPU上进行汇总，最终更新模型参数。
+    - DP 只支持 单机多卡场景，在 多机多卡 场景 下，DP 的 通讯问题将被放大:
+      - DDP首先要解决的就是通讯问题：将Server上的通讯压力均衡转到各个Worker上。实现这一点后，可以进一步去Server，留Worker。
+  - 介绍：上节讲到 DP 只支持 单机多卡场景，主要原因是 DP 无法数据并行中通讯负载不均的问题， 而 DDP 能够解决 该问题 的 核心在于 **Ring-AllReduce**。它由百度最先提出，非常有效地解决了数据并行中通讯负载不均的问题，使得DDP得以实现。
+
+- [图解分布式训练（四） ——  torch.multiprocessing 详细解析](trick/distributed/multiprocessing.md)
+  - 介绍：torch.multiprocessing是本机multiprocessing模块的封装。封装了multiprocessing模块。它注册自定义的reducer，它使用共享内存为不同进程中的相同数据提供视图共享。一旦张量/存储被移动到shared_memory（参见sharememory()），就可以将其发送到其他进程而不进行其它任何操作。
+
+- [图解分布式训练（五） ——  AMP混合精度训练 详细解析](trick/distributed/AMP.md)
+  - 动机：PyTorch 1.6版本今天发布了，带来的最大更新就是自动混合精度。
+  - 介绍：在某些上下文中torch.FloatTensor有优势，在某些上下文中torch.HalfTensor有优势呗。答案进一步可以转化为，相比于之前的默认的torch.FloatTensor，torch.HalfTensor有时具有优势，有时劣势不可忽视。
+
+- [图解分布式训练（六） ——  Pytorch的 DeepSpeed 详细解析](trick/distributed/deepspeed.md)
+  - 动机：
+    - 最常见的深度学习框架应该是TensorFlow、Pytorch、Keras，但是这些框架在面向大规模模型的时候都不是很方便。
+    - 比如Pytorch的分布式并行计算框架（Distributed Data Parallel，简称DDP），它也仅仅是能将数据并行，放到各个GPU的模型上进行训练。
+    - 也就是说，DDP的应用场景在你的模型大小大于显卡显存大小时，它就很难继续使用了，除非你自己再将模型参数拆散分散到各个GPU上。
+  - 介绍：在分布式计算环境中，需要理解几个非常基础的概念：节点编号、全局进程编号、局部进程编号、全局总进程数和主节点。其中，主节点负责协调所有其他节点和进程的工作，因此是整个系统的关键部分。
+
+- [图解分布式训练（七） ——  accelerate 分布式训练 详细解析](trick/distributed/accelerate.md)
+  - 介绍：PyTorch Accelerate 是一个 PyTorch 的加速工具包，旨在简化 PyTorch 训练和推断的开发过程，并提高性能。它是由 Hugging Face、NVIDIA、AWS 和 Microsoft 等公司联合开发的，是一个开源项目。
+
+#### 第二重 LLMs Trick
+
+- [LLMs Trick](trick/readme.md)
+
+#### 第三重 LLMTune
+
+- [【LLMs 入门实战 —— 十六 】 LLMTune 模型学习与实战](https://articles.zsxq.com/id_1hg51c292bu6.html)
+  - 动机：大语言模型虽然能力很强，目前开源生态也很丰富，但是在特定领域微调大模型依然需要大规格的显卡。例如，清华大学发布的ChatGLM-6B，参数规模60亿，在没有量化的情况下微调需要14GB显存（parameter-efficient fine-tuning，PEFT)。在没有任何优化的前提下，每10亿参数的全精度（32bit）模型载入到显存中就需要4GB，而int8量化后也需要1GB显存。而目前开源最强的模型LLaMA，其最高参数维650亿规模，全精度模型载入就需要260GB，显然已经超出了大部分人的硬件水平。更不要说对模型进行微调（微调需要训练更新参数，推理只需要前向计算即可，因此，微调需要更多的显存才能支持）。
+  - 介绍：Cornell Tech开源的LLMTune就是为了降低大模型微调难度所提出的一种解决方案。对于650亿参数的LLaMA模型微调仅需要40GB显存即可。
+  - github 地址: https://github.com/kuleshov-group/llmtune
+
+#### 第四重 QLoRA
+
+- [【LLMs 入门实战 —— 二十 】 QLoRA 模型学习与实战]()
+  - [https://huggingface.co/BlinkDL](https://huggingface.co/BlinkDL)
+  - [artidoro/qlora](https://github.com/artidoro/qlora)
+  - 模型：[timdettmers (Tim Dettmers)](https://huggingface.co/timdettmers)
+  - 量化代码：[TimDettmers/bitsandbytes](https://github.com/TimDettmers/bitsandbytes)
+  - BLOG : [Making LLMs even more accessible with bitsandbytes, 4-bit quantization and QLoRA](https://huggingface.co/blog/4bit-transformers-bitsandbytes)
+  - Demo环境：[Guanaco Playground Tgi - a Hugging Face Space by uwnlp](https://huggingface.co/spaces/uwnlp/guanaco-playground-tgi)
+  - 介绍：5月24日华盛顿大学的研究者发布了QLoRA技术及用其生成的Guanaco大模型。
+    - 特点：
+      - 在Vicuna基准测试中表现优于所有先前公开发布的模型，达到ChatGPT性能水平的99.3%，仅需要单个GPU上的24小时微调时间；
+      - QLORA引入了一些创新来节省内存而不牺牲性能：
+        - （a）4位NormalFloat（NF4），这是一种对于正态分布权重来说在信息论上是最优的数据类型；
+        - （b）双量化，通过量化量化常数来减少平均内存占用；
+        - （c）分页优化器，用于管理内存峰值。
+
+- [【LLMs 入门实战 —— 二十七 】【QLoRA实战】使用单卡高效微调bloom-7b1]()
+  - [https://huggingface.co/BlinkDL](https://huggingface.co/BlinkDL)
+  - [artidoro/qlora](https://github.com/artidoro/qlora)
+  - 模型：[timdettmers (Tim Dettmers)](https://huggingface.co/timdettmers)
+  - 量化代码：[TimDettmers/bitsandbytes](https://github.com/TimDettmers/bitsandbytes)
+  - BLOG : [Making LLMs even more accessible with bitsandbytes, 4-bit quantization and QLoRA](https://huggingface.co/blog/4bit-transformers-bitsandbytes)
+
+- [【LLMs 入门实战 】Anima 学习与实战](Anima/readme.md)
+  - Github 代码：https://github.com/lyogavin/Anima
+  - 模型：https://huggingface.co/lyogavin/Anima33B
+  - 动机：之前大部分开源可finetune的模型大都是比较小的模型7B或者13B，虽然可以在一些简单的chatbot评测集上，通过finetune训练有不错的表现。但是由于这些模型规模还是有限，LLM核心的reasoning的能力还是相对比较弱。这就是为什么很多这种小规模的模型在实际应用的场景表现像是个玩具。chatbot评测集比较简单，真正比较考验模型能力的复杂逻辑推理及数学问题上小模型和大模型差距还是很明显的。
+  - 介绍：QLoRA的优化方法，第一次让33B规模的模型可以比较民主化的，比较低成本的finetune训练，让33B模型的普及使用成为了可能。我们认为33B模型既可以发挥大规模模型的比较强的推理能力，又可以针对私有业务领域数据进行灵活的finetune训练提升对于LLM的控制力。
+
+### 第三层 LLMs to Intelligent Retrieval (IR)
 
 #### 第一重 langchain
 
@@ -192,6 +317,9 @@
     6. 将prompt交给vicuna模型生成答案
 - [【LLMs 入门实战】基于 本地知识库 的高效 🤖langchain-ChatGLM2 ](https://articles.zsxq.com/id_zx9d1pix6wls.html)
   - 介绍：langchain-ChatGLM2是一个基于本地知识的问答机器人，使用者可以自由配置本地知识，用户问题的答案也是基于本地知识生成的。
+
+#### 第二重 wenda
+
 - [【LLMs 入门实战】基于 本地知识库 的高效 🤖wenda+ChatGLM2-6B](https://articles.zsxq.com/id_mx6n1d28iccg.html)
   - 介绍：本项目设计目标为实现针对特定环境的高效内容生成，同时考虑个人和中小企业的计算资源局限性，以及知识安全和私密性问题。为达目标，平台化集成了以下能力：
     - 知识库：支持对接本地离线向量库、本地搜索引擎、在线搜索引擎等。
@@ -199,7 +327,7 @@
     - Auto脚本：通过开发插件形式的JavaScript脚本，为平台附件功能，实现包括但不限于自定义对话流程、访问外部API、在线切换LoRA模型。
     - 其他实用化所需能力：对话历史管理、内网部署、多用户同时使用等。
 
-### 第三层 LLMs to Text-to-Image
+### 第四层 LLMs to Text-to-Image
 
 #### 第一重 Stable Diffusion
 
@@ -217,7 +345,7 @@
   - 预训练模型：https://huggingface.co/johnsmith007/LoRAs/tree/main
   - 介绍：LoRA的全称是LoRA: Low-Rank Adaptation of Large Language Models，可以理解为stable diffusion（SD)模型的一种插件，和hyper-network，controlNet一样，都是在不修改SD模型的前提下，利用少量数据训练出一种画风/IP/人物，实现定制化需求，所需的训练资源比训练SD模要小很多，非常适合社区使用者和个人开发者。
 
-### 第四层 LLMs to Visual Question Answering (VQA)
+### 第五层 LLMs to Visual Question Answering (VQA)
 
 #### 第一重 BLIP
 
@@ -276,7 +404,7 @@
   - 封神榜项目主页：https://github.com/IDEA-CCNL/Fengshenbang-LM
   - 介绍：自从3月份OpenAI发布具有识图能力的多模态大模型GPT-4，大模型的能力便不再局限于文本输入-文本输出的形式，人们可以上传视觉图片来与大模型进行聊天和交互。遗憾的是，时至今日绝大部分用户也都还没有拿到GPT-4输入图片的权限，无法体验到结合视觉和语言两大模态的大模型的卓越能力，而且GPT-4也没有叙述或者开源GPT模型多模态预训练的方案。与之相对的是，学术界和开源界则充分探索了视觉预训练模型（比如ViT, Vision Transformer）与大语言模型(LLM，Large Language Model)结合，从而让目前的LLM获得输入图片、认识图片的能力。其中的代表工作包括国外团队开源的Mini-GPT4[1]，LLaVA[2]等，国内团队开源的VisuaGLM[3]，mPLUG-Owl[4]等工作。大部分的开源方案参考了BLIP2的训练方案[5]，选择冻结LLM部分的参数训练或者采用Lora等parameter-efficient的微调训练方式。IDEA研究院封神榜团队在5月17日发布“姜子牙通用大模型v1”之后，继续发布Ziya-BLIP2-14B-Visual-v1多模态大模型（以下简称Ziya-Visual模型）。和Ziya大模型一样，Ziya-Visual模型具备中英双语能力，特别是中文能力较为突出。和所有基于BLIP2的方案类似，我们简单高效的扩展了LLM的识图能力。该模型对比VisualGLM、mPLUG-Owl模型，在视觉问答（VQA）评价和GPT-4打分评价[2]中，展现了一些优势。
 
-### 第五层 LLMs to Automatic Speech Recognition (ASR)
+### 第六层 LLMs to Automatic Speech Recognition (ASR)
 
 #### 第一重 Massively Multilingual Speech (MMS，大规模多语种语音)
 
@@ -305,7 +433,7 @@
     - 后端：使用RNN进行序列建模，输出每个时间步的概率分布。
     - 解码器：将概率分布转换为最终的文本输出。
 
-### 第六层 LLMs to Text To Speech (TTS)
+### 第七层 LLMs to Text To Speech (TTS)
 
 #### 第一重 Massively Multilingual Speech (MMS，大规模多语种语音)
 
@@ -338,7 +466,7 @@
   - 论文地址：https://arxiv.org/abs/2305.18975
   - Github 代码：https://github.com/bshall/knn-vc
 
-### 第七层 LLMs to Artifact
+### 第八层 LLMs to Artifact
 
 #### 第一重 AutoGPT
 
@@ -352,65 +480,6 @@
   - OpenKG地址：http://openkg.cn/tool/deepke
   - Gitee地址：https://gitee.com/openkg/deepke/tree/main/example/llm
   - 介绍：DeepKE是一个开源可扩展的知识图谱抽取工具，可实现命名实体识别、关系抽取和属性抽取等抽取任务，并支持低资源少样本、文档篇章和多模态等复杂场景。在大模型时代，我们对DeepKE进行了全面升级并发布大模型版DeepKE-LLM（智析抽取大模型）。该版本基于大模型对数据进行智能解析以实现知识抽取，支持多种大模型、遵循指令和自定义知识类型、格式。
-
-### 第八层 LLMs to Parameter Efficient Fine-Tuning (PEFT)
-
-#### 第一重 LLMTune
-
-- [【LLMs 入门实战 —— 十六 】 LLMTune 模型学习与实战](https://articles.zsxq.com/id_1hg51c292bu6.html)
-  - 动机：大语言模型虽然能力很强，目前开源生态也很丰富，但是在特定领域微调大模型依然需要大规格的显卡。例如，清华大学发布的ChatGLM-6B，参数规模60亿，在没有量化的情况下微调需要14GB显存（parameter-efficient fine-tuning，PEFT)。在没有任何优化的前提下，每10亿参数的全精度（32bit）模型载入到显存中就需要4GB，而int8量化后也需要1GB显存。而目前开源最强的模型LLaMA，其最高参数维650亿规模，全精度模型载入就需要260GB，显然已经超出了大部分人的硬件水平。更不要说对模型进行微调（微调需要训练更新参数，推理只需要前向计算即可，因此，微调需要更多的显存才能支持）。
-  - 介绍：Cornell Tech开源的LLMTune就是为了降低大模型微调难度所提出的一种解决方案。对于650亿参数的LLaMA模型微调仅需要40GB显存即可。
-  - github 地址: https://github.com/kuleshov-group/llmtune
-
-#### 第二重 QLoRA
-
-- [【LLMs 入门实战 —— 二十 】 QLoRA 模型学习与实战]()
-  - [https://huggingface.co/BlinkDL](https://huggingface.co/BlinkDL)
-  - [artidoro/qlora](https://github.com/artidoro/qlora)
-  - 模型：[timdettmers (Tim Dettmers)](https://huggingface.co/timdettmers)
-  - 量化代码：[TimDettmers/bitsandbytes](https://github.com/TimDettmers/bitsandbytes)
-  - BLOG : [Making LLMs even more accessible with bitsandbytes, 4-bit quantization and QLoRA](https://huggingface.co/blog/4bit-transformers-bitsandbytes)
-  - Demo环境：[Guanaco Playground Tgi - a Hugging Face Space by uwnlp](https://huggingface.co/spaces/uwnlp/guanaco-playground-tgi)
-  - 介绍：5月24日华盛顿大学的研究者发布了QLoRA技术及用其生成的Guanaco大模型。
-    - 特点：
-      - 在Vicuna基准测试中表现优于所有先前公开发布的模型，达到ChatGPT性能水平的99.3%，仅需要单个GPU上的24小时微调时间；
-      - QLORA引入了一些创新来节省内存而不牺牲性能：
-        - （a）4位NormalFloat（NF4），这是一种对于正态分布权重来说在信息论上是最优的数据类型；
-        - （b）双量化，通过量化量化常数来减少平均内存占用；
-        - （c）分页优化器，用于管理内存峰值。
-
-- [【LLMs 入门实战 —— 二十七 】【QLoRA实战】使用单卡高效微调bloom-7b1]()
-  - [https://huggingface.co/BlinkDL](https://huggingface.co/BlinkDL)
-  - [artidoro/qlora](https://github.com/artidoro/qlora)
-  - 模型：[timdettmers (Tim Dettmers)](https://huggingface.co/timdettmers)
-  - 量化代码：[TimDettmers/bitsandbytes](https://github.com/TimDettmers/bitsandbytes)
-  - BLOG : [Making LLMs even more accessible with bitsandbytes, 4-bit quantization and QLoRA](https://huggingface.co/blog/4bit-transformers-bitsandbytes)
-
-- [【LLMs 入门实战 】Anima 学习与实战](Anima/readme.md)
-  - Github 代码：https://github.com/lyogavin/Anima
-  - 模型：https://huggingface.co/lyogavin/Anima33B
-  - 动机：之前大部分开源可finetune的模型大都是比较小的模型7B或者13B，虽然可以在一些简单的chatbot评测集上，通过finetune训练有不错的表现。但是由于这些模型规模还是有限，LLM核心的reasoning的能力还是相对比较弱。这就是为什么很多这种小规模的模型在实际应用的场景表现像是个玩具。chatbot评测集比较简单，真正比较考验模型能力的复杂逻辑推理及数学问题上小模型和大模型差距还是很明显的。
-  - 介绍：QLoRA的优化方法，第一次让33B规模的模型可以比较民主化的，比较低成本的finetune训练，让33B模型的普及使用成为了可能。我们认为33B模型既可以发挥大规模模型的比较强的推理能力，又可以针对私有业务领域数据进行灵活的finetune训练提升对于LLM的控制力。
-
-#### 第三重 Parallel
-
-- [分布式训练神器 之 ZeRO 学习](trick/distributed/ZeRO.md)
-  - 动机：虽然 DataParallel (DP) 因为简单易实现，所以目前应用相比于其他两种 广泛，但是 由于 DataParallel (DP) 需要 每张卡都存储一个模型，导致 显存大小 成为 制约模型规模 的 主要因素。
-  - 核心思路：去除数据并行中的冗余参数，使每张卡只存储一部分模型状态，从而减少显存占用。
-
-- [分布式训练神器 之 分布式训练方法汇总](trick/distributed/readme.md)
-  - DataParallel分布式训练
-  - Distributed分布式训练
-  - multiprocess启动
-  - AMP混合精度训练
-  - horovod分布式训练
-  - deepspeed分布式训练
-  - accelerate分布式训练
-  - transformers的Trainer分布式训练
-
-#### 第四重 Trick
-
-- [LLMs Trick](trick/readme.md)
 
 ### 第九层 LLMs to Vertical Field (VF)
 
@@ -634,15 +703,18 @@
   - 模型：
   - 介绍：由智源研究院发布，Aquila语言大模型在技术上继承了GPT-3、LLaMA等的架构设计优点，替换了一批更高效的底层算子实现、重新设计实现了中英双语的tokenizer，升级了BMTrain并行训练方法，是在中英文高质量语料基础上从０开始训练的，通过数据质量的控制、多种训练的优化方法，实现在更小的数据集、更短的训练时间，获得比其它开源模型更优的性能。也是首个支持中英双语知识、支持商用许可协议、符合国内数据合规需要的大规模开源语言模型。
 
-#### 第二十四重 baichuan-7B
+## 知识体系
 
-- [【LLMs 入门实战 】 baichuan-7B 学习与实战]()
-  - 论文名称：
-  - 论文地址：
-  - Github 代码： https://github.com/baichuan-inc/baichuan-7B
-  - 模型：
-  - 介绍：由百川智能开发的一个开源可商用的大规模预训练语言模型。基于Transformer结构，在大约1.2万亿tokens上训练的70亿参数模型，支持中英双语，上下文窗口长度为4096。在标准的中文和英文权威benchmark（C-EVAL/MMLU）上均取得同尺寸最好的效果。
+> [关于 AIGC 那些你不知道的事](https://yaz1kaenukt.feishu.cn/mindnotes/OSsQbEhzomseronYdQmc6CmXnQH)
+![](img/1.png)
 
+> [关于 NLP 那些你不知道的事](https://yaz1kaenukt.feishu.cn/mindnotes/FOlQbPf6GmdzBQnBVsncnYGJnnd)
+![](img/1.png)
+
+## 加入学习群
+
+> 扫码加小编，申请加入学习群
+![](img/3.png)
 
 ## 参考
 
