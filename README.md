@@ -1,5 +1,12 @@
 ## 【LLMs 入门实战系列】
 
+
+<img src="img/20230516092740.jpg" width="50%" >
+
+> LLMs 九层妖塔 挑战赛交流群 (注：人满 可 添加 小编wx：yzyykm666 加群！)
+
+<img src="img/微信截图_20210301212242.jpg" width="50%" >
+
 - [【LLMs 入门实战系列】](#llms-入门实战系列)
   - [第一层 LLMs to Natural Language Processing (NLP)](#第一层-llms-to-natural-language-processing-nlp)
     - [第一重 ChatGLM-6B 系列](#第一重-chatglm-6b-系列)
