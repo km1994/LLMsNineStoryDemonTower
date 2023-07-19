@@ -124,7 +124,7 @@ ChatGLM2-6B 模型的微调。需要使用--use_v2 参数来进行训练。
 - freeze 方式 微调
 
 ```s
-    $ CUDA_VISIBLE_DEVICES=0 python ../src/train_sft.py \
+    $ CUDA_VISIBLE_DEVICES=0 python ../examples/train_sft.py \
     --do_train \
     --dataset alpaca_gpt4_zh \
     --dataset_dir ../data \
@@ -146,7 +146,7 @@ ChatGLM2-6B 模型的微调。需要使用--use_v2 参数来进行训练。
 - p_tuning 方式 微调
 
 ```s
-    $ CUDA_VISIBLE_DEVICES=0 python ../src/train_sft.py \
+    $ CUDA_VISIBLE_DEVICES=0 python ../examples/train_sft.py \
     --do_train \
     --dataset alpaca_gpt4_zh \
     --dataset_dir ../data \
@@ -224,7 +224,7 @@ ChatGLM2-6B 模型的微调。需要使用--use_v2 参数来进行训练。
 - lora 方式 微调
 
 ```s
-    $ CUDA_VISIBLE_DEVICES=0 python ../src/train_sft.py \
+    $ CUDA_VISIBLE_DEVICES=0 python ../examples/train_sft.py \
     --do_train \
     --dataset alpaca_gpt4_zh \
     --dataset_dir ../data \
@@ -298,7 +298,7 @@ wandb:   train/train_steps_per_second 4.698
 
 > lora 方式 微调
 ```s
-    $ accelerate launch src/train_sft.py # 参数同上
+    $ accelerate launch examples/train_sft.py # 参数同上
 ```
 
 ## 五、ChatGLM2-6B 评估预测
@@ -306,7 +306,7 @@ wandb:   train/train_steps_per_second 4.698
 ### 5.1 ChatGLM2-6B 指标评估（BLEU分数和汉语ROUGE分数）
 
 ```s
-CUDA_VISIBLE_DEVICES=0 python src/finetune.py \
+CUDA_VISIBLE_DEVICES=0 python examples/finetune.py \
     --do_eval \
     --dataset alpaca_gpt4_zh \
     --checkpoint_dir path_to_checkpoint \
@@ -549,7 +549,7 @@ wandb: Find logs at: ./wandb/run-20230505_010703-37i3uo74/logs
 ### 5.2 ChatGLM2-6B 模型预测
 
 ```s
-  CUDA_VISIBLE_DEVICES=0 python src/finetune.py \
+  CUDA_VISIBLE_DEVICES=0 python examples/finetune.py \
     --do_predict \
     --dataset alpaca_gpt4_zh \
     --checkpoint_dir path_to_checkpoint \
