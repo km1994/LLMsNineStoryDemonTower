@@ -1,12 +1,5 @@
 ## 【LLMs 入门实战系列】
 
-
-<img src="img/20230516092740.jpg" width="50%" >
-
-> LLMs 九层妖塔 挑战赛交流群 (注：人满 可 添加 小编wx：yzyykm666 加群！)
-
-<img src="img/微信截图_20210301212242.jpg" width="50%" >
-
 - [【LLMs 入门实战系列】](#llms-入门实战系列)
   - [第一层 LLMs to Natural Language Processing (NLP)](#第一层-llms-to-natural-language-processing-nlp)
     - [第一重 ChatGLM-6B 系列](#第一重-chatglm-6b-系列)
@@ -54,6 +47,7 @@
     - [第三重 法律领域](#第三重-法律领域)
     - [第四重 教育领域](#第四重-教育领域)
     - [第五重 文化领域](#第五重-文化领域)
+    - [第六重 Coding](#第六重-coding)
   - [LLaMA 衍生物系列](#llama-衍生物系列)
     - [第五重 GPT4ALL](#第五重-gpt4all)
     - [第十一重 OpenBuddy](#第十一重-openbuddy)
@@ -583,6 +577,14 @@
   - 论文名称：
   - 论文地址：https://github.com/yangjianxin1/Firefly
   - 介绍：中文对话式大语言模型，构造了许多与中华文化相关的数据，以提升模型这方面的表现，如对联、作诗、文言文翻译、散文、金庸小说等。
+
+#### 第六重 Coding
+
+- [【LLMs 入门实战】 CodeGeeX2-6B 学习与实战](https://articles.zsxq.com/id_1bz3qf7r76wc.html)
+  - DeepKE-LLM链接：
+  - OpenKG地址：
+  - Github 地址：https://github.com/THUDM/CodeGeeX2
+  - 介绍：CodeGeeX2 是多语言代码生成模型 CodeGeeX 的第二代模型，基于 ChatGLM2 架构注入代码实现。得益于 ChatGLM2 的更优性能，CodeGeeX2-6B 在多项指标上取得了较大的性能提升。与 150 亿参数的 StarCoder-15B 相比，CodeGeeX2-6B 凭借 60 亿参数便具备了近 10% 的优势。
 
 ### LLaMA 衍生物系列
 
