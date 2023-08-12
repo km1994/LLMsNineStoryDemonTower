@@ -5,6 +5,7 @@
     - [第一重 ChatGLM-6B 系列](#第一重-chatglm-6b-系列)
       - [ChatGLM-6B](#chatglm-6b)
       - [ChatGLM2-6B](#chatglm2-6b)
+    - [第十一重 Llama2](#第十一重-llama2)
     - [第十重 Baichuan](#第十重-baichuan)
       - [Baichuan-13B](#baichuan-13b)
       - [baichuan-7B](#baichuan-7b)
@@ -119,6 +120,28 @@
     -  ChatGLM2-6B LoRA 微调：Fine-tuning the low-rank adapters of the model.
 - [【LLMs 入门实战】基于 🤗QLoRA 的高效 🤖ChatGLM2-6B 微调](https://articles.zsxq.com/id_5oocf5c9e4te.html)
   - 介绍：本项目使用 https://github.com/huggingface/peft  库，实现了 ChatGLM2-6B 模型4bit的 QLoRA 高效微调，可以在一张RTX3060上完成全部微调过程。
+
+#### 第十一重 Llama2
+
+- [【LLMs 入门实战】 Llama2 模型学习与实战](https://articles.zsxq.com/id_ivi7gtxdpq4p.html)
+  - 官网：https://ai.meta.com/llama/
+  - 论文名称：《Llama 2: Open Foundation and Fine-Tuned Chat Models》
+  - 论文地址：https://ai.meta.com/research/publications/llama-2-open-foundation-and-fine-tuned-chat-models/
+  - 演示平台：https://llama2.ai/
+  - Github 代码：https://github.com/facebookresearch/llama
+  - 模型下载地址：https://ai.meta.com/resources/models-and-libraries/llama-downloads/
+  - 介绍：此次 Meta 发布的 Llama 2 模型系列包含 70 亿、130 亿和 700 亿三种参数变体。此外还训练了 340 亿参数变体，但并没有发布，只在技术报告中提到了。据介绍，相比于 Llama 1，Llama 2 的训练数据多了 40%，上下文长度也翻倍，并采用了分组查询注意力机制。具体来说，Llama 2 预训练模型是在 2 万亿的 token 上训练的，精调 Chat 模型是在 100 万人类标记数据上训练的。
+
+- [【LLMs 入门实战】Chinese-Llama-2-7b 模型学习与实战](https://articles.zsxq.com/id_gxfww20xkje7.html)
+  - 官网：https://ai.meta.com/llama/
+  - 论文名称：《Llama 2: Open Foundation and Fine-Tuned Chat Models》
+  - 论文地址：https://ai.meta.com/research/publications/llama-2-open-foundation-and-fine-tuned-chat-models/
+  - 演示平台：https://huggingface.co/spaces/LinkSoul/Chinese-Llama-2-7b
+  - Github 代码：https://github.com/LinkSoul-AI/Chinese-Llama-2-7b
+  - 模型下载地址：
+    - https://huggingface.co/ziqingyang/chinese-llama-2-7b
+    - https://huggingface.co/LinkSoul/Chinese-Llama-2-7b-4bit
+  - 介绍：自打 LLama-2 发布后就一直在等大佬们发布 LLama-2 的适配中文版，也是这几天蹲到了一版由 LinkSoul 发布的 Chinese-Llama-2-7b，其共发布了一个常规版本和一个 4-bit 的量化版本，今天我们主要体验下 Llama-2 的中文逻辑顺便看下其训练样本的样式，后续有机会把训练和微调跑起来。
 
 #### 第十重 Baichuan
 
