@@ -1,7 +1,7 @@
 ## 【LLMs 入门实战系列】
 
 
-<img src="img/20230516092740.jpg" width="50%" >
+<img src="img/20230818133801.jpg" width="50%" >
 
 > LLMs 九层妖塔 挑战赛交流群 (注：人满 可 添加 小编wx：yzyykm666 加群！)
 
