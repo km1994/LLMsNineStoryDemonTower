@@ -1,12 +1,6 @@
 ## 【LLMs 入门实战系列】
 
-> LLMs 九层妖塔 挑战赛交流群 (注：人满 可 添加 小编wx：yzyykm666 加群！)
-
-<img src="img/微信截图_20210301212242.jpg" width="50%" >
-
 - [【LLMs 入门实战系列】](#llms-入门实战系列)
-  - [第九层 LLMs to interview](#第九层-llms-to-interview)
-  - [第八层 LLMs to Inference acceleration](#第八层-llms-to-inference-acceleration)
   - [第一层 LLMs to Natural Language Processing (NLP)](#第一层-llms-to-natural-language-processing-nlp)
     - [第一重 ChatGLM-6B 系列](#第一重-chatglm-6b-系列)
       - [ChatGLM-6B](#chatglm-6b)
@@ -28,11 +22,9 @@
     - [第二重 LLMs Trick](#第二重-llms-trick)
     - [第三重 LLMTune](#第三重-llmtune)
     - [第四重 QLoRA](#第四重-qlora)
-  - [第三层 LLMs to Artifact](#第三层-llms-to-artifact)
+  - [第三层 LLMs to Intelligent Retrieval (IR)](#第三层-llms-to-intelligent-retrieval-ir)
     - [第一重 langchain](#第一重-langchain)
     - [第二重 wenda](#第二重-wenda)
-    - [第三重 AutoGPT](#第三重-autogpt)
-    - [第四重 Knowledge Extraction](#第四重-knowledge-extraction)
   - [第四层 LLMs to Text-to-Image](#第四层-llms-to-text-to-image)
     - [第一重 Stable Diffusion](#第一重-stable-diffusion)
   - [第五层 LLMs to Visual Question Answering (VQA)](#第五层-llms-to-visual-question-answering-vqa)
@@ -47,6 +39,16 @@
   - [第七层 LLMs to Text To Speech (TTS)](#第七层-llms-to-text-to-speech-tts)
     - [第一重 Massively Multilingual Speech (MMS，大规模多语种语音)](#第一重-massively-multilingual-speech-mms大规模多语种语音-1)
     - [第二重 Retrieval-based-Voice-Conversion](#第二重-retrieval-based-voice-conversion)
+  - [第八层 LLMs to Artifact](#第八层-llms-to-artifact)
+    - [第一重 AutoGPT](#第一重-autogpt)
+    - [第二重 Knowledge Extraction](#第二重-knowledge-extraction)
+  - [第九层 LLMs to Vertical Field (VF)](#第九层-llms-to-vertical-field-vf)
+    - [第一重 金融领域](#第一重-金融领域)
+    - [第二重 医疗领域](#第二重-医疗领域)
+    - [第三重 法律领域](#第三重-法律领域)
+    - [第四重 教育领域](#第四重-教育领域)
+    - [第五重 文化领域](#第五重-文化领域)
+    - [第六重 Coding](#第六重-coding)
   - [LLaMA 衍生物系列](#llama-衍生物系列)
     - [第五重 GPT4ALL](#第五重-gpt4all)
     - [第十一重 OpenBuddy](#第十一重-openbuddy)
@@ -62,159 +64,9 @@
     - [第二十一重 TigerBot](#第二十一重-tigerbot)
     - [第二十二重 书生·浦语](#第二十二重-书生浦语)
     - [第二十三重 Aquila](#第二十三重-aquila)
-    - [第一重 金融领域](#第一重-金融领域)
-    - [第二重 医疗领域](#第二重-医疗领域)
-    - [第三重 法律领域](#第三重-法律领域)
-    - [第四重 教育领域](#第四重-教育领域)
-    - [第五重 文化领域](#第五重-文化领域)
-    - [第六重 Coding](#第六重-coding)
 - [知识体系](#知识体系)
 - [加入学习群](#加入学习群)
 - [参考](#参考)
-
-
-### 第九层 LLMs to interview
-
-- [LLMs 降龙十八掌](https://articles.zsxq.com/id_un190pd3gi8a.html)
-  - LLMs Fine-Tuning 经验贴
-    - 如何解决大模型遗忘问题#ChatGPT# #LLM (大型语言模型)
-    - Fine-Tuning max_length 选择 问题
-    - Fine-Tuning Learning rate 选择 问题
-    - 如何 向GPT/LLM模型添加额外知识？
-    - 如何解决LLM大模型fine-tune过拟合问题？
-    - 英文模型需要做词表扩充吗？
-    - 全参finetune，数据配比?
-    - 百川13b强化学习时遇到参数不更新的问题?
-    - 使用lion优化器节省显存?
-    - 使用lora训练的参数配置?
-    - ...
-  - LLMs 推理 经验贴
-    - chatglm微调完针对相同的问题输出都是一样的，有办法让他随机一点吗？
-    - 使用fastllm加速推理
-  - LLMs 部署 经验贴
-    - 如果只跑一个私有大模型，但是很多用户同时访问。这些针对不同用户的chat history怎么存取比较高效？
-  - LLMs 多轮对话 经验贴
-    - 如何 融入 之前对话信息
-  - 数据构建篇
-    - 训练数据如何构建？
-  - LLMs 胡思乱想
-    - 为什么 LLMs 不容易出现 灾难性遗忘问题？
-    - LLMs to NLP 下游任务 经验贴
-
-- [【LLMs】大模型 千面郎君](https://articles.zsxq.com/id_u51mg6wdo4h5.html)
-  - 大模型常识面
-    - 简单 介绍一下 大模型【LLMs】？
-    - 大模型【LLMs】后面跟的 175B、60B、540B等 指什么？
-    - 大模型【LLMs】具有什么优点？
-    - 大模型【LLMs】具有什么缺点？
-  - 大模型强化学习面
-    - 简单介绍强化学习？
-    - 简单介绍一下 RLHF？
-  - 大模型【LLMs】微调篇
-    - 大模型【LLMs】泛化问题？
-    - 大模型【LLMs】微调问题？
-    - 大模型【LLMs】微调有哪些优点？
-    - 大模型【LLMs】指令微调问题？
-  - 大模型【LLMs】思维链篇
-    - 大模型【LLMs】思维链问题？
-    - 大模型【LLMs】思维链本质是什么？
-    - 大模型【LLMs】思维链优点是什么？
-    - 大模型【LLMs】思维链类型和策略？
-    - 大模型【LLMs】逐步Zero-shot 介绍？
-    - 大模型【LLMs】Zero-shot-CoT提示策略定义？
-    - 大模型【LLMs】Zero-shot-CoT提示策略应用方法？
-    - 大模型【LLMs】Few-shot-CoT提示策略定义？
-    - 大模型【LLMs】Few-shot-CoT提示策略核心思想是什么？
-    - 大模型【LLMs】Few-shot-CoT提示策略应用方法是什么？
-  - 大模型【LLMs】涌现现象篇
-    - 大模型【LLMs】中有一种 涌现现象，你知道么？
-    - 大模型【LLMs】涌现现象主要体现在哪些方面？
-    - 大模型【LLMs】涌现现象主激活方式？
-  - 大模型【LLMs】提示工程篇
-    - 大模型【LLMs】提示工程 是什么？
-    - 提示工程 如何添加进 大模型【LLMs】？
-    - 微调（FineTuning） vs 提示工程？
-    - 微调（FineTuning） vs 提示工程 在应用场景中关系雨联系？
-    - 大模型【LLMs】Few-shot提示方法 是什么？
-
-- [大模型的重复生成现象如何缓解？](https://articles.zsxq.com/id_u9pxnveolxwm.html)
-  - 为何会出现重复生成现象？
-  - 如何减少大模型重复生成？
-- [ LoRA这种微调方法和全参数比起来有什么劣势吗？](https://articles.zsxq.com/id_6dbtb0w32qo3.html)
-  - 什么是 LoRA？
-  - LoRA 优点是什么？
-  - LoRA 缺点是什么？
-  - LoRA这种微调方法和全参数比起来有什么劣势吗？
-  - LoRA这种微调方法和全参数 如何选择？
-- [LLaMa-1 从原理到实践分析](https://articles.zsxq.com/id_sil90pxf3zvw.html)
-  - LLaMa-1 理论介绍
-  - LLaMa 模型架构介绍
-  - LLaMa 优化器介绍
-  - LLaMa-1 实践介绍
-- [LLaMa-2 从原理到实践分析](https://articles.zsxq.com/id_gsm9rxffc2r8.html)
-  - LLaMa-2 理论介绍
-  - LLaMa-2 实践介绍
-- [基于PyTorch来优化大模型训练的内存（显存）](https://articles.zsxq.com/id_vri8pu8oacqu.html)
-  - 动机：峰值内存（显存）的消耗直接决定了 机器 是否 支撑大模型训练
-  - LLMs Fine-Tuning 经验贴
-    - LLMs Fine-Tuning 框架依赖问题？
-    - LLMs Fine-Tuning 显存问题？
-    - 如何解决大模型遗忘问题#ChatGPT# #LLM (大型语言模型)？
-    - ...
-  - 混合精度训练（Mixed-Precision Training）
-    - 为什么需要 混合精度训练（Mixed-Precision Training）？
-    - 什么是 混合精度训练（Mixed-Precision Training）？
-    - 混合精度训练（Mixed-Precision Training）实现步骤？
-    - ...
-  - 低精度训练（Lower-Precision Training）
-    - 为什么需要 低精度训练（Lower-Precision Training）？
-    - 什么是 低精度训练（Lower-Precision Training）？
-    - ...
-  - 降低训练批处理大小（Reducing the Batchsize）
-    - 为什么需要 降低训练批处理大小（Reducing the Batchsize）？
-    - 什么是 降低训练批处理大小（Reducing the Batchsize）？
-    - ...
-  - 使用梯度累积创建微批次（Using Gradient Accumulation to Create Microbatches）
-    - 为什么需要 使用梯度累积创建微批次（Using Gradient Accumulation to Create Microbatches）？
-    - 什么是 使用梯度累积创建微批次（Using Gradient Accumulation to Create Microbatches）？
-    - ...
-- [如何缓解大模型幻觉？](https://articles.zsxq.com/id_bxani4mwdead.html)
-  - 为什么 会 出现 大模型幻觉？
-  - 如何 缓解 大模型幻觉？
-
-### 第八层 LLMs to Inference acceleration
-
-- [LLM（大语言模型）部署加速方法——PagedAttention](https://articles.zsxq.com/id_7eu43rgc4ehm.html)
-  - 什么是 PagedAttention？
-  - PagedAttention 如何存储 连续的key和value？
-  - PagedAttention 技术细节？
-  - PagedAttention 如何 实现安全共享？
-  - PagedAttention 源码介绍？
-
-- [LLM（大语言模型）部署加速方法——Faster Transformer](https://articles.zsxq.com/id_2ixvwo53necu.html)
-  - 为什么需要 Faster Transformer？
-  - 什么是 FasterTransformer？
-  - FasterTransformer 核心？
-  - FasterTransformer 优化？
-
-- [纯Python超轻量高性能LLM推理框架 —— LightLLM](https://articles.zsxq.com/id_jwdwtitwtjwj.html)
-  - 为什么 需要 LightLLM ?
-    - 显存碎片化严重
-    - 请求调度效率低
-    - kernel定制化难度高
-  - 介绍：基于纯Python语言的大模型推理部署框架LightLLM，方便研究员进行轻量级的本地部署和定制修改，用于快速扩展对不同模型的支持，吸纳层出不穷的优秀开源特性，探索最优服务架构。
-  - LightLLM 性能表现
-    - TGI由于显存碎片化严重，所以很难达到较高的吞吐量；
-    - vLLM因引入了PageAttention，但是由于整体实现细节更利于小模型推理，所以在大模型上的并发性能并不是十分理想（使用的默认配置）；
-    - 相比之下，LightLLM则可以在各种大小的模型下都保持稳健的性能，在大模型上（LLaMA-65B）相对TGI和vLLM实现了3倍左右的2提升。
-
-- [大模型推理加速工具 —— vLLM](https://articles.zsxq.com/id_ra748ubp2t3l.html)
-  - 介绍：vLLM是一个开源的LLM推理和服务引擎。它利用了全新的注意力算法「PagedAttention」，有效地管理注意力键和值。
-  - vLLM 具有哪些特点 ?
-    - 最先进的服务吞吐量；
-    - PagedAttention 可以有效的管理注意力的键和值；
-    - 动态批处理请求；
-    - 优化好的 CUDA 内核；
 
 ### 第一层 LLMs to Natural Language Processing (NLP)
 
@@ -472,7 +324,7 @@
   - 动机：之前大部分开源可finetune的模型大都是比较小的模型7B或者13B，虽然可以在一些简单的chatbot评测集上，通过finetune训练有不错的表现。但是由于这些模型规模还是有限，LLM核心的reasoning的能力还是相对比较弱。这就是为什么很多这种小规模的模型在实际应用的场景表现像是个玩具。chatbot评测集比较简单，真正比较考验模型能力的复杂逻辑推理及数学问题上小模型和大模型差距还是很明显的。
   - 介绍：QLoRA的优化方法，第一次让33B规模的模型可以比较民主化的，比较低成本的finetune训练，让33B模型的普及使用成为了可能。我们认为33B模型既可以发挥大规模模型的比较强的推理能力，又可以针对私有业务领域数据进行灵活的finetune训练提升对于LLM的控制力。
 
-### 第三层 LLMs to Artifact
+### 第三层 LLMs to Intelligent Retrieval (IR)
 
 #### 第一重 langchain
 
@@ -498,19 +350,6 @@
     - 多种大语言模型：目前支持离线部署模型有chatGLM-6B\chatGLM2-6B、chatRWKV、llama系列(不推荐中文用户)、moss(不推荐)、baichuan(需配合lora使用，否则效果差)、Aquila-7B，在线API访问openai api和chatGLM-130b api。
     - Auto脚本：通过开发插件形式的JavaScript脚本，为平台附件功能，实现包括但不限于自定义对话流程、访问外部API、在线切换LoRA模型。
     - 其他实用化所需能力：对话历史管理、内网部署、多用户同时使用等。
-
-#### 第三重 AutoGPT
-
-- [AutoGPT 使用和部署](https://articles.zsxq.com/id_pli0z9916126.html)
-  - 介绍：Auto-GPT是一个基于ChatGPT的工具，他能帮你自动完成各种任务，比如写代码、写报告、做调研等等。使用它时，你只需要告诉他要扮演的角色和要实现的目标，然后他就会利用ChatGPT和谷歌搜索等工具，不断“思考”如何接近目标并执行，你甚至可以看到他的思考过程。
-
-#### 第四重 Knowledge Extraction
-
-- [【LLMs 入门实战 】 DeepKE-LLM 模型学习与实战]()
-  - DeepKE-LLM链接：https://github.com/zjunlp/DeepKE/tree/main/example/llm
-  - OpenKG地址：http://openkg.cn/tool/deepke
-  - Gitee地址：https://gitee.com/openkg/deepke/tree/main/example/llm
-  - 介绍：DeepKE是一个开源可扩展的知识图谱抽取工具，可实现命名实体识别、关系抽取和属性抽取等抽取任务，并支持低资源少样本、文档篇章和多模态等复杂场景。在大模型时代，我们对DeepKE进行了全面升级并发布大模型版DeepKE-LLM（智析抽取大模型）。该版本基于大模型对数据进行智能解析以实现知识抽取，支持多种大模型、遵循指令和自定义知识类型、格式。
 
 ### 第四层 LLMs to Text-to-Image
 
@@ -651,6 +490,125 @@
   - 论文地址：https://arxiv.org/abs/2305.18975
   - Github 代码：https://github.com/bshall/knn-vc
 
+### 第八层 LLMs to Artifact
+
+#### 第一重 AutoGPT
+
+- [AutoGPT 使用和部署](https://articles.zsxq.com/id_pli0z9916126.html)
+  - 介绍：Auto-GPT是一个基于ChatGPT的工具，他能帮你自动完成各种任务，比如写代码、写报告、做调研等等。使用它时，你只需要告诉他要扮演的角色和要实现的目标，然后他就会利用ChatGPT和谷歌搜索等工具，不断“思考”如何接近目标并执行，你甚至可以看到他的思考过程。
+
+#### 第二重 Knowledge Extraction
+
+- [【LLMs 入门实战 】 DeepKE-LLM 模型学习与实战]()
+  - DeepKE-LLM链接：https://github.com/zjunlp/DeepKE/tree/main/example/llm
+  - OpenKG地址：http://openkg.cn/tool/deepke
+  - Gitee地址：https://gitee.com/openkg/deepke/tree/main/example/llm
+  - 介绍：DeepKE是一个开源可扩展的知识图谱抽取工具，可实现命名实体识别、关系抽取和属性抽取等抽取任务，并支持低资源少样本、文档篇章和多模态等复杂场景。在大模型时代，我们对DeepKE进行了全面升级并发布大模型版DeepKE-LLM（智析抽取大模型）。该版本基于大模型对数据进行智能解析以实现知识抽取，支持多种大模型、遵循指令和自定义知识类型、格式。
+
+### 第九层 LLMs to Vertical Field (VF)
+
+#### 第一重 金融领域
+
+- [【LLMs 入门实战 —— 十九】 聚宝盆(Cornucopia) 模型学习与实战](https://github.com/km1994/LLMsNineStoryDemonTower/tree/main/Cornucopia_19)
+  - 聚宝盆(Cornucopia) 开源了经过中文金融知识指令精调/指令微调(Instruct-tuning) 的LLaMA-7B模型。通过中文金融公开数据+爬取的金融数据构建指令数据集，并在此基础上对LLaMA进行了指令微调，提高了 LLaMA 在金融领域的问答效果。
+  - github: [jerry1993-tech/Cornucopia-LLaMA-Fin-Chinese](https://github.com/jerry1993-tech/Cornucopia-LLaMA-Fin-Chinese/tree/main)
+- [【LLMs 入门实战 】 BBT-FinCUGE-Applications 学习与实战]()
+  - 论文名称：
+  - 论文地址：https://github.com/ssymmetry/BBT-FinCUGE-Applications
+  - 介绍：开源了中文金融领域开源语料库BBT-FinCorpus，中文金融领域知识增强型预训练语言模型BBT-FinT5及中文金融领域自然语言处理评测基准CFLEB。
+- [【LLMs 入门实战 】 XuanYuan（轩辕） 学习与实战]()：首个千亿级中文金融对话模型
+  - 论文名称：
+  - 论文地址：https://huggingface.co/xyz-nlp/XuanYuan2.0
+  - 介绍：轩辕是国内首个开源的千亿级中文对话大模型，同时也是首个针对中文金融领域优化的千亿级开源对话大模型。轩辕在BLOOM-176B的基础上针对中文通用领域和金融领域进行了针对性的预训练与微调，它不仅可以应对通用领域的问题，也可以解答与金融相关的各类问题，为用户提供准确、全面的金融信息和建议。
+
+#### 第二重 医疗领域
+
+- [【LLMs 入门实战 —— 二十九 】HuatuoGPT (华佗GPT) 学习与实战](HuatuoGPT_29/readme.md)
+  - HuatuoGPT (华佗GPT), Towards Taming Language Models To Be a Doctor.
+  - 论文地址：https://arxiv.org/pdf/2305.15075.pdf
+  - Github 代码：https://github.com/FreedomIntelligence/HuatuoGPT
+  - 模型：https://huggingface.co/FreedomIntelligence/HuatuoGPT-7b-v1
+  - HuatuoGPT 体验网站：https://www.huatuogpt.cn/
+  - HuatuoGPT (华佗GPT) 监督微调（SFT）：[HuatuoGPT-sft-data-v1](https://huggingface.co/datasets/FreedomIntelligence/HuatuoGPT-sft-data-v1)
+  - 动机：
+    - 益增长的在线和医院快速医疗咨询需求 与 医生的时间和精力 矛盾问题
+    - 目前并没有 开源而且高质量的 可用于训练 medical LLMs，所以 为 训练 medical LLMs 而构建 high-quality instruction training data 至关重要；
+    - medical LLMs 诊断能力需要进行 彻底评估和测试，避免 medical LLMs 误诊问题；
+  - 介绍：
+    - HuatuoGPT (华佗GPT) 知识库是一个在庞大的中国医学语料库上训练的大型语言模型。HuatuoGPT (华佗GPT) 的目标是为医疗咨询场景构建一个更专业的“ChatGPT”。
+
+- [【LLMs 入门实战 】DoctorGLM 学习与实战]()
+  - 论文名称：
+  - 论文地址：https://github.com/xionghonglin/DoctorGLM
+  - 介绍：基于 ChatGLM-6B的中文问诊模型，通过中文医疗对话数据集进行微调，实现了包括lora、p-tuningv2等微调及部署
+
+- [【LLMs 入门实战 】 BenTsao 学习与实战]()
+  - 论文名称：
+  - 论文地址：https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese
+  - 介绍：开源了经过中文医学指令精调/指令微调(Instruct-tuning) 的LLaMA-7B模型。通过医学知识图谱和GPT3.5 API构建了中文医学指令数据集，并在此基础上对LLaMA进行了指令微调，提高了LLaMA在医疗领域的问答效果。
+
+- [【LLMs 入门实战 】 BianQue 学习与实战]()
+  - 论文名称：
+  - 论文地址：https://github.com/scutcyr/BianQue
+  - 介绍：一个经过指令与多轮问询对话联合微调的医疗对话大模型，基于ClueAI/ChatYuan-large-v2作为底座，使用中文医疗问答指令与多轮问询对话混合数据集进行微调。
+
+- [【LLMs 入门实战 】 Med-ChatGLM 学习与实战]()
+  - 论文名称：
+  - 论文地址：https://github.com/SCIR-HI/Med-ChatGLM
+  - 介绍：基于中文医学知识的ChatGLM模型微调，微调数据与BenTsao相同。
+
+- [【LLMs 入门实战 】 QiZhenGPT 学习与实战]()
+  - 论文名称：
+  - 论文地址：https://github.com/CMKRG/QiZhenGPT
+  - 介绍：该项目利用启真医学知识库构建的中文医学指令数据集，并基于此在LLaMA-7B模型上进行指令精调，大幅提高了模型在中文医疗场景下效果，首先针对药品知识问答发布了评测数据集，后续计划优化疾病、手术、检验等方面的问答效果，并针对医患问答、病历自动生成等应用展开拓展。
+
+- [【LLMs 入门实战 】 ChatMed 学习与实战]()
+  - 论文名称：
+  - 论文地址：https://github.com/michael-wzhu/ChatMed
+  - 介绍：该项目推出ChatMed系列中文医疗大规模语言模型，模型主干为LlaMA-7b并采用LoRA微调，具体包括ChatMed-Consult : 基于中文医疗在线问诊数据集ChatMed_Consult_Dataset的50w+在线问诊+ChatGPT回复作为训练集；ChatMed-TCM : 基于中医药指令数据集ChatMed_TCM_Dataset，以开源的中医药知识图谱为基础，采用以实体为中心的自指令方法(entity-centric self-instruct)，调用ChatGPT得到2.6w+的围绕中医药的指令数据训练得到。
+
+- [【LLMs 入门实战 】 XrayGLM 学习与实战]()
+  - 论文名称：
+  - 论文地址：https://github.com/WangRongsheng/XrayGLM
+  - 介绍：该项目为促进中文领域医学多模态大模型的研究发展，发布了XrayGLM数据集及模型，其在医学影像诊断和多轮交互对话上显示出了非凡的潜力。
+
+#### 第三重 法律领域
+
+- [【LLMs 入门实战 】 LaWGPT 学习与实战]()：基于中文法律知识的大语言模型
+  - 论文名称：
+  - 论文地址：https://github.com/pengxiao-song/LaWGPT
+  - 介绍：该系列模型在通用中文基座模型（如 Chinese-LLaMA、ChatGLM 等）的基础上扩充法律领域专有词表、大规模中文法律语料预训练，增强了大模型在法律领域的基础语义理解能力。在此基础上，构造法律领域对话问答数据集、中国司法考试数据集进行指令精调，提升了模型对法律内容的理解和执行能力。
+- [【LLMs 入门实战 】 LexiLaw 学习与实战]()：中文法律大模型
+  - 论文名称：
+  - 论文地址：https://github.com/CSHaitao/LexiLaw
+  - 介绍：LexiLaw 是一个基于 ChatGLM-6B微调的中文法律大模型，通过在法律领域的数据集上进行微调。该模型旨在为法律从业者、学生和普通用户提供准确、可靠的法律咨询服务，包括具体法律问题的咨询，还是对法律条款、案例解析、法规解读等方面的查询。
+- [【LLMs 入门实战 】 Lawyer LLaMA 学习与实战]()：中文法律LLaMA
+  - 论文名称：
+  - 论文地址：https://github.com/AndrewZhe/lawyer-llama
+  - 介绍：开源了一系列法律领域的指令微调数据和基于LLaMA训练的中文法律大模型的参数。Lawyer LLaMA 首先在大规模法律语料上进行了continual pretraining。在此基础上，借助ChatGPT收集了一批对中国国家统一法律职业资格考试客观题（以下简称法考）的分析和对法律咨询的回答，利用收集到的数据对模型进行指令微调，让模型习得将法律知识应用到具体场景中的能力。
+
+#### 第四重 教育领域
+
+- [【LLMs 入门实战 】 桃李（Taoli） 学习与实战]()
+  - 论文名称：
+  - 论文地址：https://github.com/blcuicall/taoli
+  - 介绍：一个在国际中文教育领域数据上进行了额外训练的模型。项目基于目前国际中文教育领域流通的500余册国际中文教育教材与教辅书、汉语水平考试试题以及汉语学习者词典等，构建了国际中文教育资源库，构造了共计 88000 条的高质量国际中文教育问答数据集，并利用收集到的数据对模型进行指令微调，让模型习得将知识应用到具体场景中的能力。
+
+#### 第五重 文化领域
+
+- [【LLMs 入门实战 】 Firefly 学习与实战]()
+  - 论文名称：
+  - 论文地址：https://github.com/yangjianxin1/Firefly
+  - 介绍：中文对话式大语言模型，构造了许多与中华文化相关的数据，以提升模型这方面的表现，如对联、作诗、文言文翻译、散文、金庸小说等。
+
+#### 第六重 Coding
+
+- [【LLMs 入门实战】 CodeGeeX2-6B 学习与实战](https://articles.zsxq.com/id_1bz3qf7r76wc.html)
+  - DeepKE-LLM链接：
+  - OpenKG地址：
+  - Github 地址：https://github.com/THUDM/CodeGeeX2
+  - 介绍：CodeGeeX2 是多语言代码生成模型 CodeGeeX 的第二代模型，基于 ChatGLM2 架构注入代码实现。得益于 ChatGLM2 的更优性能，CodeGeeX2-6B 在多项指标上取得了较大的性能提升。与 150 亿参数的 StarCoder-15B 相比，CodeGeeX2-6B 凭借 60 亿参数便具备了近 10% 的优势。
+
 ### LLaMA 衍生物系列
 
 #### 第五重 GPT4ALL
@@ -776,108 +734,6 @@
   - Github 代码： https://github.com/FlagAI-Open/FlagAI/tree/master/examples/Aquila
   - 模型：
   - 介绍：由智源研究院发布，Aquila语言大模型在技术上继承了GPT-3、LLaMA等的架构设计优点，替换了一批更高效的底层算子实现、重新设计实现了中英双语的tokenizer，升级了BMTrain并行训练方法，是在中英文高质量语料基础上从０开始训练的，通过数据质量的控制、多种训练的优化方法，实现在更小的数据集、更短的训练时间，获得比其它开源模型更优的性能。也是首个支持中英双语知识、支持商用许可协议、符合国内数据合规需要的大规模开源语言模型。
-
-#### 第一重 金融领域
-
-- [【LLMs 入门实战 —— 十九】 聚宝盆(Cornucopia) 模型学习与实战](https://github.com/km1994/LLMsNineStoryDemonTower/tree/main/Cornucopia_19)
-  - 聚宝盆(Cornucopia) 开源了经过中文金融知识指令精调/指令微调(Instruct-tuning) 的LLaMA-7B模型。通过中文金融公开数据+爬取的金融数据构建指令数据集，并在此基础上对LLaMA进行了指令微调，提高了 LLaMA 在金融领域的问答效果。
-  - github: [jerry1993-tech/Cornucopia-LLaMA-Fin-Chinese](https://github.com/jerry1993-tech/Cornucopia-LLaMA-Fin-Chinese/tree/main)
-- [【LLMs 入门实战 】 BBT-FinCUGE-Applications 学习与实战]()
-  - 论文名称：
-  - 论文地址：https://github.com/ssymmetry/BBT-FinCUGE-Applications
-  - 介绍：开源了中文金融领域开源语料库BBT-FinCorpus，中文金融领域知识增强型预训练语言模型BBT-FinT5及中文金融领域自然语言处理评测基准CFLEB。
-- [【LLMs 入门实战 】 XuanYuan（轩辕） 学习与实战]()：首个千亿级中文金融对话模型
-  - 论文名称：
-  - 论文地址：https://huggingface.co/xyz-nlp/XuanYuan2.0
-  - 介绍：轩辕是国内首个开源的千亿级中文对话大模型，同时也是首个针对中文金融领域优化的千亿级开源对话大模型。轩辕在BLOOM-176B的基础上针对中文通用领域和金融领域进行了针对性的预训练与微调，它不仅可以应对通用领域的问题，也可以解答与金融相关的各类问题，为用户提供准确、全面的金融信息和建议。
-
-#### 第二重 医疗领域
-
-- [【LLMs 入门实战 —— 二十九 】HuatuoGPT (华佗GPT) 学习与实战](HuatuoGPT_29/readme.md)
-  - HuatuoGPT (华佗GPT), Towards Taming Language Models To Be a Doctor.
-  - 论文地址：https://arxiv.org/pdf/2305.15075.pdf
-  - Github 代码：https://github.com/FreedomIntelligence/HuatuoGPT
-  - 模型：https://huggingface.co/FreedomIntelligence/HuatuoGPT-7b-v1
-  - HuatuoGPT 体验网站：https://www.huatuogpt.cn/
-  - HuatuoGPT (华佗GPT) 监督微调（SFT）：[HuatuoGPT-sft-data-v1](https://huggingface.co/datasets/FreedomIntelligence/HuatuoGPT-sft-data-v1)
-  - 动机：
-    - 益增长的在线和医院快速医疗咨询需求 与 医生的时间和精力 矛盾问题
-    - 目前并没有 开源而且高质量的 可用于训练 medical LLMs，所以 为 训练 medical LLMs 而构建 high-quality instruction training data 至关重要；
-    - medical LLMs 诊断能力需要进行 彻底评估和测试，避免 medical LLMs 误诊问题；
-  - 介绍：
-    - HuatuoGPT (华佗GPT) 知识库是一个在庞大的中国医学语料库上训练的大型语言模型。HuatuoGPT (华佗GPT) 的目标是为医疗咨询场景构建一个更专业的“ChatGPT”。
-
-- [【LLMs 入门实战 】DoctorGLM 学习与实战]()
-  - 论文名称：
-  - 论文地址：https://github.com/xionghonglin/DoctorGLM
-  - 介绍：基于 ChatGLM-6B的中文问诊模型，通过中文医疗对话数据集进行微调，实现了包括lora、p-tuningv2等微调及部署
-
-- [【LLMs 入门实战 】 BenTsao 学习与实战]()
-  - 论文名称：
-  - 论文地址：https://github.com/SCIR-HI/Huatuo-Llama-Med-Chinese
-  - 介绍：开源了经过中文医学指令精调/指令微调(Instruct-tuning) 的LLaMA-7B模型。通过医学知识图谱和GPT3.5 API构建了中文医学指令数据集，并在此基础上对LLaMA进行了指令微调，提高了LLaMA在医疗领域的问答效果。
-
-- [【LLMs 入门实战 】 BianQue 学习与实战]()
-  - 论文名称：
-  - 论文地址：https://github.com/scutcyr/BianQue
-  - 介绍：一个经过指令与多轮问询对话联合微调的医疗对话大模型，基于ClueAI/ChatYuan-large-v2作为底座，使用中文医疗问答指令与多轮问询对话混合数据集进行微调。
-
-- [【LLMs 入门实战 】 Med-ChatGLM 学习与实战]()
-  - 论文名称：
-  - 论文地址：https://github.com/SCIR-HI/Med-ChatGLM
-  - 介绍：基于中文医学知识的ChatGLM模型微调，微调数据与BenTsao相同。
-
-- [【LLMs 入门实战 】 QiZhenGPT 学习与实战]()
-  - 论文名称：
-  - 论文地址：https://github.com/CMKRG/QiZhenGPT
-  - 介绍：该项目利用启真医学知识库构建的中文医学指令数据集，并基于此在LLaMA-7B模型上进行指令精调，大幅提高了模型在中文医疗场景下效果，首先针对药品知识问答发布了评测数据集，后续计划优化疾病、手术、检验等方面的问答效果，并针对医患问答、病历自动生成等应用展开拓展。
-
-- [【LLMs 入门实战 】 ChatMed 学习与实战]()
-  - 论文名称：
-  - 论文地址：https://github.com/michael-wzhu/ChatMed
-  - 介绍：该项目推出ChatMed系列中文医疗大规模语言模型，模型主干为LlaMA-7b并采用LoRA微调，具体包括ChatMed-Consult : 基于中文医疗在线问诊数据集ChatMed_Consult_Dataset的50w+在线问诊+ChatGPT回复作为训练集；ChatMed-TCM : 基于中医药指令数据集ChatMed_TCM_Dataset，以开源的中医药知识图谱为基础，采用以实体为中心的自指令方法(entity-centric self-instruct)，调用ChatGPT得到2.6w+的围绕中医药的指令数据训练得到。
-
-- [【LLMs 入门实战 】 XrayGLM 学习与实战]()
-  - 论文名称：
-  - 论文地址：https://github.com/WangRongsheng/XrayGLM
-  - 介绍：该项目为促进中文领域医学多模态大模型的研究发展，发布了XrayGLM数据集及模型，其在医学影像诊断和多轮交互对话上显示出了非凡的潜力。
-
-#### 第三重 法律领域
-
-- [【LLMs 入门实战 】 LaWGPT 学习与实战]()：基于中文法律知识的大语言模型
-  - 论文名称：
-  - 论文地址：https://github.com/pengxiao-song/LaWGPT
-  - 介绍：该系列模型在通用中文基座模型（如 Chinese-LLaMA、ChatGLM 等）的基础上扩充法律领域专有词表、大规模中文法律语料预训练，增强了大模型在法律领域的基础语义理解能力。在此基础上，构造法律领域对话问答数据集、中国司法考试数据集进行指令精调，提升了模型对法律内容的理解和执行能力。
-- [【LLMs 入门实战 】 LexiLaw 学习与实战]()：中文法律大模型
-  - 论文名称：
-  - 论文地址：https://github.com/CSHaitao/LexiLaw
-  - 介绍：LexiLaw 是一个基于 ChatGLM-6B微调的中文法律大模型，通过在法律领域的数据集上进行微调。该模型旨在为法律从业者、学生和普通用户提供准确、可靠的法律咨询服务，包括具体法律问题的咨询，还是对法律条款、案例解析、法规解读等方面的查询。
-- [【LLMs 入门实战 】 Lawyer LLaMA 学习与实战]()：中文法律LLaMA
-  - 论文名称：
-  - 论文地址：https://github.com/AndrewZhe/lawyer-llama
-  - 介绍：开源了一系列法律领域的指令微调数据和基于LLaMA训练的中文法律大模型的参数。Lawyer LLaMA 首先在大规模法律语料上进行了continual pretraining。在此基础上，借助ChatGPT收集了一批对中国国家统一法律职业资格考试客观题（以下简称法考）的分析和对法律咨询的回答，利用收集到的数据对模型进行指令微调，让模型习得将法律知识应用到具体场景中的能力。
-
-#### 第四重 教育领域
-
-- [【LLMs 入门实战 】 桃李（Taoli） 学习与实战]()
-  - 论文名称：
-  - 论文地址：https://github.com/blcuicall/taoli
-  - 介绍：一个在国际中文教育领域数据上进行了额外训练的模型。项目基于目前国际中文教育领域流通的500余册国际中文教育教材与教辅书、汉语水平考试试题以及汉语学习者词典等，构建了国际中文教育资源库，构造了共计 88000 条的高质量国际中文教育问答数据集，并利用收集到的数据对模型进行指令微调，让模型习得将知识应用到具体场景中的能力。
-
-#### 第五重 文化领域
-
-- [【LLMs 入门实战 】 Firefly 学习与实战]()
-  - 论文名称：
-  - 论文地址：https://github.com/yangjianxin1/Firefly
-  - 介绍：中文对话式大语言模型，构造了许多与中华文化相关的数据，以提升模型这方面的表现，如对联、作诗、文言文翻译、散文、金庸小说等。
-
-#### 第六重 Coding
-
-- [【LLMs 入门实战】 CodeGeeX2-6B 学习与实战](https://articles.zsxq.com/id_1bz3qf7r76wc.html)
-  - DeepKE-LLM链接：
-  - OpenKG地址：
-  - Github 地址：https://github.com/THUDM/CodeGeeX2
-  - 介绍：CodeGeeX2 是多语言代码生成模型 CodeGeeX 的第二代模型，基于 ChatGLM2 架构注入代码实现。得益于 ChatGLM2 的更优性能，CodeGeeX2-6B 在多项指标上取得了较大的性能提升。与 150 亿参数的 StarCoder-15B 相比，CodeGeeX2-6B 凭借 60 亿参数便具备了近 10% 的优势。
 
 ## 知识体系
 
