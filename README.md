@@ -6,8 +6,6 @@
 <img src="img/微信截图_20210301212242.jpg" width="50%" >
 
 - [【LLMs 入门实战系列】](#llms-入门实战系列)
-  - [第九层 LLMs to interview](#第九层-llms-to-interview)
-  - [第八层 LLMs to Inference acceleration](#第八层-llms-to-inference-acceleration)
   - [第一层 LLMs to Natural Language Processing (NLP)](#第一层-llms-to-natural-language-processing-nlp)
     - [第一重 ChatGLM-6B 系列](#第一重-chatglm-6b-系列)
       - [ChatGLM-6B](#chatglm-6b)
@@ -24,6 +22,8 @@
     - [第七重 BELLE](#第七重-belle)
     - [第八重 ChatRWKV](#第八重-chatrwkv)
     - [第九重 ChatGPT](#第九重-chatgpt)
+  - [第九层 LLMs to interview](#第九层-llms-to-interview)
+  - [第八层 LLMs to Inference acceleration](#第八层-llms-to-inference-acceleration)
   - [第二层 LLMs to Parameter Efficient Fine-Tuning (PEFT)](#第二层-llms-to-parameter-efficient-fine-tuning-peft)
     - [第一重 分布式训练神器](#第一重-分布式训练神器)
     - [第二重 LLMs Trick](#第二重-llms-trick)
@@ -73,149 +73,6 @@
 - [加入学习群](#加入学习群)
 - [参考](#参考)
 
-
-### 第九层 LLMs to interview
-
-- [LLMs 降龙十八掌](https://articles.zsxq.com/id_un190pd3gi8a.html)
-  - LLMs Fine-Tuning 经验贴
-    - 如何解决大模型遗忘问题#ChatGPT# #LLM (大型语言模型)
-    - Fine-Tuning max_length 选择 问题
-    - Fine-Tuning Learning rate 选择 问题
-    - 如何 向GPT/LLM模型添加额外知识？
-    - 如何解决LLM大模型fine-tune过拟合问题？
-    - 英文模型需要做词表扩充吗？
-    - 全参finetune，数据配比?
-    - 百川13b强化学习时遇到参数不更新的问题?
-    - 使用lion优化器节省显存?
-    - 使用lora训练的参数配置?
-    - ...
-  - LLMs 推理 经验贴
-    - chatglm微调完针对相同的问题输出都是一样的，有办法让他随机一点吗？
-    - 使用fastllm加速推理
-  - LLMs 部署 经验贴
-    - 如果只跑一个私有大模型，但是很多用户同时访问。这些针对不同用户的chat history怎么存取比较高效？
-  - LLMs 多轮对话 经验贴
-    - 如何 融入 之前对话信息
-  - 数据构建篇
-    - 训练数据如何构建？
-  - LLMs 胡思乱想
-    - 为什么 LLMs 不容易出现 灾难性遗忘问题？
-    - LLMs to NLP 下游任务 经验贴
-
-- [【LLMs】大模型 千面郎君](https://articles.zsxq.com/id_u51mg6wdo4h5.html)
-  - 大模型常识面
-    - 简单 介绍一下 大模型【LLMs】？
-    - 大模型【LLMs】后面跟的 175B、60B、540B等 指什么？
-    - 大模型【LLMs】具有什么优点？
-    - 大模型【LLMs】具有什么缺点？
-  - 大模型强化学习面
-    - 简单介绍强化学习？
-    - 简单介绍一下 RLHF？
-  - 大模型【LLMs】微调篇
-    - 大模型【LLMs】泛化问题？
-    - 大模型【LLMs】微调问题？
-    - 大模型【LLMs】微调有哪些优点？
-    - 大模型【LLMs】指令微调问题？
-  - 大模型【LLMs】思维链篇
-    - 大模型【LLMs】思维链问题？
-    - 大模型【LLMs】思维链本质是什么？
-    - 大模型【LLMs】思维链优点是什么？
-    - 大模型【LLMs】思维链类型和策略？
-    - 大模型【LLMs】逐步Zero-shot 介绍？
-    - 大模型【LLMs】Zero-shot-CoT提示策略定义？
-    - 大模型【LLMs】Zero-shot-CoT提示策略应用方法？
-    - 大模型【LLMs】Few-shot-CoT提示策略定义？
-    - 大模型【LLMs】Few-shot-CoT提示策略核心思想是什么？
-    - 大模型【LLMs】Few-shot-CoT提示策略应用方法是什么？
-  - 大模型【LLMs】涌现现象篇
-    - 大模型【LLMs】中有一种 涌现现象，你知道么？
-    - 大模型【LLMs】涌现现象主要体现在哪些方面？
-    - 大模型【LLMs】涌现现象主激活方式？
-  - 大模型【LLMs】提示工程篇
-    - 大模型【LLMs】提示工程 是什么？
-    - 提示工程 如何添加进 大模型【LLMs】？
-    - 微调（FineTuning） vs 提示工程？
-    - 微调（FineTuning） vs 提示工程 在应用场景中关系雨联系？
-    - 大模型【LLMs】Few-shot提示方法 是什么？
-
-- [大模型的重复生成现象如何缓解？](https://articles.zsxq.com/id_u9pxnveolxwm.html)
-  - 为何会出现重复生成现象？
-  - 如何减少大模型重复生成？
-- [ LoRA这种微调方法和全参数比起来有什么劣势吗？](https://articles.zsxq.com/id_6dbtb0w32qo3.html)
-  - 什么是 LoRA？
-  - LoRA 优点是什么？
-  - LoRA 缺点是什么？
-  - LoRA这种微调方法和全参数比起来有什么劣势吗？
-  - LoRA这种微调方法和全参数 如何选择？
-- [LLaMa-1 从原理到实践分析](https://articles.zsxq.com/id_sil90pxf3zvw.html)
-  - LLaMa-1 理论介绍
-  - LLaMa 模型架构介绍
-  - LLaMa 优化器介绍
-  - LLaMa-1 实践介绍
-- [LLaMa-2 从原理到实践分析](https://articles.zsxq.com/id_gsm9rxffc2r8.html)
-  - LLaMa-2 理论介绍
-  - LLaMa-2 实践介绍
-- [基于PyTorch来优化大模型训练的内存（显存）](https://articles.zsxq.com/id_vri8pu8oacqu.html)
-  - 动机：峰值内存（显存）的消耗直接决定了 机器 是否 支撑大模型训练
-  - LLMs Fine-Tuning 经验贴
-    - LLMs Fine-Tuning 框架依赖问题？
-    - LLMs Fine-Tuning 显存问题？
-    - 如何解决大模型遗忘问题#ChatGPT# #LLM (大型语言模型)？
-    - ...
-  - 混合精度训练（Mixed-Precision Training）
-    - 为什么需要 混合精度训练（Mixed-Precision Training）？
-    - 什么是 混合精度训练（Mixed-Precision Training）？
-    - 混合精度训练（Mixed-Precision Training）实现步骤？
-    - ...
-  - 低精度训练（Lower-Precision Training）
-    - 为什么需要 低精度训练（Lower-Precision Training）？
-    - 什么是 低精度训练（Lower-Precision Training）？
-    - ...
-  - 降低训练批处理大小（Reducing the Batchsize）
-    - 为什么需要 降低训练批处理大小（Reducing the Batchsize）？
-    - 什么是 降低训练批处理大小（Reducing the Batchsize）？
-    - ...
-  - 使用梯度累积创建微批次（Using Gradient Accumulation to Create Microbatches）
-    - 为什么需要 使用梯度累积创建微批次（Using Gradient Accumulation to Create Microbatches）？
-    - 什么是 使用梯度累积创建微批次（Using Gradient Accumulation to Create Microbatches）？
-    - ...
-- [如何缓解大模型幻觉？](https://articles.zsxq.com/id_bxani4mwdead.html)
-  - 为什么 会 出现 大模型幻觉？
-  - 如何 缓解 大模型幻觉？
-
-### 第八层 LLMs to Inference acceleration
-
-- [LLM（大语言模型）部署加速方法——PagedAttention](https://articles.zsxq.com/id_7eu43rgc4ehm.html)
-  - 什么是 PagedAttention？
-  - PagedAttention 如何存储 连续的key和value？
-  - PagedAttention 技术细节？
-  - PagedAttention 如何 实现安全共享？
-  - PagedAttention 源码介绍？
-
-- [LLM（大语言模型）部署加速方法——Faster Transformer](https://articles.zsxq.com/id_2ixvwo53necu.html)
-  - 为什么需要 Faster Transformer？
-  - 什么是 FasterTransformer？
-  - FasterTransformer 核心？
-  - FasterTransformer 优化？
-
-- [纯Python超轻量高性能LLM推理框架 —— LightLLM](https://articles.zsxq.com/id_jwdwtitwtjwj.html)
-  - 为什么 需要 LightLLM ?
-    - 显存碎片化严重
-    - 请求调度效率低
-    - kernel定制化难度高
-  - 介绍：基于纯Python语言的大模型推理部署框架LightLLM，方便研究员进行轻量级的本地部署和定制修改，用于快速扩展对不同模型的支持，吸纳层出不穷的优秀开源特性，探索最优服务架构。
-  - LightLLM 性能表现
-    - TGI由于显存碎片化严重，所以很难达到较高的吞吐量；
-    - vLLM因引入了PageAttention，但是由于整体实现细节更利于小模型推理，所以在大模型上的并发性能并不是十分理想（使用的默认配置）；
-    - 相比之下，LightLLM则可以在各种大小的模型下都保持稳健的性能，在大模型上（LLaMA-65B）相对TGI和vLLM实现了3倍左右的2提升。
-
-- [大模型推理加速工具 —— vLLM](https://articles.zsxq.com/id_ra748ubp2t3l.html)
-  - 介绍：vLLM是一个开源的LLM推理和服务引擎。它利用了全新的注意力算法「PagedAttention」，有效地管理注意力键和值。
-  - vLLM 具有哪些特点 ?
-    - 最先进的服务吞吐量；
-    - PagedAttention 可以有效的管理注意力的键和值；
-    - 动态批处理请求；
-    - 优化好的 CUDA 内核；
 
 ### 第一层 LLMs to Natural Language Processing (NLP)
 
@@ -376,6 +233,149 @@
   - [吴恩达老师与OpenAI合作推出《ChatGPT Prompt Engineering for Developers》](https://learn.deeplearning.ai/chatgpt-prompt-eng/lesson/1/introduction)
   - 动机：吴恩达老师与OpenAI合作推出《ChatGPT Prompt Engineering for Developers》课程
   - 介绍：如何构建ChatGPT Prompt以处理文本摘要、推断和转换(翻译、纠错、风格转换、格式转换等)这些常见的NLP任务
+
+### 第九层 LLMs to interview
+
+- [LLMs 降龙十八掌](https://articles.zsxq.com/id_un190pd3gi8a.html)
+  - LLMs Fine-Tuning 经验贴
+    - 如何解决大模型遗忘问题#ChatGPT# #LLM (大型语言模型)
+    - Fine-Tuning max_length 选择 问题
+    - Fine-Tuning Learning rate 选择 问题
+    - 如何 向GPT/LLM模型添加额外知识？
+    - 如何解决LLM大模型fine-tune过拟合问题？
+    - 英文模型需要做词表扩充吗？
+    - 全参finetune，数据配比?
+    - 百川13b强化学习时遇到参数不更新的问题?
+    - 使用lion优化器节省显存?
+    - 使用lora训练的参数配置?
+    - ...
+  - LLMs 推理 经验贴
+    - chatglm微调完针对相同的问题输出都是一样的，有办法让他随机一点吗？
+    - 使用fastllm加速推理
+  - LLMs 部署 经验贴
+    - 如果只跑一个私有大模型，但是很多用户同时访问。这些针对不同用户的chat history怎么存取比较高效？
+  - LLMs 多轮对话 经验贴
+    - 如何 融入 之前对话信息
+  - 数据构建篇
+    - 训练数据如何构建？
+  - LLMs 胡思乱想
+    - 为什么 LLMs 不容易出现 灾难性遗忘问题？
+    - LLMs to NLP 下游任务 经验贴
+
+- [【LLMs】大模型 千面郎君](https://articles.zsxq.com/id_u51mg6wdo4h5.html)
+  - 大模型常识面
+    - 简单 介绍一下 大模型【LLMs】？
+    - 大模型【LLMs】后面跟的 175B、60B、540B等 指什么？
+    - 大模型【LLMs】具有什么优点？
+    - 大模型【LLMs】具有什么缺点？
+  - 大模型强化学习面
+    - 简单介绍强化学习？
+    - 简单介绍一下 RLHF？
+  - 大模型【LLMs】微调篇
+    - 大模型【LLMs】泛化问题？
+    - 大模型【LLMs】微调问题？
+    - 大模型【LLMs】微调有哪些优点？
+    - 大模型【LLMs】指令微调问题？
+  - 大模型【LLMs】思维链篇
+    - 大模型【LLMs】思维链问题？
+    - 大模型【LLMs】思维链本质是什么？
+    - 大模型【LLMs】思维链优点是什么？
+    - 大模型【LLMs】思维链类型和策略？
+    - 大模型【LLMs】逐步Zero-shot 介绍？
+    - 大模型【LLMs】Zero-shot-CoT提示策略定义？
+    - 大模型【LLMs】Zero-shot-CoT提示策略应用方法？
+    - 大模型【LLMs】Few-shot-CoT提示策略定义？
+    - 大模型【LLMs】Few-shot-CoT提示策略核心思想是什么？
+    - 大模型【LLMs】Few-shot-CoT提示策略应用方法是什么？
+  - 大模型【LLMs】涌现现象篇
+    - 大模型【LLMs】中有一种 涌现现象，你知道么？
+    - 大模型【LLMs】涌现现象主要体现在哪些方面？
+    - 大模型【LLMs】涌现现象主激活方式？
+  - 大模型【LLMs】提示工程篇
+    - 大模型【LLMs】提示工程 是什么？
+    - 提示工程 如何添加进 大模型【LLMs】？
+    - 微调（FineTuning） vs 提示工程？
+    - 微调（FineTuning） vs 提示工程 在应用场景中关系雨联系？
+    - 大模型【LLMs】Few-shot提示方法 是什么？
+
+- [大模型的重复生成现象如何缓解？](https://articles.zsxq.com/id_u9pxnveolxwm.html)
+  - 为何会出现重复生成现象？
+  - 如何减少大模型重复生成？
+- [ LoRA这种微调方法和全参数比起来有什么劣势吗？](https://articles.zsxq.com/id_6dbtb0w32qo3.html)
+  - 什么是 LoRA？
+  - LoRA 优点是什么？
+  - LoRA 缺点是什么？
+  - LoRA这种微调方法和全参数比起来有什么劣势吗？
+  - LoRA这种微调方法和全参数 如何选择？
+- [LLaMa-1 从原理到实践分析](https://articles.zsxq.com/id_sil90pxf3zvw.html)
+  - LLaMa-1 理论介绍
+  - LLaMa 模型架构介绍
+  - LLaMa 优化器介绍
+  - LLaMa-1 实践介绍
+- [LLaMa-2 从原理到实践分析](https://articles.zsxq.com/id_gsm9rxffc2r8.html)
+  - LLaMa-2 理论介绍
+  - LLaMa-2 实践介绍
+- [基于PyTorch来优化大模型训练的内存（显存）](https://articles.zsxq.com/id_vri8pu8oacqu.html)
+  - 动机：峰值内存（显存）的消耗直接决定了 机器 是否 支撑大模型训练
+  - LLMs Fine-Tuning 经验贴
+    - LLMs Fine-Tuning 框架依赖问题？
+    - LLMs Fine-Tuning 显存问题？
+    - 如何解决大模型遗忘问题#ChatGPT# #LLM (大型语言模型)？
+    - ...
+  - 混合精度训练（Mixed-Precision Training）
+    - 为什么需要 混合精度训练（Mixed-Precision Training）？
+    - 什么是 混合精度训练（Mixed-Precision Training）？
+    - 混合精度训练（Mixed-Precision Training）实现步骤？
+    - ...
+  - 低精度训练（Lower-Precision Training）
+    - 为什么需要 低精度训练（Lower-Precision Training）？
+    - 什么是 低精度训练（Lower-Precision Training）？
+    - ...
+  - 降低训练批处理大小（Reducing the Batchsize）
+    - 为什么需要 降低训练批处理大小（Reducing the Batchsize）？
+    - 什么是 降低训练批处理大小（Reducing the Batchsize）？
+    - ...
+  - 使用梯度累积创建微批次（Using Gradient Accumulation to Create Microbatches）
+    - 为什么需要 使用梯度累积创建微批次（Using Gradient Accumulation to Create Microbatches）？
+    - 什么是 使用梯度累积创建微批次（Using Gradient Accumulation to Create Microbatches）？
+    - ...
+- [如何缓解大模型幻觉？](https://articles.zsxq.com/id_bxani4mwdead.html)
+  - 为什么 会 出现 大模型幻觉？
+  - 如何 缓解 大模型幻觉？
+
+### 第八层 LLMs to Inference acceleration
+
+- [LLM（大语言模型）部署加速方法——PagedAttention](https://articles.zsxq.com/id_7eu43rgc4ehm.html)
+  - 什么是 PagedAttention？
+  - PagedAttention 如何存储 连续的key和value？
+  - PagedAttention 技术细节？
+  - PagedAttention 如何 实现安全共享？
+  - PagedAttention 源码介绍？
+
+- [LLM（大语言模型）部署加速方法——Faster Transformer](https://articles.zsxq.com/id_2ixvwo53necu.html)
+  - 为什么需要 Faster Transformer？
+  - 什么是 FasterTransformer？
+  - FasterTransformer 核心？
+  - FasterTransformer 优化？
+
+- [纯Python超轻量高性能LLM推理框架 —— LightLLM](https://articles.zsxq.com/id_jwdwtitwtjwj.html)
+  - 为什么 需要 LightLLM ?
+    - 显存碎片化严重
+    - 请求调度效率低
+    - kernel定制化难度高
+  - 介绍：基于纯Python语言的大模型推理部署框架LightLLM，方便研究员进行轻量级的本地部署和定制修改，用于快速扩展对不同模型的支持，吸纳层出不穷的优秀开源特性，探索最优服务架构。
+  - LightLLM 性能表现
+    - TGI由于显存碎片化严重，所以很难达到较高的吞吐量；
+    - vLLM因引入了PageAttention，但是由于整体实现细节更利于小模型推理，所以在大模型上的并发性能并不是十分理想（使用的默认配置）；
+    - 相比之下，LightLLM则可以在各种大小的模型下都保持稳健的性能，在大模型上（LLaMA-65B）相对TGI和vLLM实现了3倍左右的2提升。
+
+- [大模型推理加速工具 —— vLLM](https://articles.zsxq.com/id_ra748ubp2t3l.html)
+  - 介绍：vLLM是一个开源的LLM推理和服务引擎。它利用了全新的注意力算法「PagedAttention」，有效地管理注意力键和值。
+  - vLLM 具有哪些特点 ?
+    - 最先进的服务吞吐量；
+    - PagedAttention 可以有效的管理注意力的键和值；
+    - 动态批处理请求；
+    - 优化好的 CUDA 内核；
 
 ### 第二层 LLMs to Parameter Efficient Fine-Tuning (PEFT)
 
