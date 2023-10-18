@@ -130,6 +130,15 @@
 
 #### 第十一重 Llama2
 
+- [【LLMs 入门实战】 QLoRA微调Llama2 模型学习与实战](https://articles.zsxq.com/id_e0nworruzu7t.html)
+  - 官网：https://ai.meta.com/llama/
+  - 论文名称：《Llama 2: Open Foundation and Fine-Tuned Chat Models》
+  - 论文地址：https://ai.meta.com/research/publications/llama-2-open-foundation-and-fine-tuned-chat-models/
+  - 演示平台：https://llama2.ai/
+  - Github 代码：https://github.com/facebookresearch/llama
+  - 模型下载地址：https://ai.meta.com/resources/models-and-libraries/llama-downloads/
+  - 介绍：QLoRA微调Llama2 模型学习与实战
+
 - [【LLMs 入门实战】 Llama2 模型学习与实战](https://articles.zsxq.com/id_ivi7gtxdpq4p.html)
   - 官网：https://ai.meta.com/llama/
   - 论文名称：《Llama 2: Open Foundation and Fine-Tuned Chat Models》
