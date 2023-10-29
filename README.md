@@ -9,12 +9,14 @@
 - [【LLMs 入门实战系列】](#llms-入门实战系列)
   - [第一层 LLMs to Natural Language Processing (NLP)](#第一层-llms-to-natural-language-processing-nlp)
     - [第一重 ChatGLM-6B 系列](#第一重-chatglm-6b-系列)
-      - [ChatGLM-6B](#chatglm-6b)
+      - [ChatGLM3](#chatglm3)
       - [ChatGLM2-6B](#chatglm2-6b)
-    - [第十一重 Llama2](#第十一重-llama2)
+      - [ChatGLM-6B](#chatglm-6b)
     - [第十重 Baichuan](#第十重-baichuan)
+      - [Baichuan2](#baichuan2)
       - [Baichuan-13B](#baichuan-13b)
       - [baichuan-7B](#baichuan-7b)
+    - [第十一重 Llama2](#第十一重-llama2)
     - [第二重 Stanford Alpaca 7B](#第二重-stanford-alpaca-7b)
     - [第三重 Chinese-LLaMA-Alpaca](#第三重-chinese-llama-alpaca)
     - [第四重 小羊驼 Vicuna](#第四重-小羊驼-vicuna)
@@ -79,27 +81,28 @@
 
 #### 第一重 ChatGLM-6B 系列
 
-##### ChatGLM-6B 
+##### ChatGLM3
 
-1. [【ChatGLM-6B入门-一】清华大学开源中文版ChatGLM-6B模型学习与实战](ChatGLM-6B/induction.md)
-   1. 介绍：ChatGLM-6B 环境配置 和 部署
-2. [【ChatGLM-6B入门-二】清华大学开源中文版ChatGLM-6B模型微调实战](ChatGLM-6B/ptuning.md)
-   1. ChatGLM-6B P-Tuning V2 微调：Fine-tuning the prefix encoder of the model.
-3. [【ChatGLM-6B入门-三】ChatGLM 特定任务微调实战](https://articles.zsxq.com/id_3b42ukjdkwpt.html)
-4. [【ChatGLM-6B入门-四】ChatGLM + LoRA 进行finetune](https://articles.zsxq.com/id_e2389qm0w0sx.html)
-   1. 介绍：ChatGLM-6B LoRA 微调：Fine-tuning the low-rank adapters of the model.
-5. [ChatGLM-6B 小编填坑记](https://articles.zsxq.com/id_fw7vn0mhdsnq.html)
-   1. 介绍：ChatGLM-6B 在 部署和微调 过程中 会遇到很多坑，小编掉坑了很多次，为防止 后人和小编一样继续掉坑，小编索性把遇到的坑都填了。
-6. [【LLMs学习】关于大模型实践的一些总结](https://articles.zsxq.com/id_il58nxrs9jxr.html)
-7. [【LLMs 入门实战 —— 十一 】基于 🤗PEFT 的高效 🤖ChatGLM-6B 微调](https://articles.zsxq.com/id_7rz5jtfguuc5.html)
-   1. 微调方式：
-      1. ChatGLM-6B Freeze 微调：Fine-tuning the MLPs in the last n blocks of the model.
-      2. ChatGLM-6B P-Tuning V2 微调：Fine-tuning the prefix encoder of the model.
-      3. ChatGLM-6B LoRA 微调：Fine-tuning the low-rank adapters of the model.
-8. [【LLMs 入门实战】基于 🤗QLoRA 的高效 🤖ChatGLM-6B 微调](https://articles.zsxq.com/id_jwxc99b1gbfd.html)
-   1. 介绍：本项目使用 https://github.com/huggingface/peft  库，实现了 ChatGLM-6B 模型4bit的 QLoRA 高效微调，可以在一张RTX3060上完成全部微调过程。
-9. [【LLMs 入门实战 】🤖ChatGLM-6B 模型结构代码解析](https://articles.zsxq.com/id_vi2qatrhvzwt.html)
-   1.  介绍：ChatGLM-6B 模型结构代码解析
+- [【LLMs 入门实战】 ChatGLM3 模型学习与实战]()
+  - 论文名称：ChatGLM3
+  - Github 代码：https://github.com/THUDM/ChatGLM3
+  - 模型地址：
+    - huggingface：https://huggingface.co/THUDM/chatglm3-6b
+    - modelscope：https://modelscope.cn/models/ZhipuAI/chatglm3-6b/summary
+  - 动机：2023年10月26日，由中国计算机学会主办的2023中国计算机大会（CNCC）正式开幕，据了解，智谱AI于27日论坛上推出了全自研的第三代基座大模型ChatGLM3及相关系列产品，这也是智谱AI继推出千亿基座的对话模型ChatGLM和ChatGLM2之后的又一次重大突破。
+  - 介绍：ChatGLM3 是智谱AI和清华大学 KEG 实验室联合发布的新一代对话预训练模型。ChatGLM3-6B 是 ChatGLM3 系列中的开源模型，在保留了前两代模型对话流畅、部署门槛低等众多优秀特性的基础上，ChatGLM3-6B 引入了如下特性：
+    - **更强大的基础模型：** ChatGLM3-6B 的基础模型 ChatGLM3-6B-Base 采用了更多样的训练数据、更充分的训练步数和更合理的训练策略。在语义、数学、推理、代码、知识等不同角度的数据集上测评显示，**ChatGLM3-6B-Base 具有在 10B 以下的基础模型中最强的性能**。
+    - **更完整的功能支持：** ChatGLM3-6B 采用了全新设计的 [Prompt 格式](PROMPT.md)，除正常的多轮对话外。同时原生支持[工具调用](tool_using/README.md)（Function Call）、代码执行（Code Interpreter）和 Agent 任务等复杂场景。
+    - **更全面的开源序列：** 除了对话模型 [ChatGLM3-6B](https://huggingface.co/THUDM/chatglm3-6b) 外，还开源了基础模型 [ChatGLM3-6B-Base](https://huggingface.co/THUDM/chatglm3-6b-base)、长文本对话模型 [ChatGLM3-6B-32K](https://huggingface.co/THUDM/chatglm3-6b-32k)。以上所有权重对学术研究**完全开放**，在填写[问卷](https://open.bigmodel.cn/mla/form)进行登记后**亦允许免费商业使用**。
+
+- [【LLMs 入门实战】 ChatGLM3 模型微调学习与实战]()
+  - 论文名称：ChatGLM3
+  - Github 代码：https://github.com/THUDM/ChatGLM3
+  - 模型地址：
+    - huggingface：https://huggingface.co/THUDM/chatglm3-6b
+    - modelscope：https://modelscope.cn/models/ZhipuAI/chatglm3-6b/summary
+  - 动机：2023年10月26日，由中国计算机学会主办的2023中国计算机大会（CNCC）正式开幕，据了解，智谱AI于27日论坛上推出了全自研的第三代基座大模型ChatGLM3及相关系列产品，这也是智谱AI继推出千亿基座的对话模型ChatGLM和ChatGLM2之后的又一次重大突破。
+  - 介绍：分别对 ChatGLM3 进行 lora 和 full_training 微调
 
 ##### ChatGLM2-6B 
 
@@ -127,6 +130,67 @@
     -  ChatGLM2-6B LoRA 微调：Fine-tuning the low-rank adapters of the model.
 - [【LLMs 入门实战】基于 🤗QLoRA 的高效 🤖ChatGLM2-6B 微调](https://articles.zsxq.com/id_5oocf5c9e4te.html)
   - 介绍：本项目使用 https://github.com/huggingface/peft  库，实现了 ChatGLM2-6B 模型4bit的 QLoRA 高效微调，可以在一张RTX3060上完成全部微调过程。
+
+##### ChatGLM-6B 
+
+1. [【ChatGLM-6B入门-一】清华大学开源中文版ChatGLM-6B模型学习与实战](ChatGLM-6B/induction.md)
+   1. 介绍：ChatGLM-6B 环境配置 和 部署
+2. [【ChatGLM-6B入门-二】清华大学开源中文版ChatGLM-6B模型微调实战](ChatGLM-6B/ptuning.md)
+   1. ChatGLM-6B P-Tuning V2 微调：Fine-tuning the prefix encoder of the model.
+3. [【ChatGLM-6B入门-三】ChatGLM 特定任务微调实战](https://articles.zsxq.com/id_3b42ukjdkwpt.html)
+4. [【ChatGLM-6B入门-四】ChatGLM + LoRA 进行finetune](https://articles.zsxq.com/id_e2389qm0w0sx.html)
+   1. 介绍：ChatGLM-6B LoRA 微调：Fine-tuning the low-rank adapters of the model.
+5. [ChatGLM-6B 小编填坑记](https://articles.zsxq.com/id_fw7vn0mhdsnq.html)
+   1. 介绍：ChatGLM-6B 在 部署和微调 过程中 会遇到很多坑，小编掉坑了很多次，为防止 后人和小编一样继续掉坑，小编索性把遇到的坑都填了。
+6. [【LLMs学习】关于大模型实践的一些总结](https://articles.zsxq.com/id_il58nxrs9jxr.html)
+7. [【LLMs 入门实战 —— 十一 】基于 🤗PEFT 的高效 🤖ChatGLM-6B 微调](https://articles.zsxq.com/id_7rz5jtfguuc5.html)
+   1. 微调方式：
+      1. ChatGLM-6B Freeze 微调：Fine-tuning the MLPs in the last n blocks of the model.
+      2. ChatGLM-6B P-Tuning V2 微调：Fine-tuning the prefix encoder of the model.
+      3. ChatGLM-6B LoRA 微调：Fine-tuning the low-rank adapters of the model.
+8. [【LLMs 入门实战】基于 🤗QLoRA 的高效 🤖ChatGLM-6B 微调](https://articles.zsxq.com/id_jwxc99b1gbfd.html)
+   1. 介绍：本项目使用 https://github.com/huggingface/peft  库，实现了 ChatGLM-6B 模型4bit的 QLoRA 高效微调，可以在一张RTX3060上完成全部微调过程。
+9. [【LLMs 入门实战 】🤖ChatGLM-6B 模型结构代码解析](https://articles.zsxq.com/id_vi2qatrhvzwt.html)
+   1.  介绍：ChatGLM-6B 模型结构代码解析
+
+#### 第十重 Baichuan
+
+##### Baichuan2
+
+- [【LLMs 入门实战】 Baichuan2 学习与实战](https://articles.zsxq.com/id_4o2tzx0v6v55.html)
+  - 论文名称：Baichuan 2: Open Large-scale Language Models
+  - Github 代码：https://github.com/baichuan-inc/Baichuan2
+  - 模型：https://huggingface.co/baichuan-inc
+  - Baichuan-13B 大模型：
+    - 官方微调过（指令对齐）:https://huggingface.co/baichuan-inc/Baichuan-13B-Chat
+    - 预训练大模型（未经过微调）:https://huggingface.co/baichuan-inc/Baichuan-13B-Base
+  - 介绍：
+    - Baichuan 2 是百川智能推出的新一代开源大语言模型，采用 2.6 万亿 Tokens 的高质量语料训练。
+    - Baichuan 2 在多个权威的中文、英文和多语言的通用、领域 benchmark 上取得同尺寸最佳的效果。
+    - 本次发布包含有 7B、13B 的 Base 和 Chat 版本，并提供了 Chat 版本的 4bits 量化。
+    - 所有版本对学术研究完全开放。同时，开发者通过邮件申请并获得官方商用许可后，即可免费商用，请参考协议章节。
+
+##### Baichuan-13B
+
+- [【LLMs 入门实战 】 Baichuan-13B 模型学习与实战](https://articles.zsxq.com/id_a88op9no2xwi.html)
+  - baichuan-inc/Baichuan-13B：https://github.com/baichuan-inc/Baichuan-13B
+  - Baichuan-13B 大模型：
+    - 官方微调过（指令对齐）:https://huggingface.co/baichuan-inc/Baichuan-13B-Chat
+    - 预训练大模型（未经过微调）:https://huggingface.co/baichuan-inc/Baichuan-13B-Base
+  - 介绍：Baichuan-13B 是由百川智能继 Baichuan-7B 之后开发的包含 130 亿参数的开源可商用的大规模语言模型，在权威的中文和英文 benchmark 上均取得同尺寸最好的效果。Baichuan-13B 有如下几个特点：
+    - 更大尺寸、更多数据：Baichuan-13B 在 Baichuan-7B 的基础上进一步扩大参数量到 130 亿，并且在高质量的语料上训练了 1.4 万亿 tokens，超过 LLaMA-13B 40%，是当前开源 13B 尺寸下训练数据量最多的模型。支持中英双语，使用 ALiBi 位置编码，上下文窗口长度为 4096。
+    - 同时开源预训练和对齐模型：预训练模型是适用开发者的“基座”，而广大普通用户对有对话功能的对齐模型具有更强的需求。因此本次开源同时发布了对齐模型（Baichuan-13B-Chat），具有很强的对话能力，开箱即用，几行代码即可简单的部署。
+    - 更高效的推理：为了支持更广大用户的使用，本次同时开源了 int8 和 int4 的量化版本，相对非量化版本在几乎没有效果损失的情况下大大降低了部署的机器资源门槛，可以部署在如 Nvidia 3090 这样的消费级显卡上。
+    - 开源免费可商用：Baichuan-13B 不仅对学术研究完全开放，开发者也仅需邮件申请并获得官方商用许可后，即可以免费商用。
+
+##### baichuan-7B
+
+- [【LLMs 入门实战 】 baichuan-7B 学习与实战]()
+  - 论文名称：
+  - 论文地址：
+  - Github 代码： https://github.com/baichuan-inc/baichuan-7B
+  - 模型：
+  - 介绍：由百川智能开发的一个开源可商用的大规模预训练语言模型。基于Transformer结构，在大约1.2万亿tokens上训练的70亿参数模型，支持中英双语，上下文窗口长度为4096。在标准的中文和英文权威benchmark（C-EVAL/MMLU）上均取得同尺寸最好的效果。
 
 #### 第十一重 Llama2
 
@@ -158,30 +222,6 @@
     - https://huggingface.co/ziqingyang/chinese-llama-2-7b
     - https://huggingface.co/LinkSoul/Chinese-Llama-2-7b-4bit
   - 介绍：自打 LLama-2 发布后就一直在等大佬们发布 LLama-2 的适配中文版，也是这几天蹲到了一版由 LinkSoul 发布的 Chinese-Llama-2-7b，其共发布了一个常规版本和一个 4-bit 的量化版本，今天我们主要体验下 Llama-2 的中文逻辑顺便看下其训练样本的样式，后续有机会把训练和微调跑起来。
-
-#### 第十重 Baichuan
-
-##### Baichuan-13B
-
-- [【LLMs 入门实战 】 Baichuan-13B 模型学习与实战](https://articles.zsxq.com/id_a88op9no2xwi.html)
-  - baichuan-inc/Baichuan-13B：https://github.com/baichuan-inc/Baichuan-13B
-  - Baichuan-13B 大模型：
-    - 官方微调过（指令对齐）:https://huggingface.co/baichuan-inc/Baichuan-13B-Chat
-    - 预训练大模型（未经过微调）:https://huggingface.co/baichuan-inc/Baichuan-13B-Base
-  - 介绍：Baichuan-13B 是由百川智能继 Baichuan-7B 之后开发的包含 130 亿参数的开源可商用的大规模语言模型，在权威的中文和英文 benchmark 上均取得同尺寸最好的效果。Baichuan-13B 有如下几个特点：
-    - 更大尺寸、更多数据：Baichuan-13B 在 Baichuan-7B 的基础上进一步扩大参数量到 130 亿，并且在高质量的语料上训练了 1.4 万亿 tokens，超过 LLaMA-13B 40%，是当前开源 13B 尺寸下训练数据量最多的模型。支持中英双语，使用 ALiBi 位置编码，上下文窗口长度为 4096。
-    - 同时开源预训练和对齐模型：预训练模型是适用开发者的“基座”，而广大普通用户对有对话功能的对齐模型具有更强的需求。因此本次开源同时发布了对齐模型（Baichuan-13B-Chat），具有很强的对话能力，开箱即用，几行代码即可简单的部署。
-    - 更高效的推理：为了支持更广大用户的使用，本次同时开源了 int8 和 int4 的量化版本，相对非量化版本在几乎没有效果损失的情况下大大降低了部署的机器资源门槛，可以部署在如 Nvidia 3090 这样的消费级显卡上。
-    - 开源免费可商用：Baichuan-13B 不仅对学术研究完全开放，开发者也仅需邮件申请并获得官方商用许可后，即可以免费商用。
-
-##### baichuan-7B
-
-- [【LLMs 入门实战 】 baichuan-7B 学习与实战]()
-  - 论文名称：
-  - 论文地址：
-  - Github 代码： https://github.com/baichuan-inc/baichuan-7B
-  - 模型：
-  - 介绍：由百川智能开发的一个开源可商用的大规模预训练语言模型。基于Transformer结构，在大约1.2万亿tokens上训练的70亿参数模型，支持中英双语，上下文窗口长度为4096。在标准的中文和英文权威benchmark（C-EVAL/MMLU）上均取得同尺寸最好的效果。
 
 #### 第二重 Stanford Alpaca 7B 
 
