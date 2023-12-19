@@ -83,7 +83,7 @@
 
 ##### ChatGLM3
 
-- [【LLMs 入门实战】 ChatGLM3 模型学习与实战]()
+- [【LLMs 入门实战】 ChatGLM3 模型学习与实战](https://articles.zsxq.com/id_oobintch21oa.html)
   - 论文名称：ChatGLM3
   - Github 代码：https://github.com/THUDM/ChatGLM3
   - 模型地址：
@@ -95,7 +95,7 @@
     - **更完整的功能支持：** ChatGLM3-6B 采用了全新设计的 [Prompt 格式](PROMPT.md)，除正常的多轮对话外。同时原生支持[工具调用](tool_using/README.md)（Function Call）、代码执行（Code Interpreter）和 Agent 任务等复杂场景。
     - **更全面的开源序列：** 除了对话模型 [ChatGLM3-6B](https://huggingface.co/THUDM/chatglm3-6b) 外，还开源了基础模型 [ChatGLM3-6B-Base](https://huggingface.co/THUDM/chatglm3-6b-base)、长文本对话模型 [ChatGLM3-6B-32K](https://huggingface.co/THUDM/chatglm3-6b-32k)。以上所有权重对学术研究**完全开放**，在填写[问卷](https://open.bigmodel.cn/mla/form)进行登记后**亦允许免费商业使用**。
 
-- [【LLMs 入门实战】 ChatGLM3 模型微调学习与实战]()
+- [【LLMs 入门实战】 ChatGLM3 模型微调学习与实战](https://articles.zsxq.com/id_c4mwszan0set.html)
   - 论文名称：ChatGLM3
   - Github 代码：https://github.com/THUDM/ChatGLM3
   - 模型地址：
