@@ -9,8 +9,8 @@
 - [【LLMs 入门实战系列】](#llms-入门实战系列)
   - [第一层 LLMs to Natural Language Processing (NLP)](#第一层-llms-to-natural-language-processing-nlp)
     - [第一重 ChatGLM-6B 系列](#第一重-chatglm-6b-系列)
-      - [ChatGLM3](#chatglm3)
       - [ChatGLM2-6B](#chatglm2-6b)
+      - [ChatGLM3](#chatglm3)
       - [ChatGLM-6B](#chatglm-6b)
     - [第十重 Baichuan](#第十重-baichuan)
       - [Baichuan2](#baichuan2)
@@ -81,29 +81,6 @@
 
 #### 第一重 ChatGLM-6B 系列
 
-##### ChatGLM3
-
-- [【LLMs 入门实战】 ChatGLM3 模型学习与实战](https://articles.zsxq.com/id_oobintch21oa.html)
-  - 论文名称：ChatGLM3
-  - Github 代码：https://github.com/THUDM/ChatGLM3
-  - 模型地址：
-    - huggingface：https://huggingface.co/THUDM/chatglm3-6b
-    - modelscope：https://modelscope.cn/models/ZhipuAI/chatglm3-6b/summary
-  - 动机：2023年10月26日，由中国计算机学会主办的2023中国计算机大会（CNCC）正式开幕，据了解，智谱AI于27日论坛上推出了全自研的第三代基座大模型ChatGLM3及相关系列产品，这也是智谱AI继推出千亿基座的对话模型ChatGLM和ChatGLM2之后的又一次重大突破。
-  - 介绍：ChatGLM3 是智谱AI和清华大学 KEG 实验室联合发布的新一代对话预训练模型。ChatGLM3-6B 是 ChatGLM3 系列中的开源模型，在保留了前两代模型对话流畅、部署门槛低等众多优秀特性的基础上，ChatGLM3-6B 引入了如下特性：
-    - **更强大的基础模型：** ChatGLM3-6B 的基础模型 ChatGLM3-6B-Base 采用了更多样的训练数据、更充分的训练步数和更合理的训练策略。在语义、数学、推理、代码、知识等不同角度的数据集上测评显示，**ChatGLM3-6B-Base 具有在 10B 以下的基础模型中最强的性能**。
-    - **更完整的功能支持：** ChatGLM3-6B 采用了全新设计的 [Prompt 格式](PROMPT.md)，除正常的多轮对话外。同时原生支持[工具调用](tool_using/README.md)（Function Call）、代码执行（Code Interpreter）和 Agent 任务等复杂场景。
-    - **更全面的开源序列：** 除了对话模型 [ChatGLM3-6B](https://huggingface.co/THUDM/chatglm3-6b) 外，还开源了基础模型 [ChatGLM3-6B-Base](https://huggingface.co/THUDM/chatglm3-6b-base)、长文本对话模型 [ChatGLM3-6B-32K](https://huggingface.co/THUDM/chatglm3-6b-32k)。以上所有权重对学术研究**完全开放**，在填写[问卷](https://open.bigmodel.cn/mla/form)进行登记后**亦允许免费商业使用**。
-
-- [【LLMs 入门实战】 ChatGLM3 模型微调学习与实战](https://articles.zsxq.com/id_c4mwszan0set.html)
-  - 论文名称：ChatGLM3
-  - Github 代码：https://github.com/THUDM/ChatGLM3
-  - 模型地址：
-    - huggingface：https://huggingface.co/THUDM/chatglm3-6b
-    - modelscope：https://modelscope.cn/models/ZhipuAI/chatglm3-6b/summary
-  - 动机：2023年10月26日，由中国计算机学会主办的2023中国计算机大会（CNCC）正式开幕，据了解，智谱AI于27日论坛上推出了全自研的第三代基座大模型ChatGLM3及相关系列产品，这也是智谱AI继推出千亿基座的对话模型ChatGLM和ChatGLM2之后的又一次重大突破。
-  - 介绍：分别对 ChatGLM3 进行 lora 和 full_training 微调
-
 ##### ChatGLM2-6B 
 
 - [【ChatGLM2-6B入门】清华大学开源中文版ChatGLM-6B模型学习与实战](https://mp.weixin.qq.com/s/11jCCeOpg1YbABIRLlnyvg)
@@ -130,6 +107,29 @@
     -  ChatGLM2-6B LoRA 微调：Fine-tuning the low-rank adapters of the model.
 - [【LLMs 入门实战】基于 🤗QLoRA 的高效 🤖ChatGLM2-6B 微调](https://articles.zsxq.com/id_5oocf5c9e4te.html)
   - 介绍：本项目使用 https://github.com/huggingface/peft  库，实现了 ChatGLM2-6B 模型4bit的 QLoRA 高效微调，可以在一张RTX3060上完成全部微调过程。
+
+##### ChatGLM3
+
+- [【LLMs 入门实战】 ChatGLM3 模型学习与实战](https://articles.zsxq.com/id_oobintch21oa.html)
+  - 论文名称：ChatGLM3
+  - Github 代码：https://github.com/THUDM/ChatGLM3
+  - 模型地址：
+    - huggingface：https://huggingface.co/THUDM/chatglm3-6b
+    - modelscope：https://modelscope.cn/models/ZhipuAI/chatglm3-6b/summary
+  - 动机：2023年10月26日，由中国计算机学会主办的2023中国计算机大会（CNCC）正式开幕，据了解，智谱AI于27日论坛上推出了全自研的第三代基座大模型ChatGLM3及相关系列产品，这也是智谱AI继推出千亿基座的对话模型ChatGLM和ChatGLM2之后的又一次重大突破。
+  - 介绍：ChatGLM3 是智谱AI和清华大学 KEG 实验室联合发布的新一代对话预训练模型。ChatGLM3-6B 是 ChatGLM3 系列中的开源模型，在保留了前两代模型对话流畅、部署门槛低等众多优秀特性的基础上，ChatGLM3-6B 引入了如下特性：
+    - **更强大的基础模型：** ChatGLM3-6B 的基础模型 ChatGLM3-6B-Base 采用了更多样的训练数据、更充分的训练步数和更合理的训练策略。在语义、数学、推理、代码、知识等不同角度的数据集上测评显示，**ChatGLM3-6B-Base 具有在 10B 以下的基础模型中最强的性能**。
+    - **更完整的功能支持：** ChatGLM3-6B 采用了全新设计的 [Prompt 格式](PROMPT.md)，除正常的多轮对话外。同时原生支持[工具调用](tool_using/README.md)（Function Call）、代码执行（Code Interpreter）和 Agent 任务等复杂场景。
+    - **更全面的开源序列：** 除了对话模型 [ChatGLM3-6B](https://huggingface.co/THUDM/chatglm3-6b) 外，还开源了基础模型 [ChatGLM3-6B-Base](https://huggingface.co/THUDM/chatglm3-6b-base)、长文本对话模型 [ChatGLM3-6B-32K](https://huggingface.co/THUDM/chatglm3-6b-32k)。以上所有权重对学术研究**完全开放**，在填写[问卷](https://open.bigmodel.cn/mla/form)进行登记后**亦允许免费商业使用**。
+
+- [【LLMs 入门实战】 ChatGLM3 模型微调学习与实战](https://articles.zsxq.com/id_c4mwszan0set.html)
+  - 论文名称：ChatGLM3
+  - Github 代码：https://github.com/THUDM/ChatGLM3
+  - 模型地址：
+    - huggingface：https://huggingface.co/THUDM/chatglm3-6b
+    - modelscope：https://modelscope.cn/models/ZhipuAI/chatglm3-6b/summary
+  - 动机：2023年10月26日，由中国计算机学会主办的2023中国计算机大会（CNCC）正式开幕，据了解，智谱AI于27日论坛上推出了全自研的第三代基座大模型ChatGLM3及相关系列产品，这也是智谱AI继推出千亿基座的对话模型ChatGLM和ChatGLM2之后的又一次重大突破。
+  - 介绍：分别对 ChatGLM3 进行 lora 和 full_training 微调
 
 ##### ChatGLM-6B 
 
